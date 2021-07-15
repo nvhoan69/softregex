@@ -1,0 +1,1000 @@
+7812	lines having a capital letter, the string <M0>, and the string <M1> before a character	(([A-Z])&(dog)&(truck)).*(.).*	
+1612	lines with words with a letter, a vowel, and a character	\b([A-Za-z])&([AEIOUaeiou])&(.)\b	
+1065	lines with the string <M0> or a lower-case letter before a vowel	((dog)|([a-z])).*([AEIOUaeiou]).*	
+6399	lines not words with the string <M0>, 4 or more times	~(\b(dog){4,}\b)	
+5229	lines with a letter before either a capital letter, the string <M0>, or the string <M1>	([A-Za-z]).*(([A-Z])|(dog)|(truck)).*	
+7861	lines with the string <M0> followed by a lower-case letter before the string <M1> at least once	(dog.*[a-z].*).*((truck)+).*	
+752	lines with a letter, 5 or more times before the string <M0>	(([A-Za-z]){5,}).*(dog).*	
+8176	lines with words with the string <M0>, a lower-case letter, and a vowel at least once	(\b(dog)&([a-z])&([AEIOUaeiou])\b)+	
+5815	lines ending with the string <M0> at least once or a lower-case letter	(.*)(((dog)+)|([a-z]))	
+1620	lines with words with a capital letter, a number, and the string <M0>	\b([A-Z])&([0-9])&(dog)\b	
+1841	lines with words with a character or the string <M0> followed by the string <M1>	\b(.)|(dog.*truck.*)\b	
+287	lines not having a number and the string <M0>, zero or more times	(~([0-9]))&((dog)*)	
+3043	lines not having a letter before a number followed by the string <M0>	(~([A-Za-z])).*([0-9].*dog.*).*	
+2616	lines containing a letter and ending with the string <M0>	.*([A-Za-z])&((.*)(dog)).*	
+9672	lines having a number, the string <M0>, and the string <M1> before a vowel	(([0-9])&(dog)&(truck)).*([AEIOUaeiou]).*	
+1193	lines with words with starting with a vowel, zero or more times	\b(([AEIOUaeiou])(.*))*\b	
+3061	lines with a lower-case letter followed by the string <M0>, 4 or more times	([a-z].*dog.*){4,}	
+5125	lines with words with the string <M0>, zero or more times	\b(dog)*\b	
+4850	lines ending with a lower-case letter, 2 or more times	((.*)([a-z])){2,}	
+1717	lines ending with a lower-case letter followed by a character	(.*)([a-z].*..*)	
+9714	lines with the string <M0> and the string <M1> before the string <M2>, zero or more times	((dog)&(truck)).*((ring)*).*	
+4673	lines not having a letter, not the string <M0>, and not a lower-case letter	~(([A-Za-z])&(dog)&([a-z]))	
+7336	lines not containing the string <M0> or a lower-case letter	~((.*dog.*)|([a-z]))	
+2096	lines starting with a capital letter or a letter, 5 or more times	((([A-Z])|([A-Za-z]))(.*)){5,}	
+9440	lines ending with a character followed by a capital letter	(.*)(..*[A-Z].*)	
+1425	lines starting with a vowel followed by a character at least once	(([AEIOUaeiou].*..*)(.*))+	
+4533	lines containing a capital letter before a number or a vowel	.*(([A-Z]).*([0-9]).*)|([AEIOUaeiou]).*	
+4592	lines with a number before a character followed by the string <M0>	([0-9]).*(..*dog.*).*	
+1959	lines with a number, zero or more times before a lower-case letter, the string <M0>, and the string <M1>	(([0-9])*).*(([a-z])&(dog)&(truck)).*	
+4454	lines with the string <M0> before a number, 5 or more times	(dog).*(([0-9]){5,}).*	
+3252	lines with words that contain a capital letter, 6 or more times	\b.*([A-Z]){6,}.*\b	
+9565	lines containing a lower-case letter followed by a capital letter	.*[a-z].*[A-Z].*.*	
+1567	lines ending with the string <M0> before a capital letter, 4 or more times	((.*)(dog)).*(([A-Z]){4,}).*	
+8240	lines with a character before a capital letter at least once	(.).*(([A-Z])+).*	
+574	lines not having a number, not a lower-case letter, and not a character or the string <M0>	~((([0-9])&([a-z])&(.))|(dog))	
+835	lines having either the string <M0>, the string <M1>, or a number before the string <M2>	((dog)|(truck)|([0-9])).*(ring).*	
+9723	lines with words with a character, 3 or more times before the string <M0>	\b((.){3,}).*(dog).*\b	
+493	lines with the string <M0> before a letter followed by a number	(dog).*([A-Za-z].*[0-9].*).*	
+8158	lines with a lower-case letter and a number before the string <M0>	(([a-z])&([0-9])).*(dog).*	
+2313	lines with the string <M0> followed by a capital letter before not the string <M1>	(dog.*[A-Z].*).*(~(truck)).*	
+3447	lines ending with containing containing only a capital letter	(.*)(.*[A-Z].*)	
+4939	lines starting with the string <M0> or the string <M1> at least once	(((dog)|(truck))(.*))+	
+5320	lines with a number before either a character, a letter, or a vowel	([0-9]).*((.)|([A-Za-z])|([AEIOUaeiou])).*	
+1957	lines starting with words that contain only a character	(\b.\b)(.*)	
+6498	lines starting with a letter or a number	(([A-Za-z])|([0-9]))(.*)	
+4447	lines with words with a vowel, a letter, and the string <M0>	\b([AEIOUaeiou])&([A-Za-z])&(dog)\b	
+8654	lines containing a lower-case letter or a number	.*([a-z])|([0-9]).*	
+3654	lines containing the string <M0> followed by the string <M1> before a character	.*(dog.*truck.*).*(.).*.*	
+3371	lines with a lower-case letter before the string <M0>, zero or more times	([a-z]).*((dog)*).*	
+7550	lines with the string <M0> before words with a capital letter, 6 or more times	(dog).*(\b([A-Z]){6,}\b).*	
+3226	lines with a capital letter followed by a letter before a character	([A-Z].*[A-Za-z].*).*(.).*	
+9053	lines with a capital letter before a lower-case letter, zero or more times	([A-Z]).*(([a-z])*).*	
+4126	lines with words that contain only a capital letter at least once	(\b[A-Z]\b)+	
+6518	lines not having a letter, 7 or more times before a character	~((([A-Za-z]){7,}).*(.).*)	
+5090	lines with words with ending with a character before the string <M0>	\b((.*)(.)).*(dog).*\b	
+8372	lines not having the string <M0> followed by a capital letter	~(dog.*[A-Z].*)	
+9190	lines with a capital letter, 2 or more times before a letter	(([A-Z]){2,}).*([A-Za-z]).*	
+955	lines with a letter before the string <M0>, 5 or more times	([A-Za-z]).*((dog){5,}).*	
+6691	lines with words that contain starting with a capital letter	\b.*([A-Z])(.*).*\b	
+3193	lines with words with ending with the string <M0> followed by a vowel	\b(.*)(dog.*[AEIOUaeiou].*)\b	
+5000	lines not having a vowel and ending with a number	(~([AEIOUaeiou]))&((.*)([0-9]))	
+9860	lines with a number, 5 or more times before a letter	(([0-9]){5,}).*([A-Za-z]).*	
+537	lines with a letter before the string <M0> and a capital letter	([A-Za-z]).*((dog)&([A-Z])).*	
+9219	lines containing a lower-case letter followed by the string <M0>, 6 or more times	(.*[a-z].*dog.*.*){6,}	
+1741	lines containing words with the string <M0>, 4 or more times	.*\b(dog){4,}\b.*	
+2140	lines with a capital letter before a number and a lower-case letter	([A-Z]).*(([0-9])&([a-z])).*	
+2641	lines not having a character and not starting with the string <M0>	~((.)&((dog)(.*)))	
+1075	lines with words with a number followed by a capital letter, 2 or more times	(\b[0-9].*[A-Z].*\b){2,}	
+9341	lines with a number, 4 or more times before a character	(([0-9]){4,}).*(.).*	
+6590	lines not containing a character, zero or more times	.*~((.)*).*	
+8237	lines with a capital letter followed by the string <M0> and ending with a lower-case letter	([A-Z].*dog.*)&((.*)([a-z]))	
+2702	lines with a vowel, 6 or more times	([AEIOUaeiou]){6,}	
+9609	lines with the string <M0> before either a character, the string <M1>, or the string <M2>	(dog).*((.)|(truck)|(ring)).*	
+1509	lines containing ending with a capital letter followed by a letter	.*(.*)([A-Z].*[A-Za-z].*).*	
+4196	lines having a character, the string <M0>, and a vowel before a number	((.)&(dog)&([AEIOUaeiou])).*([0-9]).*	
+2517	lines having either a letter, the string <M0>, or the string <M1> before a lower-case letter	(([A-Za-z])|(dog)|(truck)).*([a-z]).*	
+3152	lines containing a letter and the string <M0> at least once	.*([A-Za-z])&((dog)+).*	
+4173	lines containing the string <M0> or a capital letter followed by a character	(.*dog.*)|([A-Z].*..*)	
+2471	lines ending with words with a letter before a lower-case letter	(.*)(\b([A-Za-z]).*([a-z]).*\b)	
+2209	lines containing the string <M0> followed by a vowel	.*dog.*[AEIOUaeiou].*.*	
+901	lines ending with a letter or a lower-case letter, 2 or more times	(.*)((([A-Za-z])|([a-z])){2,})	
+5791	lines with words with a number, 7 or more times	\b([0-9]){7,}\b	
+3227	lines not having a number before a vowel at least once	~(([0-9]).*(([AEIOUaeiou])+).*)	
+1267	lines with a capital letter, 3 or more times before a lower-case letter	(([A-Z]){3,}).*([a-z]).*	
+613	lines with words that contain either a lower-case letter, the string <M0>, or a vowel	\b.*([a-z])|(dog)|([AEIOUaeiou]).*\b	
+9822	lines with a character followed by a capital letter before a number	(..*[A-Z].*).*([0-9]).*	
+8272	lines with the string <M0> or a capital letter, 6 or more times	((dog)|([A-Z])){6,}	
+8393	lines with a character followed by the string <M0> at least once	(..*dog.*)+	
+2380	lines with a capital letter or the string <M0> before not a vowel	(([A-Z])|(dog)).*(~([AEIOUaeiou])).*	
+495	lines starting with a number and a capital letter before the string <M0>	(([0-9])(.*))&(([A-Z]).*(dog).*)	
+9922	lines not having a letter or a character	~(([A-Za-z])|(.))	
+161	lines with the string <M0> before the string <M1> followed by a capital letter	(dog).*(truck.*[A-Z].*).*	
+1752	lines not having the string <M0> before the string <M1> and not a vowel	~((dog).*((truck)&([AEIOUaeiou])).*)	
+8101	lines containing either a vowel, a letter, or a lower-case letter	.*([AEIOUaeiou])|([A-Za-z])|([a-z]).*	
+9419	lines with words that contain only the string <M0> and a letter	\b(dog)&([A-Za-z])\b	
+2450	lines with the string <M0> before not containing only the string <M1>	(dog).*(~(truck)).*	
+7502	lines with words that contain only a letter at least once	\b([A-Za-z])+\b	
+2077	lines with a vowel, 4 or more times before a lower-case letter	(([AEIOUaeiou]){4,}).*([a-z]).*	
+2870	lines with a lower-case letter before a number and the string <M0>	([a-z]).*(([0-9])&(dog)).*	
+1706	lines not having the string <M0> or ending with a capital letter	(~(dog))|((.*)([A-Z]))	
+5633	lines ending with a character or a capital letter, 2 or more times	((.*)(.))|(([A-Z]){2,})	
+2118	lines with words with the string <M0> before ending with a letter	\b(dog).*((.*)([A-Za-z])).*\b	
+2855	lines with a lower-case letter, 3 or more times and a number, a vowel, and a character	(([a-z]){3,})&(([0-9])&([AEIOUaeiou])&(.))	
+7967	lines not words with a vowel, not a lower-case letter, and not the string <M0>	~(\b([AEIOUaeiou])&([a-z])&(dog)\b)	
+5167	lines with words with either the string <M0>, a number, or the string <M1> at least once	(\b(dog)|([0-9])|(truck)\b)+	
+6157	lines with words that contain a character	\b.*..*\b	
+4822	lines with words that contain the string <M0>, 6 or more times	\b.*(dog){6,}.*\b	
+7179	lines ending with a character before the string <M0> or the string <M1>	(.*)(((.).*(dog).*)|(truck))	
+8405	lines with words with a capital letter or a character	\b([A-Z])|(.)\b	
+8253	lines not having a vowel, not the string <M0>, and not a lower-case letter	~(([AEIOUaeiou])&(dog)&([a-z]))	
+2873	lines having either a character, the string <M0>, or the string <M1> before a letter	((.)|(dog)|(truck)).*([A-Za-z]).*	
+3629	lines ending with either the string <M0>, a lower-case letter, or the string <M1> or the string <M2>	(.*)(((dog)|([a-z])|(truck))|(ring))	
+2759	lines with the string <M0> before words with a character and a capital letter	(dog).*(\b(.)&([A-Z])\b).*	
+3331	lines with a letter before either the string <M0>, a lower-case letter, or a capital letter	([A-Za-z]).*((dog)|([a-z])|([A-Z])).*	
+9801	lines with words with a character followed by a vowel	\b..*[AEIOUaeiou].*\b	
+6322	lines starting with the string <M0> or not a number	((dog)(.*))|(~([0-9]))	
+5945	lines not having the string <M0>, a capital letter, or a character	~((dog)|([A-Z])|(.))	
+4920	lines with the string <M0> before the string <M1> and the string <M2>	(dog).*((truck)&(ring)).*	
+2527	lines with words with a letter and a capital letter	\b([A-Za-z])&([A-Z])\b	
+3374	lines having either a number, the string <M0>, or a lower-case letter before the string <M1>	(([0-9])|(dog)|([a-z])).*(truck).*	
+2576	lines with words with ending with the string <M0> followed by a character	\b(.*)(dog.*..*)\b	
+8467	lines with a capital letter before the string <M0>, 7 or more times	([A-Z]).*((dog){7,}).*	
+412	lines containing a capital letter and the string <M0> at least once	(.*([A-Z])&(dog).*)+	
+6226	lines with words with the string <M0>, a letter, and a vowel	\b(dog)&([A-Za-z])&([AEIOUaeiou])\b	
+9722	lines with words with a lower-case letter and the string <M0> or a number	\b(([a-z])&(dog))|([0-9])\b	
+1792	lines with a character followed by a letter or the string <M0> at least once	((..*[A-Za-z].*)|(dog))+	
+5670	lines starting with a character and a lower-case letter, zero or more times	((.)(.*))&(([a-z])*)	
+6699	lines with a vowel and a character before a letter	(([AEIOUaeiou])&(.)).*([A-Za-z]).*	
+135	lines not having a capital letter, a lower-case letter, or the string <M0>	~(([A-Z])|([a-z])|(dog))	
+4729	lines not starting with a number, 4 or more times	~((([0-9])(.*)){4,})	
+7642	lines with a capital letter, zero or more times and not a lower-case letter	(([A-Z])*)&(~([a-z]))	
+5064	lines with a character followed by the string <M0>, 6 or more times	(..*dog.*){6,}	
+2131	lines not having a vowel at least once before the string <M0>	~((([AEIOUaeiou])+).*(dog).*)	
+2196	lines containing a vowel or a number	.*([AEIOUaeiou])|([0-9]).*	
+5070	lines containing a capital letter and the string <M0> or a lower-case letter	(.*[A-Z].*)&((dog)|([a-z]))	
+8026	lines starting with a vowel followed by a lower-case letter	([AEIOUaeiou].*[a-z].*)(.*)	
+7213	lines with words that don't have a number at least once	\b~(([0-9])+)\b	
+443	lines with a lower-case letter before either a vowel, the string <M0>, or the string <M1>	([a-z]).*(([AEIOUaeiou])|(dog)|(truck)).*	
+7483	lines ending with a number before a character at least once	((.*)([0-9])).*((.)+).*	
+4161	lines having a lower-case letter, a vowel, and a capital letter before a character	(([a-z])&([AEIOUaeiou])&([A-Z])).*(.).*	
+6725	lines with a capital letter, 3 or more times before the string <M0>	(([A-Z]){3,}).*(dog).*	
+7155	lines not having a number, not a letter, and not a vowel	~(([0-9])&([A-Za-z])&([AEIOUaeiou]))	
+2282	lines with words with a character and a capital letter, zero or more times	\b(.)&(([A-Z])*)\b	
+9000	lines with words with a number and not a character	\b([0-9])&(~(.))\b	
+9128	lines having a character, a lower-case letter, and the string <M0> before a vowel	((.)&([a-z])&(dog)).*([AEIOUaeiou]).*	
+7482	lines with the string <M0> before not a vowel at least once	(dog).*(~(([AEIOUaeiou])+)).*	
+2334	lines with a capital letter, 4 or more times before a character	(([A-Z]){4,}).*(.).*	
+2587	lines with the string <M0> followed by a character or a capital letter at least once	(dog.*..*)|(([A-Z])+)	
+1339	lines containing a character, 3 or more times	(.*..*){3,}	
+6794	lines having either a letter, the string <M0>, or a lower-case letter before a capital letter	(([A-Za-z])|(dog)|([a-z])).*([A-Z]).*	
+4718	lines containing ending with a number before a letter	(.*(.*)([0-9]).*).*([A-Za-z]).*	
+6003	lines with a lower-case letter before a capital letter or a character	([a-z]).*(([A-Z])|(.)).*	
+1979	lines with words with starting with a vowel, 2 or more times	\b(([AEIOUaeiou])(.*)){2,}\b	
+4262	lines containing ending with a letter, 4 or more times	(.*(.*)([A-Za-z]).*){4,}	
+4979	lines ending with a capital letter or the string <M0>	(.*)(([A-Z])|(dog))	
+9668	lines with words with a character and the string <M0>, zero or more times	(\b(.)&(dog)\b)*	
+3390	lines with a capital letter or a number, 7 or more times	(([A-Z])|([0-9])){7,}	
+6572	lines starting with a vowel or a character at least once	((([AEIOUaeiou])|(.))+)(.*)	
+8880	lines with the string <M0> before the string <M1> followed by a character at least once	(dog).*((truck.*..*)+).*	
+9919	lines with a lower-case letter followed by a letter before a character	([a-z].*[A-Za-z].*).*(.).*	
+9225	lines containing a capital letter or a number	.*([A-Z])|([0-9]).*	
+4344	lines ending with the string <M0> followed by a letter	(.*)(dog.*[A-Za-z].*)	
+4134	lines containing a number before the string <M0>	(.*[0-9].*).*(dog).*	
+827	lines with a capital letter, 7 or more times before a vowel	(([A-Z]){7,}).*([AEIOUaeiou]).*	
+5196	lines containing a number, a character, and a capital letter	.*([0-9])&(.)&([A-Z]).*	
+2667	lines containing containing only the string <M0>, 2 or more times	(.*dog.*){2,}	
+4769	lines ending with a capital letter before a character	((.*)([A-Z])).*(.).*	
+386	lines with a letter and a character before a number	(([A-Za-z])&(.)).*([0-9]).*	
+9797	lines with the string <M0> before a letter, the string <M1>, and the string <M2>	(dog).*(([A-Za-z])&(truck)&(ring)).*	
+5891	lines with a number before the string <M0> followed by the string <M1>	([0-9]).*(dog.*truck.*).*	
+8389	lines with a lower-case letter, 6 or more times	([a-z]){6,}	
+4200	lines with a character before a number, the string <M0>, and a lower-case letter	(.).*(([0-9])&(dog)&([a-z])).*	
+201	lines not having the string <M0> followed by a lower-case letter	~(dog.*[a-z].*)	
+7957	lines with the string <M0> before the string <M1> and a capital letter followed by the string <M2>	((dog).*(truck).*)&([A-Z].*ring.*)	
+8644	lines containing either a lower-case letter, the string <M0>, or the string <M1>, zero or more times	(.*([a-z])|(dog)|(truck).*)*	
+5961	lines with a vowel before a letter, 2 or more times	([AEIOUaeiou]).*(([A-Za-z]){2,}).*	
+252	lines with a character or a letter before a vowel	((.)|([A-Za-z])).*([AEIOUaeiou]).*	
+8157	lines with words with either a letter, a number, or a character	\b([A-Za-z])|([0-9])|(.)\b	
+9628	lines with a number before a lower-case letter at least once	([0-9]).*(([a-z])+).*	
+8649	lines with a lower-case letter before either the string <M0>, a letter, or a number	([a-z]).*((dog)|([A-Za-z])|([0-9])).*	
+7008	lines having a number, a letter, and the string <M0> before a capital letter	(([0-9])&([A-Za-z])&(dog)).*([A-Z]).*	
+5772	lines starting with the string <M0> before a vowel	((dog)(.*)).*([AEIOUaeiou]).*	
+6940	lines having either a capital letter, a letter, or the string <M0> before the string <M1>	(([A-Z])|([A-Za-z])|(dog)).*(truck).*	
+854	lines with a capital letter or a letter, 6 or more times	(([A-Z])|([A-Za-z])){6,}	
+9143	lines containing a character or a letter at least once	(.*(.)|([A-Za-z]).*)+	
+2439	lines with a vowel before the string <M0>	([AEIOUaeiou]).*(dog).*	
+4328	lines containing either a vowel, a letter, or the string <M0>	.*([AEIOUaeiou])|([A-Za-z])|(dog).*	
+649	lines with a number and a vowel before a capital letter	(([0-9])&([AEIOUaeiou])).*([A-Z]).*	
+3978	lines with a character before ending with a letter, 6 or more times	(.).*((.*)(([A-Za-z]){6,})).*	
+130	lines starting with the string <M0> before the string <M1> at least once	((dog)(.*)).*((truck)+).*	
+8708	lines starting with a capital letter or ending with a lower-case letter	(([A-Z])(.*))|((.*)([a-z]))	
+6779	lines with words with starting with a capital letter at least once	(\b([A-Z])(.*)\b)+	
+7518	lines not having a lower-case letter, a character, or a letter	~(([a-z])|(.)|([A-Za-z]))	
+3971	lines containing the string <M0> before the string <M1> or a letter	.*(dog).*((truck)|([A-Za-z])).*.*	
+4940	lines not having a number or the string <M0>	~(([0-9])|(dog))	
+9741	lines with words with starting with a vowel, 4 or more times	\b(([AEIOUaeiou])(.*)){4,}\b	
+8623	lines having the string <M0>, a letter, and the string <M1> before a lower-case letter	((dog)&([A-Za-z])&(truck)).*([a-z]).*	
+2956	lines ending with a vowel followed by a number or the string <M0>	(.*)(([AEIOUaeiou].*[0-9].*)|(dog))	
+539	lines with the string <M0> followed by a character, zero or more times	(dog.*..*)*	
+8140	lines with a letter before a character, a number, and the string <M0>	([A-Za-z]).*((.)&([0-9])&(dog)).*	
+2761	lines with words that contain a character, 5 or more times	(\b.*..*\b){5,}	
+1190	lines ending with the string <M0>, 4 or more times or a capital letter	(.*)(((dog){4,})|([A-Z]))	
+1194	lines with words with a vowel and containing only a letter	\b([AEIOUaeiou])&([A-Za-z])\b	
+3551	lines with words with starting with a character at least once	\b((.)(.*))+\b	
+630	lines with a number, zero or more times and starting with the string <M0>	(([0-9])*)&((dog)(.*))	
+168	lines with words with starting with a vowel or the string <M0>	\b(([AEIOUaeiou])(.*))|(dog)\b	
+3473	lines not having a lower-case letter followed by a vowel, 6 or more times	~(([a-z].*[AEIOUaeiou].*){6,})	
+8121	lines with a letter before the string <M0> and a character	([A-Za-z]).*((dog)&(.)).*	
+7562	lines with the string <M0> or a character, 4 or more times	((dog)|(.)){4,}	
+5645	lines containing ending with a lower-case letter, 3 or more times	.*((.*)([a-z])){3,}.*	
+7234	lines with a letter before a number	([A-Za-z]).*([0-9]).*	
+3847	lines having a character, the string <M0>, and a letter before a capital letter	((.)&(dog)&([A-Za-z])).*([A-Z]).*	
+8395	lines not having a capital letter or a number	~(([A-Z])|([0-9]))	
+5828	lines containing the string <M0> before a number, the string <M1>, and a letter	(.*dog.*).*(([0-9])&(truck)&([A-Za-z])).*	
+2967	lines having either the string <M0>, a vowel, or a number before a letter	((dog)|([AEIOUaeiou])|([0-9])).*([A-Za-z]).*	
+3377	lines having either a vowel, the string <M0>, or a lower-case letter before a capital letter	(([AEIOUaeiou])|(dog)|([a-z])).*([A-Z]).*	
+9906	lines with words with ending with a lower-case letter or the string <M0>	\b(.*)(([a-z])|(dog))\b	
+1669	lines with words with the string <M0> or a lower-case letter, 4 or more times	(\b(dog)|([a-z])\b){4,}	
+28	lines with words with a lower-case letter before a character or the string <M0>	\b([a-z]).*((.)|(dog)).*\b	
+473	lines with a letter followed by a character, 6 or more times	([A-Za-z].*..*){6,}	
+6528	lines with words with a vowel, 7 or more times	\b([AEIOUaeiou]){7,}\b	
+635	lines with words with a lower-case letter or containing only the string <M0>	\b([a-z])|(dog)\b	
+4427	lines containing the string <M0>, a letter, and the string <M1>	.*(dog)&([A-Za-z])&(truck).*	
+5183	lines starting with the string <M0> followed by the string <M1> before a vowel	((dog.*truck.*)(.*)).*([AEIOUaeiou]).*	
+7618	lines with the string <M0> or starting with the string <M1>, 4 or more times	((dog)|((truck)(.*))){4,}	
+1020	lines containing a number before a lower-case letter	(.*[0-9].*).*([a-z]).*	
+3633	lines with the string <M0> followed by a capital letter	dog.*[A-Z].*	
+5279	lines with the string <M0> before a letter and a number	(dog).*(([A-Za-z])&([0-9])).*	
+7589	lines not having a capital letter or starting with a letter	(~([A-Z]))|(([A-Za-z])(.*))	
+6177	lines with a number followed by the string <M0>, 4 or more times	([0-9].*dog.*){4,}	
+2733	lines ending with the string <M0> or the string <M1>, zero or more times	((.*)((dog)|(truck)))*	
+2352	lines with a character before the string <M0> or a vowel	(.).*((dog)|([AEIOUaeiou])).*	
+6276	lines not starting with a vowel or the string <M0>	~((([AEIOUaeiou])(.*))|(dog))	
+6557	lines containing the string <M0> followed by a vowel at least once	(.*dog.*[AEIOUaeiou].*.*)+	
+729	lines starting with a character at least once	((.)(.*))+	
+8033	lines with words with a capital letter followed by a lower-case letter, 6 or more times	\b([A-Z].*[a-z].*){6,}\b	
+3680	lines containing either a vowel, a capital letter, or a lower-case letter	.*([AEIOUaeiou])|([A-Z])|([a-z]).*	
+9182	lines with a character before a vowel or the string <M0>, zero or more times	(((.).*([AEIOUaeiou]).*)|(dog))*	
+5415	lines with a lower-case letter, zero or more times before a capital letter followed by the string <M0>	(([a-z])*).*([A-Z].*dog.*).*	
+2723	lines with the string <M0> followed by a vowel, 2 or more times	(dog.*[AEIOUaeiou].*){2,}	
+2416	lines with a capital letter at least once before containing a lower-case letter	(([A-Z])+).*(.*[a-z].*).*	
+4612	lines not containing the string <M0>, not a capital letter, and not a vowel	~(.*(dog)&([A-Z])&([AEIOUaeiou]).*)	
+3636	lines with a number before a vowel or a capital letter	([0-9]).*(([AEIOUaeiou])|([A-Z])).*	
+3080	lines with the string <M0> and a character before a letter	((dog)&(.)).*([A-Za-z]).*	
+9060	lines with a character before containing either a lower-case letter, the string <M0>, or the string <M1>	(.).*(.*([a-z])|(dog)|(truck).*).*	
+6359	lines starting with a character or either the string <M0>, the string <M1>, or a lower-case letter	((.)|((dog)|(truck)|([a-z])))(.*)	
+2612	lines containing the string <M0> or a vowel	.*(dog)|([AEIOUaeiou]).*	
+8015	lines with the string <M0> followed by the string <M1> or a capital letter before a character	(dog.*truck.*)|(([A-Z]).*(.).*)	
+4294	lines with a number before a capital letter or the string <M0>, 3 or more times	([0-9]).*((([A-Z])|(dog)){3,}).*	
+8488	lines with a vowel before the string <M0> at least once	([AEIOUaeiou]).*((dog)+).*	
+5680	lines not having the string <M0> or a vowel	~((dog)|([AEIOUaeiou]))	
+661	lines with words with a lower-case letter, a character, and the string <M0>	\b([a-z])&(.)&(dog)\b	
+372	lines with words with the string <M0>, a vowel, and a capital letter	\b(dog)&([AEIOUaeiou])&([A-Z])\b	
+1818	lines with a vowel before containing a number, zero or more times	([AEIOUaeiou]).*((.*[0-9].*)*).*	
+1335	lines not having a character before ending with a vowel	~((.).*((.*)([AEIOUaeiou])).*)	
+2409	lines not having a capital letter, not a number, and not a lower-case letter	~(([A-Z])&([0-9])&([a-z]))	
+4145	lines ending with the string <M0> and containing the string <M1>	((.*)(dog))&(.*truck.*)	
+888	lines ending with words with a letter, 7 or more times	(.*)(\b([A-Za-z]){7,}\b)	
+8189	lines with a number before a capital letter, the string <M0>, and a letter	([0-9]).*(([A-Z])&(dog)&([A-Za-z])).*	
+3830	lines ending with a character, zero or more times before the string <M0>	((.*)((.)*)).*(dog).*	
+2227	lines containing either a vowel, a lower-case letter, or a capital letter	.*([AEIOUaeiou])|([a-z])|([A-Z]).*	
+795	lines with a capital letter before not a lower-case letter	([A-Z]).*(~([a-z])).*	
+5716	lines with a letter before a vowel and a lower-case letter	([A-Za-z]).*(([AEIOUaeiou])&([a-z])).*	
+2142	lines with words with a vowel followed by a number	\b[AEIOUaeiou].*[0-9].*\b	
+8874	lines with a capital letter, 2 or more times or containing the string <M0>	(([A-Z]){2,})|(.*dog.*)	
+2700	lines not having a vowel, zero or more times before the string <M0>	~((([AEIOUaeiou])*).*(dog).*)	
+9462	lines with a number followed by a vowel before a character	([0-9].*[AEIOUaeiou].*).*(.).*	
+9994	lines with the string <M0>, 5 or more times and a number before a letter	((dog){5,})&(([0-9]).*([A-Za-z]).*)	
+25	lines with the string <M0> followed by the string <M1> or ending with the string <M2>	(dog.*truck.*)|((.*)(ring))	
+1453	lines with the string <M0>, 4 or more times before a number	((dog){4,}).*([0-9]).*	
+4630	lines with a lower-case letter followed by a letter before a capital letter	([a-z].*[A-Za-z].*).*([A-Z]).*	
+2101	lines containing the string <M0> followed by a lower-case letter before the string <M1>	(.*dog.*[a-z].*.*).*(truck).*	
+6112	lines containing a number, 3 or more times	.*([0-9]){3,}.*	
+4468	lines with words that don't the string <M0> or a lower-case letter	\b(~(dog))|([a-z])\b	
+6513	lines with a vowel before either the string <M0>, the string <M1>, or the string <M2>	([AEIOUaeiou]).*((dog)|(truck)|(ring)).*	
+2865	lines with a number before a vowel or the string <M0>	([0-9]).*(([AEIOUaeiou])|(dog)).*	
+8223	lines with the string <M0> before words with ending with the string <M1>	(dog).*(\b(.*)(truck)\b).*	
+4510	lines ending with a vowel followed by a letter at least once	(.*)(([AEIOUaeiou].*[A-Za-z].*)+)	
+6097	lines not having a capital letter, 4 or more times before a number	~((([A-Z]){4,}).*([0-9]).*)	
+4619	lines with a number before words with the string <M0> at least once	([0-9]).*(\b(dog)+\b).*	
+9658	lines with a character before a capital letter, a lower-case letter, and the string <M0>	(.).*(([A-Z])&([a-z])&(dog)).*	
+6032	lines with a letter and a lower-case letter before the string <M0>	(([A-Za-z])&([a-z])).*(dog).*	
+2360	lines with words with ending with a capital letter at least once	\b(.*)(([A-Z])+)\b	
+2225	lines with a character followed by a capital letter, 5 or more times	(..*[A-Z].*){5,}	
+880	lines with words with the string <M0>, the string <M1>, and a character	\b(dog)&(truck)&(.)\b	
+7196	lines with a character or the string <M0>, 4 or more times	((.)|(dog)){4,}	
+3991	lines not having a character or the string <M0>	~((.)|(dog))	
+3873	lines not starting with a letter and not a capital letter	~((([A-Za-z])(.*))&([A-Z]))	
+9564	lines not words that contain only a capital letter	~(\b[A-Z]\b)	
+8693	lines with a lower-case letter and the string <M0> before a capital letter	(([a-z])&(dog)).*([A-Z]).*	
+9621	lines with a vowel, zero or more times before either the string <M0>, a character, or a lower-case letter	(([AEIOUaeiou])*).*((dog)|(.)|([a-z])).*	
+2907	lines with the string <M0> followed by the string <M1> before a vowel, zero or more times	(dog.*truck.*).*(([AEIOUaeiou])*).*	
+9394	lines containing a character, the string <M0>, and a vowel	.*(.)&(dog)&([AEIOUaeiou]).*	
+9289	lines with a capital letter followed by a character before a vowel	([A-Z].*..*).*([AEIOUaeiou]).*	
+6888	lines with the string <M0> before either a vowel, the string <M1>, or a capital letter	(dog).*(([AEIOUaeiou])|(truck)|([A-Z])).*	
+7919	lines with a vowel before either the string <M0>, a number, or the string <M1>	([AEIOUaeiou]).*((dog)|([0-9])|(truck)).*	
+2854	lines with words that contain only the string <M0>, 4 or more times	\b(dog){4,}\b	
+6954	lines with a character before the string <M0> or a capital letter	(.).*((dog)|([A-Z])).*	
+4430	lines containing either a letter, the string <M0>, or the string <M1>	.*([A-Za-z])|(dog)|(truck).*	
+4555	lines with a vowel followed by a letter at least once	([AEIOUaeiou].*[A-Za-z].*)+	
+6251	lines having either the string <M0>, a number, or the string <M1> before a letter	((dog)|([0-9])|(truck)).*([A-Za-z]).*	
+7977	lines with words with either a letter, a character, or a lower-case letter	\b([A-Za-z])|(.)|([a-z])\b	
+4765	lines with words with a character or the string <M0> and a capital letter	\b((.)|(dog))&([A-Z])\b	
+6714	lines with the string <M0> before a character followed by a number	(dog).*(..*[0-9].*).*	
+7256	lines with words with the string <M0>, a lower-case letter, and a number	\b(dog)&([a-z])&([0-9])\b	
+6467	lines not having a capital letter, 2 or more times	~(([A-Z]){2,})	
+9459	lines with words with the string <M0> or a vowel	\b(dog)|([AEIOUaeiou])\b	
+3004	lines with words with the string <M0>, the string <M1>, and a number	\b(dog)&(truck)&([0-9])\b	
+3796	lines with a number before a letter at least once	([0-9]).*(([A-Za-z])+).*	
+5439	lines with words with a lower-case letter, a capital letter, and a number	\b([a-z])&([A-Z])&([0-9])\b	
+5605	lines with a vowel and a number before a character	(([AEIOUaeiou])&([0-9])).*(.).*	
+215	lines with words with a letter, 5 or more times	\b([A-Za-z]){5,}\b	
+9111	lines with a vowel before a capital letter, a lower-case letter, and a character	([AEIOUaeiou]).*(([A-Z])&([a-z])&(.)).*	
+5931	lines ending with the string <M0> followed by a vowel, 3 or more times	(.*)((dog.*[AEIOUaeiou].*){3,})	
+4656	lines not having the string <M0> before a number at least once	(~(dog)).*(([0-9])+).*	
+9466	lines ending with a lower-case letter or the string <M0> and a character	(.*)(([a-z])|((dog)&(.)))	
+1895	lines having either a number, the string <M0>, or the string <M1> before a character	(([0-9])|(dog)|(truck)).*(.).*	
+1682	lines with a capital letter before either a character, a lower-case letter, or the string <M0>	([A-Z]).*((.)|([a-z])|(dog)).*	
+1384	lines with a lower-case letter, 6 or more times before a capital letter	(([a-z]){6,}).*([A-Z]).*	
+9878	lines containing a number, 2 or more times	.*([0-9]){2,}.*	
+8574	lines containing a capital letter at least once before a lower-case letter	.*(([A-Z])+).*([a-z]).*.*	
+3832	lines with the string <M0> before the string <M1>, the string <M2>, and a character	(dog).*((truck)&(ring)&(.)).*	
+4711	lines with the string <M0> before ending with the string <M1> at least once	(dog).*(((.*)(truck))+).*	
+753	lines with a capital letter, zero or more times before a number	(([A-Z])*).*([0-9]).*	
+8660	lines with words with a number or a vowel	\b([0-9])|([AEIOUaeiou])\b	
+6889	lines containing a lower-case letter, 7 or more times	(.*[a-z].*){7,}	
+5515	lines with a number before a vowel followed by a letter	([0-9]).*([AEIOUaeiou].*[A-Za-z].*).*	
+8363	lines with words with the string <M0> or a lower-case letter, 3 or more times	\b((dog)|([a-z])){3,}\b	
+2001	lines not having the string <M0> or a character followed by a letter	(~(dog))|(..*[A-Za-z].*)	
+1898	lines containing the string <M0>, 7 or more times	.*(dog){7,}.*	
+8252	lines starting with words with not a letter	(\b~([A-Za-z])\b)(.*)	
+3692	lines with a lower-case letter, 5 or more times before a character	(([a-z]){5,}).*(.).*	
+4172	lines with a vowel or a number before a capital letter	(([AEIOUaeiou])|([0-9])).*([A-Z]).*	
+9335	lines containing a character or the string <M0> before a number	(.*..*)|((dog).*([0-9]).*)	
+8225	lines with the string <M0>, 2 or more times before a lower-case letter	((dog){2,}).*([a-z]).*	
+7613	lines containing the string <M0>, a number, and the string <M1>	.*(dog)&([0-9])&(truck).*	
+1108	lines with words with ending with containing only a number	\b(.*)([0-9])\b	
+391	lines not having a vowel followed by the string <M0>, 6 or more times	~(([AEIOUaeiou].*dog.*){6,})	
+4530	lines with the string <M0> at least once and not the string <M1>	((dog)+)&(~(truck))	
+5048	lines ending with containing a vowel, 7 or more times	(.*)(.*([AEIOUaeiou]){7,}.*)	
+7915	lines containing a lower-case letter and the string <M0>	.*([a-z])&(dog).*	
+8013	lines with a number or the string <M0> before a capital letter	(([0-9])|(dog)).*([A-Z]).*	
+8862	lines with a lower-case letter at least once and not a character	(([a-z])+)&(~(.))	
+6856	lines ending with a lower-case letter or not the string <M0>	(.*)(([a-z])|(~(dog)))	
+9632	lines starting with the string <M0> and a letter or the string <M1>	(((dog)&([A-Za-z]))|(truck))(.*)	
+6202	lines with the string <M0>, zero or more times and a number followed by a capital letter	((dog)*)&([0-9].*[A-Z].*)	
+4764	lines ending with words with the string <M0> and a number	(.*)(\b(dog)&([0-9])\b)	
+7201	lines with the string <M0> and a letter before a capital letter	((dog)&([A-Za-z])).*([A-Z]).*	
+4033	lines with a character or a vowel before the string <M0>	((.)|([AEIOUaeiou])).*(dog).*	
+8359	lines containing a number and a letter	.*([0-9])&([A-Za-z]).*	
+8613	lines with a letter before a number at least once	([A-Za-z]).*(([0-9])+).*	
+5640	lines with a capital letter, zero or more times before a lower-case letter	(([A-Z])*).*([a-z]).*	
+5955	lines containing a capital letter or the string <M0>	.*([A-Z])|(dog).*	
+1566	lines having either the string <M0>, the string <M1>, or a capital letter before a lower-case letter	((dog)|(truck)|([A-Z])).*([a-z]).*	
+4059	lines not having a letter and the string <M0>, 5 or more times	(~([A-Za-z]))&((dog){5,})	
+8307	lines starting with a letter, 4 or more times	(([A-Za-z]){4,})(.*)	
+1091	lines with a letter followed by a vowel before a number	([A-Za-z].*[AEIOUaeiou].*).*([0-9]).*	
+1405	lines with a lower-case letter, 3 or more times before a number	(([a-z]){3,}).*([0-9]).*	
+808	lines with a letter before a lower-case letter followed by a character	([A-Za-z]).*([a-z].*..*).*	
+4078	lines having the string <M0>, a letter, and a character before a number	((dog)&([A-Za-z])&(.)).*([0-9]).*	
+8008	lines with a letter followed by a lower-case letter	[A-Za-z].*[a-z].*	
+4109	lines with the string <M0> or a lower-case letter before the string <M1> and the string <M2>	((dog)|([a-z])).*((truck)&(ring)).*	
+7907	lines having either the string <M0>, a vowel, or a letter or the string <M1>, 3 or more times	(((dog)|([AEIOUaeiou])|([A-Za-z]))|(truck)){3,}	
+3287	lines starting with a lower-case letter and the string <M0> or a character	(([a-z])(.*))&((dog)|(.))	
+2751	lines with the string <M0> before either the string <M1>, the string <M2>, or a letter	(dog).*((truck)|(ring)|([A-Za-z])).*	
+745	lines starting with the string <M0> before the string <M1>, 2 or more times	((dog)(.*)).*((truck){2,}).*	
+715	lines with words with the string <M0> and a capital letter at least once	(\b(dog)&([A-Z])\b)+	
+7824	lines with a vowel followed by a character and ending with a number	([AEIOUaeiou].*..*)&((.*)([0-9]))	
+3750	lines with a vowel or a letter before a number	(([AEIOUaeiou])|([A-Za-z])).*([0-9]).*	
+5534	lines with a vowel or a character, zero or more times	(([AEIOUaeiou])|(.))*	
+5309	lines with words with starting with the string <M0> or a number	\b((dog)|([0-9]))(.*)\b	
+3174	lines with a number before a capital letter and the string <M0>	([0-9]).*(([A-Z])&(dog)).*	
+1833	lines containing either the string <M0>, a number, or a letter	.*(dog)|([0-9])|([A-Za-z]).*	
+7686	lines with a letter before the string <M0>	([A-Za-z]).*(dog).*	
+7354	lines with words with either a capital letter, a vowel, or the string <M0> or the string <M1>	\b(([A-Z])|([AEIOUaeiou])|(dog))|(truck)\b	
+7522	lines having the string <M0>, a capital letter, and a lower-case letter before a number	((dog)&([A-Z])&([a-z])).*([0-9]).*	
+5387	lines ending with containing only a letter, 3 or more times	((.*)([A-Za-z])){3,}	
+5293	lines ending with the string <M0> before containing a letter	((.*)(dog)).*(.*[A-Za-z].*).*	
+4801	lines with a vowel before a number or a letter	([AEIOUaeiou]).*(([0-9])|([A-Za-z])).*	
+6353	lines having either a capital letter, the string <M0>, or a vowel before the string <M1>	(([A-Z])|(dog)|([AEIOUaeiou])).*(truck).*	
+7576	lines starting with words with a letter, 3 or more times	(\b([A-Za-z]){3,}\b)(.*)	
+8758	lines with a number and a letter before a capital letter	(([0-9])&([A-Za-z])).*([A-Z]).*	
+124	lines not having the string <M0>, a number, or a letter	~((dog)|([0-9])|([A-Za-z]))	
+8508	lines with the string <M0> before ending with a vowel	(dog).*((.*)([AEIOUaeiou])).*	
+2428	lines having the string <M0>, the string <M1>, and a number before a lower-case letter	((dog)&(truck)&([0-9])).*([a-z]).*	
+6491	lines ending with words with a character, 4 or more times	(.*)(\b(.){4,}\b)	
+2003	lines not having a number, not a character, and not a lower-case letter	~(([0-9])&(.)&([a-z]))	
+704	lines with a character or a letter before a lower-case letter	((.)|([A-Za-z])).*([a-z]).*	
+5784	lines with a character, 4 or more times and ending with a capital letter	((.){4,})&((.*)([A-Z]))	
+1107	lines ending with a lower-case letter followed by a letter before the string <M0>	((.*)([a-z].*[A-Za-z].*)).*(dog).*	
+6585	lines with a character or a capital letter, zero or more times	((.)|([A-Z]))*	
+2182	lines with the string <M0> before the string <M1>, a vowel, and the string <M2>	(dog).*((truck)&([AEIOUaeiou])&(ring)).*	
+9630	lines having the string <M0>, the string <M1>, and a number or the string <M2>, zero or more times	(((dog)&(truck)&([0-9]))|(ring))*	
+8266	lines with a capital letter before the string <M0>, a number, and a letter	([A-Z]).*((dog)&([0-9])&([A-Za-z])).*	
+8626	lines with a character and a letter before the string <M0>	((.)&([A-Za-z])).*(dog).*	
+4726	lines with words with the string <M0> and a letter or the string <M1>	\b((dog)&([A-Za-z]))|(truck)\b	
+9973	lines not ending with the string <M0> or a lower-case letter	~(((.*)(dog))|([a-z]))	
+6840	lines with a vowel, 5 or more times or ending with a number	(([AEIOUaeiou]){5,})|((.*)([0-9]))	
+914	lines with words with a vowel followed by a character before a capital letter	\b([AEIOUaeiou].*..*).*([A-Z]).*\b	
+118	lines with a number before the string <M0>, 2 or more times	([0-9]).*((dog){2,}).*	
+3062	lines with words with ending with a character	\b(.*)(.)\b	
+6172	lines with a number followed by a lower-case letter	[0-9].*[a-z].*	
+7942	lines with words with the string <M0>, a capital letter, and a character	\b(dog)&([A-Z])&(.)\b	
+9042	lines containing a number, a character, and a letter	.*([0-9])&(.)&([A-Za-z]).*	
+6758	lines with a lower-case letter or the string <M0> before a number	(([a-z])|(dog)).*([0-9]).*	
+5906	lines starting with a vowel, 5 or more times before a number	((([AEIOUaeiou]){5,})(.*)).*([0-9]).*	
+5147	lines ending with the string <M0> or containing only a vowel	(.*)((dog)|([AEIOUaeiou]))	
+581	lines not words with the string <M0> followed by the string <M1>	~(\bdog.*truck.*\b)	
+3595	lines ending with a lower-case letter, 7 or more times	(.*)(([a-z]){7,})	
+9590	lines with a character and a vowel before the string <M0> followed by a lower-case letter	((.)&([AEIOUaeiou])).*(dog.*[a-z].*).*	
+2132	lines not starting with a character	~((.)(.*))	
+618	lines with a number before either a lower-case letter, the string <M0>, or the string <M1>	([0-9]).*(([a-z])|(dog)|(truck)).*	
+9164	lines with a capital letter before either a character, a number, or the string <M0>	([A-Z]).*((.)|([0-9])|(dog)).*	
+7648	lines containing either a vowel, the string <M0>, or a lower-case letter	.*([AEIOUaeiou])|(dog)|([a-z]).*	
+5335	lines having the string <M0>, a character, and a vowel before the string <M1>	((dog)&(.)&([AEIOUaeiou])).*(truck).*	
+961	lines containing containing only a lower-case letter, 5 or more times	.*([a-z]){5,}.*	
+6328	lines having a number, the string <M0>, and a capital letter before the string <M1>	(([0-9])&(dog)&([A-Z])).*(truck).*	
+8893	lines with a letter before the string <M0> and a capital letter, 3 or more times	(([A-Za-z]).*(dog).*)&(([A-Z]){3,})	
+8310	lines with words with either a vowel, the string <M0>, or the string <M1> at least once	(\b([AEIOUaeiou])|(dog)|(truck)\b)+	
+5554	lines not having the string <M0> or the string <M1>, 6 or more times	((~(dog))|(truck)){6,}	
+6031	lines containing a lower-case letter, a number, and a letter	.*([a-z])&([0-9])&([A-Za-z]).*	
+7990	lines not containing a vowel before a lower-case letter	(~(.*[AEIOUaeiou].*)).*([a-z]).*	
+8850	lines with the string <M0> before either a lower-case letter, a vowel, or a number	(dog).*(([a-z])|([AEIOUaeiou])|([0-9])).*	
+7914	lines with a number before the string <M0> followed by a vowel	([0-9]).*(dog.*[AEIOUaeiou].*).*	
+9845	lines containing a capital letter, a character, and a letter	.*([A-Z])&(.)&([A-Za-z]).*	
+9838	lines not words with the string <M0> followed by a character	~(\bdog.*..*\b)	
+1155	lines containing a capital letter before the string <M0> and a letter	(.*[A-Z].*).*((dog)&([A-Za-z])).*	
+3749	lines not having a letter or a capital letter and not a lower-case letter	~((([A-Za-z])|([A-Z]))&([a-z]))	
+2157	lines starting with words with a capital letter followed by a letter	(\b[A-Z].*[A-Za-z].*\b)(.*)	
+1223	lines having a number, a vowel, and a lower-case letter before the string <M0>	(([0-9])&([AEIOUaeiou])&([a-z])).*(dog).*	
+1033	lines containing either a capital letter, a character, or a lower-case letter	.*([A-Z])|(.)|([a-z]).*	
+5774	lines with a vowel followed by a lower-case letter before a capital letter	([AEIOUaeiou].*[a-z].*).*([A-Z]).*	
+3444	lines with words with a character before a letter	\b(.).*([A-Za-z]).*\b	
+2970	lines with the string <M0> or the string <M1>, zero or more times	((dog)|(truck))*	
+7472	lines with the string <M0> before a capital letter followed by a letter	(dog).*([A-Z].*[A-Za-z].*).*	
+3396	lines with a number or containing the string <M0> at least once	(([0-9])|(.*dog.*))+	
+2177	lines with a vowel or a lower-case letter, 7 or more times	(([AEIOUaeiou])|([a-z])){7,}	
+560	lines with a lower-case letter, 5 or more times before a letter	(([a-z]){5,}).*([A-Za-z]).*	
+308	lines with a capital letter and a letter before a character	(([A-Z])&([A-Za-z])).*(.).*	
+5176	lines containing the string <M0> before a capital letter	(.*dog.*).*([A-Z]).*	
+3045	lines with the string <M0>, 7 or more times or a vowel followed by the string <M1>	((dog){7,})|([AEIOUaeiou].*truck.*)	
+8494	lines with words that contain the string <M0>, a vowel, and the string <M1>	\b.*(dog)&([AEIOUaeiou])&(truck).*\b	
+8939	lines with a lower-case letter or a number, zero or more times	(([a-z])|([0-9]))*	
+4713	lines containing either a character, a number, or the string <M0>, 5 or more times	(.*(.)|([0-9])|(dog).*){5,}	
+4942	lines with words with either a lower-case letter, a letter, or the string <M0>	\b([a-z])|([A-Za-z])|(dog)\b	
+7737	lines with words with a capital letter, zero or more times before a number	\b(([A-Z])*).*([0-9]).*\b	
+9349	lines having the string <M0>, the string <M1>, and the string <M2> before a letter	((dog)&(truck)&(ring)).*([A-Za-z]).*	
+7512	lines with the string <M0> followed by the string <M1> before a vowel	(dog.*truck.*).*([AEIOUaeiou]).*	
+2387	lines with a character, 4 or more times before the string <M0>	((.){4,}).*(dog).*	
+6685	lines with a letter before the string <M0>, a vowel, and a capital letter	([A-Za-z]).*((dog)&([AEIOUaeiou])&([A-Z])).*	
+2355	lines containing either the string <M0>, a number, or a vowel at least once	(.*(dog)|([0-9])|([AEIOUaeiou]).*)+	
+2784	lines with a number, 2 or more times before a vowel	(([0-9]){2,}).*([AEIOUaeiou]).*	
+5780	lines having a character, the string <M0>, and a vowel before a capital letter	((.)&(dog)&([AEIOUaeiou])).*([A-Z]).*	
+3639	lines with the string <M0> at least once before containing a lower-case letter	((dog)+).*(.*[a-z].*).*	
+6418	lines with a number, 4 or more times before the string <M0>	(([0-9]){4,}).*(dog).*	
+7029	lines starting with a character before a vowel at least once	((.)(.*)).*(([AEIOUaeiou])+).*	
+3786	lines having the string <M0>, a character, and a lower-case letter before the string <M1>	((dog)&(.)&([a-z])).*(truck).*	
+5166	lines with a lower-case letter before a capital letter followed by a letter	([a-z]).*([A-Z].*[A-Za-z].*).*	
+3572	lines with a lower-case letter before a number or the string <M0>	([a-z]).*(([0-9])|(dog)).*	
+6257	lines containing a letter and starting with the string <M0>	(.*[A-Za-z].*)&((dog)(.*))	
+139	lines containing only a letter	[A-Za-z]	
+9125	lines with words with a lower-case letter, 2 or more times	\b([a-z]){2,}\b	
+4076	lines with a number before a vowel, 2 or more times	([0-9]).*(([AEIOUaeiou]){2,}).*	
+4954	lines not having a vowel before a character	~(([AEIOUaeiou]).*(.).*)	
+9759	lines having either a capital letter, a number, or a lower-case letter or a letter, 4 or more times	((([A-Z])|([0-9])|([a-z]))|([A-Za-z])){4,}	
+4914	lines with a letter or a lower-case letter before a capital letter	(([A-Za-z])|([a-z])).*([A-Z]).*	
+3117	lines with words with a lower-case letter or a letter, 3 or more times	(\b([a-z])|([A-Za-z])\b){3,}	
+7844	lines with a character and the string <M0> before containing a lower-case letter	((.)&(dog)).*(.*[a-z].*).*	
+7673	lines containing a character at least once	(.*..*)+	
+7655	lines containing a lower-case letter before a character	(.*[a-z].*).*(.).*	
+7418	lines with the string <M0> before containing only the string <M1> at least once	(dog).*((truck)+).*	
+211	lines with words with a number, 4 or more times and a character	\b(([0-9]){4,})&(.)\b	
+8564	lines having the string <M0>, a lower-case letter, and a letter before the string <M1>	((dog)&([a-z])&([A-Za-z])).*(truck).*	
+8782	lines not having the string <M0>, not a letter, and not a capital letter	~((dog)&([A-Za-z])&([A-Z]))	
+2371	lines containing a character or a number	.*(.)|([0-9]).*	
+2507	lines ending with the string <M0> and starting with a lower-case letter	((.*)(dog))&(([a-z])(.*))	
+7498	lines not starting with a lower-case letter or a capital letter	~((([a-z])(.*))|([A-Z]))	
+2199	lines with a number or a capital letter followed by the string <M0>, 4 or more times	(([0-9])|([A-Z].*dog.*)){4,}	
+1573	lines not ending with the string <M0>	~((.*)(dog))	
+4157	lines with a character before a letter, a capital letter, and a number	(.).*(([A-Za-z])&([A-Z])&([0-9])).*	
+7935	lines containing the string <M0> or a vowel at least once	(.*(dog)|([AEIOUaeiou]).*)+	
+8980	lines with a vowel or a letter, 2 or more times	(([AEIOUaeiou])|([A-Za-z])){2,}	
+4155	lines ending with containing a letter before a number	(.*)(.*([A-Za-z]).*([0-9]).*.*)	
+4334	lines ending with the string <M0> followed by a character, zero or more times	((.*)(dog.*..*))*	
+5123	lines with words with either a lower-case letter, the string <M0>, or a capital letter	\b([a-z])|(dog)|([A-Z])\b	
+9270	lines with a lower-case letter before a capital letter at least once	([a-z]).*(([A-Z])+).*	
+7614	lines containing a letter and a capital letter	.*([A-Za-z])&([A-Z]).*	
+7859	lines with a number before the string <M0> and a lower-case letter	([0-9]).*((dog)&([a-z])).*	
+9689	lines with a vowel and the string <M0> before a number	(([AEIOUaeiou])&(dog)).*([0-9]).*	
+2179	lines with words with a capital letter, a character, and the string <M0>	\b([A-Z])&(.)&(dog)\b	
+7979	lines with a letter at least once before not a capital letter	(([A-Za-z])+).*(~([A-Z])).*	
+1510	lines containing a character, the string <M0>, and a capital letter	.*(.)&(dog)&([A-Z]).*	
+6360	lines with words that don't ending with a vowel	\b~((.*)([AEIOUaeiou]))\b	
+8231	lines with a capital letter followed by a character, 5 or more times	([A-Z].*..*){5,}	
+7273	lines starting with a number or the string <M0>, 3 or more times	((([0-9])|(dog))(.*)){3,}	
+203	lines not having a lower-case letter or the string <M0> followed by a letter	(~([a-z]))|(dog.*[A-Za-z].*)	
+8724	lines with a lower-case letter before not a capital letter	([a-z]).*(~([A-Z])).*	
+6516	lines not having a lower-case letter, not a character, and not a vowel	~(([a-z])&(.)&([AEIOUaeiou]))	
+5657	lines with the string <M0> followed by the string <M1>, 4 or more times	(dog.*truck.*){4,}	
+5108	lines with words with a character, 4 or more times	\b(.){4,}\b	
+7794	lines not containing only a number or a letter	~(([0-9])|([A-Za-z]))	
+5017	lines having a lower-case letter, a character, and the string <M0> or a letter, zero or more times	((([a-z])&(.)&(dog))|([A-Za-z]))*	
+4265	lines not words that contain only the string <M0>	~(\bdog\b)	
+7529	lines with a capital letter before a vowel, zero or more times	([A-Z]).*(([AEIOUaeiou])*).*	
+1462	lines with the string <M0> or a character, 3 or more times	((dog)|(.)){3,}	
+5348	lines not having a vowel and a capital letter, zero or more times	(~([AEIOUaeiou]))&(([A-Z])*)	
+8248	lines having a vowel, a character, and the string <M0> before a number	(([AEIOUaeiou])&(.)&(dog)).*([0-9]).*	
+1853	lines ending with the string <M0> before a character, 4 or more times	((.*)(dog)).*((.){4,}).*	
+3461	lines containing only a number or the string <M0>, zero or more times	(([0-9])|(dog))*	
+8446	lines with words with a lower-case letter followed by a number, zero or more times	\b([a-z].*[0-9].*)*\b	
+1069	lines with a number before words that contain only a character	([0-9]).*(\b.\b).*	
+2607	lines having a character, a vowel, and the string <M0> before a number	((.)&([AEIOUaeiou])&(dog)).*([0-9]).*	
+4649	lines not having a capital letter or the string <M0>, zero or more times	(~([A-Z]))|((dog)*)	
+8111	lines with words with the string <M0> or the string <M1> before a vowel	(\b(dog)|(truck)\b).*([AEIOUaeiou]).*	
+9014	lines with words with a capital letter and the string <M0> or the string <M1>	\b([A-Z])&((dog)|(truck))\b	
+9248	lines with the string <M0> followed by a letter, 5 or more times	(dog.*[A-Za-z].*){5,}	
+4153	lines starting with a character before a number	((.)(.*)).*([0-9]).*	
+9547	lines with a number, zero or more times before the string <M0>	(([0-9])*).*(dog).*	
+1433	lines with words with either a character, the string <M0>, or a number, zero or more times	(\b(.)|(dog)|([0-9])\b)*	
+957	lines not having a number, 2 or more times	~(([0-9]){2,})	
+1208	lines having either the string <M0>, a vowel, or a capital letter or the string <M1> at least once	(((dog)|([AEIOUaeiou])|([A-Z]))|(truck))+	
+3085	lines with words with ending with a letter or the string <M0>	\b(.*)(([A-Za-z])|(dog))\b	
+1490	lines ending with a capital letter or the string <M0>, 2 or more times	((.*)(([A-Z])|(dog))){2,}	
+6743	lines with words with starting with the string <M0> before a capital letter	\b((dog)(.*)).*([A-Z]).*\b	
+3843	lines with a character before a vowel or the string <M0> at least once	(((.).*([AEIOUaeiou]).*)|(dog))+	
+7413	lines having the string <M0>, a letter, and a vowel before a capital letter	((dog)&([A-Za-z])&([AEIOUaeiou])).*([A-Z]).*	
+3901	lines with words with a vowel or a number	\b([AEIOUaeiou])|([0-9])\b	
+6061	lines with words with a number and a character or the string <M0>	\b(([0-9])&(.))|(dog)\b	
+1668	lines with the string <M0> before a character or the string <M1> and a number	((dog).*(.).*)|((truck)&([0-9]))	
+6765	lines with the string <M0> before containing the string <M1> or the string <M2>	(dog).*(.*(truck)|(ring).*).*	
+4901	lines containing words with starting with a letter	.*\b([A-Za-z])(.*)\b.*	
+8270	lines containing ending with the string <M0>, zero or more times	(.*(.*)(dog).*)*	
+4572	lines with the string <M0> before the string <M1> and a lower-case letter	(dog).*((truck)&([a-z])).*	
+1359	lines containing a number followed by a vowel	.*[0-9].*[AEIOUaeiou].*.*	
+3410	lines not having a number, not a vowel, and not a letter	~(([0-9])&([AEIOUaeiou])&([A-Za-z]))	
+2295	lines with a lower-case letter before ending with a character	([a-z]).*((.*)(.)).*	
+9237	lines having the string <M0>, the string <M1>, and a vowel before a number	((dog)&(truck)&([AEIOUaeiou])).*([0-9]).*	
+9537	lines with the string <M0> before a number or a lower-case letter	(dog).*(([0-9])|([a-z])).*	
+7223	lines ending with a lower-case letter followed by the string <M0> or a number	(.*)(([a-z].*dog.*)|([0-9]))	
+4539	lines with words with either a lower-case letter, a vowel, or a number	\b([a-z])|([AEIOUaeiou])|([0-9])\b	
+1738	lines with the string <M0> before containing a capital letter	(dog).*(.*[A-Z].*).*	
+9500	lines with words with a vowel or the string <M0> before a lower-case letter	(\b([AEIOUaeiou])|(dog)\b).*([a-z]).*	
+5328	lines with the string <M0> followed by the string <M1> and the string <M2>, the string <M3>, and a lower-case letter	(dog.*truck.*)&((ring)&(lake)&([a-z]))	
+5659	lines not having a letter, not a vowel, and not a lower-case letter	~(([A-Za-z])&([AEIOUaeiou])&([a-z]))	
+8757	lines starting with the string <M0> or a letter	((dog)|([A-Za-z]))(.*)	
+4171	lines with words with a number or starting with a capital letter	\b([0-9])|(([A-Z])(.*))\b	
+4696	lines with words with a capital letter, a lower-case letter, and the string <M0>	\b([A-Z])&([a-z])&(dog)\b	
+8251	lines ending with containing containing only the string <M0>	(.*)(.*dog.*)	
+2169	lines with a letter or the string <M0> before a lower-case letter, zero or more times	(([A-Za-z])|(dog)).*(([a-z])*).*	
+3205	lines not having a capital letter and not a character	~(([A-Z])&(.))	
+7747	lines with a capital letter, zero or more times or the string <M0> before a character	(([A-Z])*)|((dog).*(.).*)	
+8054	lines having a vowel, a lower-case letter, and a letter before a capital letter	(([AEIOUaeiou])&([a-z])&([A-Za-z])).*([A-Z]).*	
+3459	lines with the string <M0> before the string <M1> and a letter, 3 or more times	((dog).*(truck).*)&(([A-Za-z]){3,})	
+58	lines containing a character followed by a lower-case letter at least once	(.*..*[a-z].*.*)+	
+3737	lines not having a lower-case letter and not the string <M0> or the string <M1>	~(([a-z])&((dog)|(truck)))	
+7436	lines with words with ending with a capital letter before the string <M0>	\b((.*)([A-Z])).*(dog).*\b	
+4302	lines with words with either a letter, the string <M0>, or a character	\b([A-Za-z])|(dog)|(.)\b	
+4485	lines with the string <M0> before a vowel or a character	(dog).*(([AEIOUaeiou])|(.)).*	
+9788	lines with words with a number followed by a lower-case letter	\b[0-9].*[a-z].*\b	
+3179	lines containing the string <M0>, a lower-case letter, and a vowel	.*(dog)&([a-z])&([AEIOUaeiou]).*	
+9962	lines with words that contain starting with a vowel	\b.*([AEIOUaeiou])(.*).*\b	
+5556	lines containing a capital letter or a lower-case letter, zero or more times	.*(([A-Z])|([a-z]))*.*	
+7926	lines not having a capital letter	~([A-Z])	
+3511	lines ending with words with a number, zero or more times	(.*)(\b([0-9])*\b)	
+5483	lines with a capital letter before not a number	([A-Z]).*(~([0-9])).*	
+2518	lines with a vowel, 3 or more times before a lower-case letter	(([AEIOUaeiou]){3,}).*([a-z]).*	
+3200	lines with words with a number, 3 or more times	\b([0-9]){3,}\b	
+4554	lines having either a character, a capital letter, or a lower-case letter before the string <M0>	((.)|([A-Z])|([a-z])).*(dog).*	
+9031	lines with words with either a letter, the string <M0>, or a number	\b([A-Za-z])|(dog)|([0-9])\b	
+4255	lines starting with a lower-case letter or a character	(([a-z])|(.))(.*)	
+3715	lines not having the string <M0> or the string <M1> and not a letter	~((dog)|((truck)&([A-Za-z])))	
+8192	lines not having the string <M0> or the string <M1> before a vowel	(~(dog))|((truck).*([AEIOUaeiou]).*)	
+6901	lines with the string <M0> before either a capital letter, a number, or the string <M1>	(dog).*(([A-Z])|([0-9])|(truck)).*	
+2203	lines with a lower-case letter before containing a number	([a-z]).*(.*[0-9].*).*	
+1659	lines ending with a vowel or a lower-case letter, 6 or more times	(.*)((([AEIOUaeiou])|([a-z])){6,})	
+9035	lines with a lower-case letter before a vowel followed by the string <M0>	([a-z]).*([AEIOUaeiou].*dog.*).*	
+3005	lines with words that don't the string <M0> followed by a letter	\b~(dog.*[A-Za-z].*)\b	
+604	lines ending with a lower-case letter, 6 or more times	(.*)(([a-z]){6,})	
+9617	lines with words with a character before a letter at least once	(\b(.).*([A-Za-z]).*\b)+	
+5647	lines with words with ending with containing a letter	\b(.*)(.*[A-Za-z].*)\b	
+5418	lines starting with a number followed by a capital letter, 3 or more times	(([0-9].*[A-Z].*)(.*)){3,}	
+3578	lines containing a character or the string <M0> followed by the string <M1>	(.*..*)|(dog.*truck.*)	
+8164	lines containing a capital letter followed by a vowel before the string <M0>	.*([A-Z].*[AEIOUaeiou].*).*(dog).*.*	
+9028	lines not containing only a number or the string <M0>	~(([0-9])|(dog))	
+1278	lines not having a capital letter, the string <M0>, or a character	~(([A-Z])|(dog)|(.))	
+4296	lines containing either a vowel, a character, or a letter	.*([AEIOUaeiou])|(.)|([A-Za-z]).*	
+6379	lines with the string <M0> at least once or the string <M1> before a character	((dog)+)|((truck).*(.).*)	
+7365	lines with words that don't have a letter, a vowel, or the string <M0>	\b~(([A-Za-z])|([AEIOUaeiou])|(dog))\b	
+2724	lines with the string <M0> and a vowel before a number	((dog)&([AEIOUaeiou])).*([0-9]).*	
+7661	lines with a letter before not a number	([A-Za-z]).*(~([0-9])).*	
+2476	lines with a vowel or a lower-case letter before a number	(([AEIOUaeiou])|([a-z])).*([0-9]).*	
+2589	lines with a vowel at least once or the string <M0> and the string <M1>	(([AEIOUaeiou])+)|((dog)&(truck))	
+4797	lines with the string <M0> before a vowel, 2 or more times	(dog).*(([AEIOUaeiou]){2,}).*	
+3138	lines with words with a letter, a lower-case letter, and the string <M0>	\b([A-Za-z])&([a-z])&(dog)\b	
+601	lines with words with a lower-case letter and a character	\b([a-z])&(.)\b	
+2498	lines with a number, 7 or more times before a letter	(([0-9]){7,}).*([A-Za-z]).*	
+2960	lines starting with words with a letter, 7 or more times	(\b([A-Za-z]){7,}\b)(.*)	
+2766	lines containing the string <M0>, a number, and a character	.*(dog)&([0-9])&(.).*	
+3626	lines not containing a letter or the string <M0>	.*~(([A-Za-z])|(dog)).*	
+2764	lines containing a lower-case letter followed by the string <M0> at least once	.*([a-z].*dog.*)+.*	
+3585	lines with words that don't the string <M0> followed by the string <M1>	\b~(dog.*truck.*)\b	
+9426	lines containing a lower-case letter, 4 or more times	(.*[a-z].*){4,}	
+5727	lines with words with either a number, a vowel, or a lower-case letter	\b([0-9])|([AEIOUaeiou])|([a-z])\b	
+4299	lines with a lower-case letter followed by a number, 2 or more times	([a-z].*[0-9].*){2,}	
+6793	lines not having a capital letter and not a lower-case letter	~(([A-Z])&([a-z]))	
+2540	lines not having the string <M0> and not starting with the string <M1>	~((dog)&((truck)(.*)))	
+9113	lines with the string <M0>, zero or more times before ending with the string <M1>	((dog)*).*((.*)(truck)).*	
+9126	lines not having a character or a vowel	~((.)|([AEIOUaeiou]))	
+5346	lines containing only a capital letter or a letter, zero or more times	(([A-Z])|([A-Za-z]))*	
+8271	lines having either a letter, the string <M0>, or the string <M1> before a number	(([A-Za-z])|(dog)|(truck)).*([0-9]).*	
+5168	lines not having the string <M0>, not a character, and not a number	~((dog)&(.)&([0-9]))	
+5948	lines with a capital letter or a letter before a vowel	(([A-Z])|([A-Za-z])).*([AEIOUaeiou]).*	
+2441	lines with a letter, 4 or more times before a lower-case letter	(([A-Za-z]){4,}).*([a-z]).*	
+1012	lines with a number before the string <M0> or not the string <M1>	(([0-9]).*(dog).*)|(~(truck))	
+2554	lines containing containing only a lower-case letter or the string <M0>	.*([a-z])|(dog).*	
+7203	lines ending with a lower-case letter followed by a vowel	(.*)([a-z].*[AEIOUaeiou].*)	
+678	lines containing the string <M0> or the string <M1>	.*(dog)|(truck).*	
+7140	lines not having a lower-case letter, not a letter, and not a capital letter	~(([a-z])&([A-Za-z])&([A-Z]))	
+3619	lines containing either a letter, a capital letter, or a lower-case letter	.*([A-Za-z])|([A-Z])|([a-z]).*	
+4560	lines with a letter followed by a lower-case letter before a vowel	([A-Za-z].*[a-z].*).*([AEIOUaeiou]).*	
+5915	lines not having the string <M0> and not a vowel at least once	~((dog)&(([AEIOUaeiou])+))	
+3746	lines with a letter and the string <M0> before a character	(([A-Za-z])&(dog)).*(.).*	
+104	lines containing a character before the string <M0>	(.*..*).*(dog).*	
+295	lines not words with ending with a lower-case letter	~(\b(.*)([a-z])\b)	
+3428	lines with a capital letter followed by a number, 7 or more times	([A-Z].*[0-9].*){7,}	
+4586	lines ending with a capital letter before a number	((.*)([A-Z])).*([0-9]).*	
+5352	lines with words with a vowel, a character, and a number	\b([AEIOUaeiou])&(.)&([0-9])\b	
+6845	lines with a character before a capital letter, a letter, and the string <M0>	(.).*(([A-Z])&([A-Za-z])&(dog)).*	
+3195	lines with a letter before a number and a capital letter	([A-Za-z]).*(([0-9])&([A-Z])).*	
+5120	lines ending with a number, 7 or more times	((.*)([0-9])){7,}	
+4110	lines containing containing only a letter and the string <M0>	.*([A-Za-z])&(dog).*	
+4995	lines with a character before a lower-case letter or the string <M0>	(.).*(([a-z])|(dog)).*	
+6950	lines with words with ending with a vowel	\b(.*)([AEIOUaeiou])\b	
+2262	lines with a vowel or a lower-case letter, 2 or more times	(([AEIOUaeiou])|([a-z])){2,}	
+1699	lines not having the string <M0>, zero or more times and not a letter	~(((dog)*)&([A-Za-z]))	
+3820	lines with a letter before a character or a lower-case letter	([A-Za-z]).*((.)|([a-z])).*	
+603	lines with words with the string <M0>, a vowel, and the string <M1> at least once	(\b(dog)&([AEIOUaeiou])&(truck)\b)+	
+2298	lines with a lower-case letter followed by a character, 3 or more times	([a-z].*..*){3,}	
+3270	lines ending with a number, zero or more times or a vowel	(.*)((([0-9])*)|([AEIOUaeiou]))	
+1547	lines with the string <M0>, 3 or more times and a lower-case letter or a letter	((dog){3,})&(([a-z])|([A-Za-z]))	
+8835	lines with words with a capital letter before a vowel	\b([A-Z]).*([AEIOUaeiou]).*\b	
+7999	lines with a capital letter before ending with a letter	([A-Z]).*((.*)([A-Za-z])).*	
+5744	lines with words with starting with a letter, 7 or more times	\b(([A-Za-z])(.*)){7,}\b	
+9152	lines having a vowel, a letter, and a number before a lower-case letter	(([AEIOUaeiou])&([A-Za-z])&([0-9])).*([a-z]).*	
+2072	lines not having a letter before a capital letter	~(([A-Za-z]).*([A-Z]).*)	
+7723	lines with the string <M0> at least once before a lower-case letter	((dog)+).*([a-z]).*	
+5036	lines not having a letter, a lower-case letter, or a number	~(([A-Za-z])|([a-z])|([0-9]))	
+953	lines ending with a vowel followed by the string <M0>	(.*)([AEIOUaeiou].*dog.*)	
+5161	lines with words with ending with a character, 4 or more times	(\b(.*)(.)\b){4,}	
+681	lines ending with a character and a capital letter at least once	((.*)(.))&(([A-Z])+)	
+1628	lines not having the string <M0>, a character, or the string <M1>	~((dog)|(.)|(truck))	
+8108	lines not having the string <M0> before the string <M1>	~((dog).*(truck).*)	
+162	lines with words that don't the string <M0> followed by a number	\b~(dog.*[0-9].*)\b	
+468	lines having a capital letter, the string <M0>, and the string <M1> before a vowel	(([A-Z])&(dog)&(truck)).*([AEIOUaeiou]).*	
+5664	lines not having a letter or a capital letter	~(([A-Za-z])|([A-Z]))	
+5396	lines with a lower-case letter at least once and starting with the string <M0>	(([a-z])+)&((dog)(.*))	
+331	lines with words with starting with a letter followed by the string <M0>	\b([A-Za-z].*dog.*)(.*)\b	
+2582	lines with words with the string <M0> before containing only the string <M1>	\b(dog).*(truck).*\b	
+1678	lines not having a number and a character, 3 or more times	(~([0-9]))&((.){3,})	
+5447	lines with a lower-case letter before containing only the string <M0>, 3 or more times	([a-z]).*((dog){3,}).*	
+2402	lines with a vowel before a number and a lower-case letter or the string <M0>	(([AEIOUaeiou]).*([0-9]).*)&(([a-z])|(dog))	
+3941	lines not having a capital letter before a lower-case letter, 2 or more times	~(([A-Z]).*(([a-z]){2,}).*)	
+7608	lines with the string <M0> followed by a character, 7 or more times	(dog.*..*){7,}	
+3751	lines containing a character, a lower-case letter, and the string <M0>	.*(.)&([a-z])&(dog).*	
+4818	lines containing containing only a capital letter at least once	.*([A-Z])+.*	
+6316	lines not having a letter, not the string <M0>, and not the string <M1>	~(([A-Za-z])&(dog)&(truck))	
+1537	lines with the string <M0> or containing the string <M1> at least once	((dog)|(.*truck.*))+	
+2272	lines containing a vowel followed by a number	.*[AEIOUaeiou].*[0-9].*.*	
+4057	lines with a capital letter and a number before the string <M0>	(([A-Z])&([0-9])).*(dog).*	
+5299	lines with the string <M0> and the string <M1> before a lower-case letter followed by the string <M2>	((dog)&(truck)).*([a-z].*ring.*).*	
+8113	lines ending with words with the string <M0>, the string <M1>, and a capital letter	(.*)(\b(dog)&(truck)&([A-Z])\b)	
+2461	lines with the string <M0> or a vowel before a lower-case letter	((dog)|([AEIOUaeiou])).*([a-z]).*	
+6958	lines with a letter before a lower-case letter and a vowel	([A-Za-z]).*(([a-z])&([AEIOUaeiou])).*	
+1858	lines with the string <M0> before the string <M1>, a lower-case letter, and a number	(dog).*((truck)&([a-z])&([0-9])).*	
+5941	lines with a capital letter followed by a character before a lower-case letter	([A-Z].*..*).*([a-z]).*	
+666	lines containing a vowel, a lower-case letter, and the string <M0>	.*([AEIOUaeiou])&([a-z])&(dog).*	
+9664	lines with a vowel, zero or more times before ending with the string <M0>	(([AEIOUaeiou])*).*((.*)(dog)).*	
+3778	lines starting with the string <M0> and not the string <M1>	((dog)(.*))&(~(truck))	
+4368	lines not having a number, zero or more times	~(([0-9])*)	
+279	lines not having a lower-case letter, a vowel, or a character	~(([a-z])|([AEIOUaeiou])|(.))	
+5095	lines containing either a vowel, a capital letter, or a number	.*([AEIOUaeiou])|([A-Z])|([0-9]).*	
+8571	lines starting with a character followed by the string <M0>, 2 or more times	((..*dog.*)(.*)){2,}	
+3214	lines with the string <M0> followed by the string <M1>, 3 or more times	(dog.*truck.*){3,}	
+4359	lines with a letter before a number or a lower-case letter	([A-Za-z]).*(([0-9])|([a-z])).*	
+6203	lines with words that contain starting with a letter	\b.*([A-Za-z])(.*).*\b	
+4309	lines with words with a character followed by the string <M0>, zero or more times	\b(..*dog.*)*\b	
+3007	lines with words with a letter and a character followed by a vowel	\b([A-Za-z])&(..*[AEIOUaeiou].*)\b	
+8365	lines starting with the string <M0>, 6 or more times before a vowel	(((dog){6,})(.*)).*([AEIOUaeiou]).*	
+837	lines with the string <M0> before the string <M1>, a capital letter, and a letter	(dog).*((truck)&([A-Z])&([A-Za-z])).*	
+3019	lines with the string <M0> followed by a lower-case letter before a number	(dog.*[a-z].*).*([0-9]).*	
+3419	lines with a capital letter followed by a letter before a number	([A-Z].*[A-Za-z].*).*([0-9]).*	
+769	lines with the string <M0> followed by a vowel, 7 or more times	(dog.*[AEIOUaeiou].*){7,}	
+8577	lines with a vowel before the string <M0> and the string <M1>	([AEIOUaeiou]).*((dog)&(truck)).*	
+5817	lines not having a vowel, not a letter, and not a capital letter	~(([AEIOUaeiou])&([A-Za-z])&([A-Z]))	
+5837	lines with a letter or the string <M0>, 6 or more times	(([A-Za-z])|(dog)){6,}	
+6757	lines containing a lower-case letter and a letter	.*([a-z])&([A-Za-z]).*	
+288	lines with a number before containing the string <M0> at least once	([0-9]).*((.*dog.*)+).*	
+1027	lines containing the string <M0> or starting with the string <M1>	(.*dog.*)|((truck)(.*))	
+4952	lines not ending with a letter before a number	(~((.*)([A-Za-z]))).*([0-9]).*	
+7215	lines ending with words with a lower-case letter at least once	(.*)(\b([a-z])+\b)	
+4962	lines with the string <M0> before a number, 2 or more times	(dog).*(([0-9]){2,}).*	
+1206	lines with a number or a lower-case letter before a character	(([0-9])|([a-z])).*(.).*	
+7873	lines with a capital letter or a character, 2 or more times	(([A-Z])|(.)){2,}	
+6878	lines with words with a number, 5 or more times	\b([0-9]){5,}\b	
+5449	lines with a lower-case letter before a vowel, zero or more times	([a-z]).*(([AEIOUaeiou])*).*	
+310	lines with words with starting with a letter, zero or more times	(\b([A-Za-z])(.*)\b)*	
+5867	lines with words with either a vowel, a capital letter, or the string <M0>, 6 or more times	(\b([AEIOUaeiou])|([A-Z])|(dog)\b){6,}	
+400	lines containing a lower-case letter and a number, a vowel, and the string <M0>	(.*[a-z].*)&(([0-9])&([AEIOUaeiou])&(dog))	
+1001	lines with a lower-case letter followed by a character	[a-z].*..*	
+875	lines ending with words with not a letter	(.*)(\b~([A-Za-z])\b)	
+1940	lines having either the string <M0>, a letter, or a number before a character	((dog)|([A-Za-z])|([0-9])).*(.).*	
+2150	lines with the string <M0> before containing only the string <M1>, 6 or more times	(dog).*((truck){6,}).*	
+8653	lines with words with a letter before the string <M0>, zero or more times	(\b([A-Za-z]).*(dog).*\b)*	
+1670	lines with words with starting with a letter	\b([A-Za-z])(.*)\b	
+7396	lines containing a lower-case letter before a vowel, zero or more times	.*([a-z]).*(([AEIOUaeiou])*).*.*	
+8836	lines containing either a number, the string <M0>, or a capital letter	.*([0-9])|(dog)|([A-Z]).*	
+6536	lines with the string <M0> before the string <M1> or a number, 4 or more times	((dog).*(truck).*)|(([0-9]){4,})	
+4131	lines starting with the string <M0> or a character	((dog)|(.))(.*)	
+5359	lines with a number before a lower-case letter followed by a capital letter	([0-9]).*([a-z].*[A-Z].*).*	
+8324	lines with the string <M0> and a number before a capital letter	((dog)&([0-9])).*([A-Z]).*	
+5810	lines containing a number or the string <M0>	.*([0-9])|(dog).*	
+1839	lines with words with the string <M0>, a capital letter, and the string <M1> at least once	(\b(dog)&([A-Z])&(truck)\b)+	
+5964	lines not having a capital letter, not a vowel, and not a number	~(([A-Z])&([AEIOUaeiou])&([0-9]))	
+2851	lines with words with the string <M0> and a character before the string <M1>	\b((dog)&(.)).*(truck).*\b	
+9673	lines with words with a lower-case letter, a number, and a character	\b([a-z])&([0-9])&(.)\b	
+2920	lines having either a vowel, a capital letter, or a letter before a number	(([AEIOUaeiou])|([A-Z])|([A-Za-z])).*([0-9]).*	
+8942	lines containing a capital letter or a vowel	.*([A-Z])|([AEIOUaeiou]).*	
+4771	lines with words with a lower-case letter followed by a capital letter	\b[a-z].*[A-Z].*\b	
+6529	lines with the string <M0> before a vowel, 3 or more times	(dog).*(([AEIOUaeiou]){3,}).*	
+369	lines not containing only the string <M0>, 3 or more times	~((dog){3,})	
+5344	lines ending with the string <M0> and a number, zero or more times	((.*)(dog))&(([0-9])*)	
+5211	lines having the string <M0>, a vowel, and a letter before a character	((dog)&([AEIOUaeiou])&([A-Za-z])).*(.).*	
+4473	lines with words that contain containing only the string <M0>	\b.*dog.*\b	
+4545	lines not ending with a lower-case letter	~((.*)([a-z]))	
+6574	lines not having a lower-case letter, not a character, and not the string <M0>	~(([a-z])&(.)&(dog))	
+1104	lines with the string <M0> before a character or not the string <M1>	((dog).*(.).*)|(~(truck))	
+1302	lines with a vowel followed by a lower-case letter, 7 or more times	([AEIOUaeiou].*[a-z].*){7,}	
+4040	lines with the string <M0> before a number, the string <M1>, and a letter	(dog).*(([0-9])&(truck)&([A-Za-z])).*	
+5617	lines containing a number or the string <M0>, zero or more times	.*(([0-9])|(dog))*.*	
+2806	lines not containing a capital letter, zero or more times	.*~(([A-Z])*).*	
+3954	lines with the string <M0> and a lower-case letter before a number at least once	((dog)&([a-z])).*(([0-9])+).*	
+7524	lines with the string <M0> before not starting with the string <M1>	(dog).*(~((truck)(.*))).*	
+9075	lines having a letter, a character, and the string <M0> before a number	(([A-Za-z])&(.)&(dog)).*([0-9]).*	
+549	lines with words with a letter or a capital letter and the string <M0>	\b(([A-Za-z])|([A-Z]))&(dog)\b	
+4768	lines containing a letter followed by the string <M0> at least once	(.*[A-Za-z].*dog.*.*)+	
+6689	lines with a lower-case letter or the string <M0>, 5 or more times	(([a-z])|(dog)){5,}	
+6236	lines having the string <M0>, a character, and the string <M1> before a capital letter	((dog)&(.)&(truck)).*([A-Z]).*	
+974	lines ending with a letter and containing a character	((.*)([A-Za-z]))&(.*..*)	
+2643	lines with a character or a lower-case letter, 2 or more times	((.)|([a-z])){2,}	
+3325	lines containing a number before a character followed by the string <M0>	.*([0-9]).*(..*dog.*).*.*	
+2480	lines not having the string <M0> or starting with a vowel	(~(dog))|(([AEIOUaeiou])(.*))	
+1980	lines having the string <M0>, a capital letter, and the string <M1> before a letter	((dog)&([A-Z])&(truck)).*([A-Za-z]).*	
+8527	lines with the string <M0>, zero or more times or a number and a character	((dog)*)|(([0-9])&(.))	
+654	lines not having a letter and ending with a lower-case letter	(~([A-Za-z]))&((.*)([a-z]))	
+1616	lines with a lower-case letter followed by the string <M0>	[a-z].*dog.*	
+8093	lines with a vowel and a number before the string <M0>	(([AEIOUaeiou])&([0-9])).*(dog).*	
+891	lines with words that contain only the string <M0> before a number	\b(dog).*([0-9]).*\b	
+526	lines with a capital letter or ending with a number, zero or more times	(([A-Z])|((.*)([0-9])))*	
+1238	lines starting with the string <M0> followed by a letter	(dog.*[A-Za-z].*)(.*)	
+761	lines ending with a letter, 7 or more times	((.*)([A-Za-z])){7,}	
+4416	lines containing a letter or a character and a lower-case letter	(.*[A-Za-z].*)|((.)&([a-z]))	
+9830	lines with a letter before either the string <M0>, a vowel, or a character	([A-Za-z]).*((dog)|([AEIOUaeiou])|(.)).*	
+6831	lines with a number at least once	([0-9])+	
+9835	lines with words with either the string <M0>, a letter, or a lower-case letter, zero or more times	(\b(dog)|([A-Za-z])|([a-z])\b)*	
+6425	lines ending with words with a capital letter followed by the string <M0>	(.*)(\b[A-Z].*dog.*\b)	
+1674	lines not having a lower-case letter, a vowel, or the string <M0>	~(([a-z])|([AEIOUaeiou])|(dog))	
+2021	lines with words that contain only a vowel, 3 or more times	(\b[AEIOUaeiou]\b){3,}	
+4774	lines with a character before a letter followed by a lower-case letter	(.).*([A-Za-z].*[a-z].*).*	
+5504	lines with a lower-case letter before a number, 4 or more times	([a-z]).*(([0-9]){4,}).*	
+3020	lines with a character followed by a vowel, 5 or more times	(..*[AEIOUaeiou].*){5,}	
+3422	lines with a capital letter before the string <M0>, a letter, and a vowel	([A-Z]).*((dog)&([A-Za-z])&([AEIOUaeiou])).*	
+4099	lines ending with a letter, 6 or more times	((.*)([A-Za-z])){6,}	
+290	lines containing a lower-case letter and a character	.*([a-z])&(.).*	
+9555	lines starting with a letter before a capital letter and a lower-case letter	(([A-Za-z])(.*)).*(([A-Z])&([a-z])).*	
+4211	lines with a letter before a capital letter and a vowel	([A-Za-z]).*(([A-Z])&([AEIOUaeiou])).*	
+4303	lines with a lower-case letter before a vowel and a number	([a-z]).*(([AEIOUaeiou])&([0-9])).*	
+4061	lines with words with a vowel before a number, the string <M0>, and a capital letter	\b([AEIOUaeiou]).*(([0-9])&(dog)&([A-Z])).*\b	
+1516	lines with a letter and a vowel before a lower-case letter	(([A-Za-z])&([AEIOUaeiou])).*([a-z]).*	
+8079	lines with words with the string <M0> at least once before a vowel	\b((dog)+).*([AEIOUaeiou]).*\b	
+1913	lines not words with a number followed by a vowel	~(\b[0-9].*[AEIOUaeiou].*\b)	
+5487	lines having a number, a lower-case letter, and the string <M0> before the string <M1>	(([0-9])&([a-z])&(dog)).*(truck).*	
+703	lines starting with a lower-case letter, zero or more times before a vowel	((([a-z])(.*))*).*([AEIOUaeiou]).*	
+6701	lines containing either a lower-case letter, a capital letter, or a vowel	.*([a-z])|([A-Z])|([AEIOUaeiou]).*	
+9338	lines having either a number, a letter, or a vowel before a lower-case letter	(([0-9])|([A-Za-z])|([AEIOUaeiou])).*([a-z]).*	
+2491	lines with the string <M0> before a lower-case letter followed by a capital letter	(dog).*([a-z].*[A-Z].*).*	
+7640	lines with a vowel followed by a number, 7 or more times	([AEIOUaeiou].*[0-9].*){7,}	
+8102	lines not having the string <M0> and a vowel, zero or more times	(~(dog))&(([AEIOUaeiou])*)	
+9870	lines with a capital letter or not the string <M0>, zero or more times	(([A-Z])|(~(dog)))*	
+5441	lines not containing only a lower-case letter	~([a-z])	
+6738	lines with words with a character before a vowel	\b(.).*([AEIOUaeiou]).*\b	
+3496	lines with a capital letter or a lower-case letter, 6 or more times	(([A-Z])|([a-z])){6,}	
+8291	lines having a character, the string <M0>, and a capital letter before the string <M1>	((.)&(dog)&([A-Z])).*(truck).*	
+8315	lines with a lower-case letter or a capital letter, zero or more times	(([a-z])|([A-Z]))*	
+655	lines having a capital letter, a vowel, and a character or a lower-case letter, zero or more times	((([A-Z])&([AEIOUaeiou])&(.))|([a-z]))*	
+905	lines not containing only the string <M0> at least once	~((dog)+)	
+7578	lines containing the string <M0> or the string <M1> before the string <M2>	(.*dog.*)|((truck).*(ring).*)	
+8303	lines containing a letter, 6 or more times	(.*[A-Za-z].*){6,}	
+2168	lines containing a character or ending with a capital letter	.*(.)|((.*)([A-Z])).*	
+2267	lines with the string <M0>, 7 or more times before a letter	((dog){7,}).*([A-Za-z]).*	
+853	lines containing a number and a lower-case letter at least once	(.*([0-9])&([a-z]).*)+	
+5655	lines containing a letter, the string <M0>, and a capital letter	.*([A-Za-z])&(dog)&([A-Z]).*	
+6772	lines with a vowel, zero or more times before a letter	(([AEIOUaeiou])*).*([A-Za-z]).*	
+3455	lines with words with ending with a character and a number	\b((.*)(.))&([0-9])\b	
+1318	lines ending with a lower-case letter or a capital letter	(.*)(([a-z])|([A-Z]))	
+9173	lines not containing the string <M0>, not the string <M1>, and not the string <M2>	.*~((dog)&(truck)&(ring)).*	
+1848	lines with a lower-case letter before a vowel or a number	([a-z]).*(([AEIOUaeiou])|([0-9])).*	
+6967	lines with words with a number, a capital letter, and the string <M0>	\b([0-9])&([A-Z])&(dog)\b	
+2894	lines with a lower-case letter followed by the string <M0> before the string <M1> at least once	([a-z].*dog.*).*((truck)+).*	
+5404	lines not having the string <M0> before a letter	(~(dog)).*([A-Za-z]).*	
+9908	lines not containing the string <M0> before a character	~((.*dog.*).*(.).*)	
+3434	lines having either a capital letter, the string <M0>, or the string <M1> before a number	(([A-Z])|(dog)|(truck)).*([0-9]).*	
+6254	lines with a lower-case letter followed by a vowel before a character	([a-z].*[AEIOUaeiou].*).*(.).*	
+1092	lines containing a vowel, a letter, and a number	.*([AEIOUaeiou])&([A-Za-z])&([0-9]).*	
+9795	lines with the string <M0> before a character and a lower-case letter	(dog).*((.)&([a-z])).*	
+7004	lines with the string <M0> or a character, zero or more times	((dog)|(.))*	
+5165	lines containing a vowel or the string <M0>	.*([AEIOUaeiou])|(dog).*	
+819	lines with words with a number, the string <M0>, and a vowel	\b([0-9])&(dog)&([AEIOUaeiou])\b	
+7382	lines ending with a lower-case letter or a letter	(.*)(([a-z])|([A-Za-z]))	
+7630	lines with a capital letter, 7 or more times	([A-Z]){7,}	
+1132	lines having the string <M0>, a lower-case letter, and a letter before a number	((dog)&([a-z])&([A-Za-z])).*([0-9]).*	
+49	lines ending with a number or a letter	(.*)(([0-9])|([A-Za-z]))	
+9099	lines with words with the string <M0> before the string <M1>	\b(dog).*(truck).*\b	
+150	lines with a number before either the string <M0>, the string <M1>, or the string <M2>	([0-9]).*((dog)|(truck)|(ring)).*	
+1574	lines not containing a number or a character	~(.*([0-9])|(.).*)	
+6218	lines with words with a letter, 3 or more times	\b([A-Za-z]){3,}\b	
+746	lines with words with a number, 4 or more times	\b([0-9]){4,}\b	
+8046	lines containing a vowel or a number, zero or more times	((.*[AEIOUaeiou].*)|([0-9]))*	
+9867	lines ending with a number followed by the string <M0>, zero or more times	((.*)([0-9].*dog.*))*	
+764	lines with words with a letter and a character or a capital letter	\b(([A-Za-z])&(.))|([A-Z])\b	
+8283	lines with a lower-case letter followed by a number before not the string <M0>	([a-z].*[0-9].*).*(~(dog)).*	
+4763	lines having the string <M0>, a character, and a letter before a number	((dog)&(.)&([A-Za-z])).*([0-9]).*	
+7841	lines with the string <M0> or the string <M1> before a capital letter	((dog)|(truck)).*([A-Z]).*	
+7506	lines containing the string <M0> or not a letter	.*(dog)|(~([A-Za-z])).*	
+7377	lines with the string <M0> before not a vowel	(dog).*(~([AEIOUaeiou])).*	
+8633	lines with the string <M0> before a capital letter, the string <M1>, and a vowel	(dog).*(([A-Z])&(truck)&([AEIOUaeiou])).*	
+7086	lines with words with a number, a character, and a lower-case letter	\b([0-9])&(.)&([a-z])\b	
+8432	lines containing either a letter, the string <M0>, or a character	.*([A-Za-z])|(dog)|(.).*	
+4923	lines with the string <M0> followed by a capital letter, 5 or more times	(dog.*[A-Z].*){5,}	
+9660	lines ending with the string <M0> followed by a character	(.*)(dog.*..*)	
+6329	lines with a vowel or a capital letter before containing a character	(([AEIOUaeiou])|([A-Z])).*(.*..*).*	
+5711	lines starting with words with the string <M0>, a character, and a lower-case letter	(\b(dog)&(.)&([a-z])\b)(.*)	
+1502	lines having either a capital letter, a number, or the string <M0> before a character	(([A-Z])|([0-9])|(dog)).*(.).*	
+8057	lines starting with the string <M0> before a vowel at least once	((dog)(.*)).*(([AEIOUaeiou])+).*	
+2458	lines containing a number, zero or more times	.*([0-9])*.*	
+4542	lines with a character before a letter	(.).*([A-Za-z]).*	
+1123	lines ending with a capital letter, zero or more times	(.*)(([A-Z])*)	
+9358	lines containing either a number, the string <M0>, or a lower-case letter	.*([0-9])|(dog)|([a-z]).*	
+7275	lines with the string <M0>, 6 or more times before a number	((dog){6,}).*([0-9]).*	
+9254	lines with words with a capital letter followed by a character	\b[A-Z].*..*\b	
+7732	lines with a character or the string <M0>, 5 or more times	((.)|(dog)){5,}	
+2809	lines containing words with not a vowel	.*\b~([AEIOUaeiou])\b.*	
+7440	lines with a number before a character followed by a capital letter	([0-9]).*(..*[A-Z].*).*	
+2086	lines with a capital letter before the string <M0> and a letter	([A-Z]).*((dog)&([A-Za-z])).*	
+1956	lines with the string <M0> or either a vowel, a lower-case letter, or the string <M1>, 7 or more times	((dog)|(([AEIOUaeiou])|([a-z])|(truck))){7,}	
+8677	lines with the string <M0> before the string <M1> followed by a number	(dog).*(truck.*[0-9].*).*	
+504	lines with the string <M0> and a number or the string <M1>, zero or more times	(((dog)&([0-9]))|(truck))*	
+633	lines with a letter before a number, a character, and a vowel	([A-Za-z]).*(([0-9])&(.)&([AEIOUaeiou])).*	
+2539	lines with a character and a lower-case letter before the string <M0>	((.)&([a-z])).*(dog).*	
+8482	lines with the string <M0> before containing a vowel	(dog).*(.*[AEIOUaeiou].*).*	
+4235	lines containing a lower-case letter or not a number	(.*[a-z].*)|(~([0-9]))	
+5146	lines starting with the string <M0>, 3 or more times	((dog){3,})(.*)	
+2377	lines starting with a letter, 4 or more times or the string <M0>	((([A-Za-z]){4,})|(dog))(.*)	
+29	lines ending with words that contain only a character	(.*)(\b.\b)	
+376	lines with a letter before a number and the string <M0>	([A-Za-z]).*(([0-9])&(dog)).*	
+3945	lines having either a lower-case letter, the string <M0>, or a character before a vowel	(([a-z])|(dog)|(.)).*([AEIOUaeiou]).*	
+6775	lines containing words with either a letter, a capital letter, or the string <M0>	.*\b([A-Za-z])|([A-Z])|(dog)\b.*	
+7115	lines with words with starting with a vowel, 6 or more times	(\b([AEIOUaeiou])(.*)\b){6,}	
+5819	lines containing either a vowel, a character, or the string <M0>	.*([AEIOUaeiou])|(.)|(dog).*	
+7095	lines ending with the string <M0> followed by a capital letter at least once	((.*)(dog.*[A-Z].*))+	
+5106	lines with words with a lower-case letter or ending with the string <M0>	\b([a-z])|((.*)(dog))\b	
+4037	lines not having a vowel, the string <M0>, or the string <M1>	~(([AEIOUaeiou])|(dog)|(truck))	
+9083	lines with words with a lower-case letter, zero or more times	\b([a-z])*\b	
+9314	lines with a vowel or a number, 6 or more times	(([AEIOUaeiou])|([0-9])){6,}	
+2743	lines not having a number followed by the string <M0>	~([0-9].*dog.*)	
+5251	lines containing either a capital letter, the string <M0>, or a lower-case letter	.*([A-Z])|(dog)|([a-z]).*	
+9774	lines with a number or a capital letter before the string <M0>	(([0-9])|([A-Z])).*(dog).*	
+8822	lines with words with the string <M0>, a vowel, and a number	\b(dog)&([AEIOUaeiou])&([0-9])\b	
+4613	lines with a character before a letter or containing a number	((.).*([A-Za-z]).*)|(.*[0-9].*)	
+1828	lines not words with ending with a character	~(\b(.*)(.)\b)	
+5272	lines containing the string <M0> and a number	.*(dog)&([0-9]).*	
+7514	lines with a number before a vowel, 3 or more times	([0-9]).*(([AEIOUaeiou]){3,}).*	
+7692	lines with a lower-case letter before containing a capital letter	([a-z]).*(.*[A-Z].*).*	
+3274	lines containing the string <M0> before the string <M1> followed by the string <M2>	(.*dog.*).*(truck.*ring.*).*	
+6601	lines not having a capital letter before a number, the string <M0>, and the string <M1>	(~([A-Z])).*(([0-9])&(dog)&(truck)).*	
+1391	lines with a capital letter and a lower-case letter before a character	(([A-Z])&([a-z])).*(.).*	
+857	lines with words that contain a number or the string <M0>	\b(.*[0-9].*)|(dog)\b	
+1375	lines with a letter before the string <M0>, 3 or more times	([A-Za-z]).*((dog){3,}).*	
+7784	lines containing a vowel and a capital letter	.*([AEIOUaeiou])&([A-Z]).*	
+7932	lines with a capital letter followed by a number, 4 or more times	([A-Z].*[0-9].*){4,}	
+7829	lines with a letter at least once before a lower-case letter or the string <M0>	(([A-Za-z])+).*(([a-z])|(dog)).*	
+2421	lines with words with a number followed by a character	\b[0-9].*..*\b	
+3349	lines with a character or a lower-case letter at least once	((.)|([a-z]))+	
+5438	lines having either a letter, a number, or a character before a vowel	(([A-Za-z])|([0-9])|(.)).*([AEIOUaeiou]).*	
+5511	lines with a character before a capital letter, the string <M0>, and the string <M1>	(.).*(([A-Z])&(dog)&(truck)).*	
+8679	lines containing a number, a lower-case letter, and the string <M0>	.*([0-9])&([a-z])&(dog).*	
+3686	lines with the string <M0>, 7 or more times before not a lower-case letter	((dog){7,}).*(~([a-z])).*	
+6796	lines with words that contain only a letter, 6 or more times	(\b[A-Za-z]\b){6,}	
+327	lines with words with ending with a lower-case letter, 7 or more times	(\b(.*)([a-z])\b){7,}	
+4820	lines ending with a lower-case letter or containing a capital letter	(.*)(([a-z])|(.*[A-Z].*))	
+9499	lines with the string <M0> or a character before a capital letter	((dog)|(.)).*([A-Z]).*	
+4787	lines with the string <M0>, 3 or more times before a capital letter	((dog){3,}).*([A-Z]).*	
+4139	lines having either a vowel, the string <M0>, or a number before a capital letter	(([AEIOUaeiou])|(dog)|([0-9])).*([A-Z]).*	
+7070	lines starting with not a letter or a number	((~([A-Za-z]))|([0-9]))(.*)	
+5238	lines having the string <M0>, a character, and a capital letter before the string <M1>	((dog)&(.)&([A-Z])).*(truck).*	
+80	lines containing either a number, the string <M0>, or a character	.*([0-9])|(dog)|(.).*	
+7584	lines not having a letter at least once	~(([A-Za-z])+)	
+558	lines with the string <M0> before a character at least once	(dog).*((.)+).*	
+4911	lines starting with words with a capital letter, 3 or more times	(\b([A-Z]){3,}\b)(.*)	
+1535	lines not having a number and the string <M0> at least once	(~([0-9]))&((dog)+)	
+8949	lines with words with either a lower-case letter, a letter, or a capital letter	\b([a-z])|([A-Za-z])|([A-Z])\b	
+9423	lines with a character before a lower-case letter and a vowel	(.).*(([a-z])&([AEIOUaeiou])).*	
+1972	lines with a capital letter, 2 or more times before a lower-case letter	(([A-Z]){2,}).*([a-z]).*	
+791	lines starting with the string <M0>	(dog)(.*)	
+212	lines with a capital letter and the string <M0> before a number	(([A-Z])&(dog)).*([0-9]).*	
+4511	lines containing a lower-case letter, 5 or more times	.*([a-z]){5,}.*	
+5965	lines with a lower-case letter followed by the string <M0> and the string <M1>, 3 or more times	([a-z].*dog.*)&((truck){3,})	
+925	lines with a lower-case letter followed by a number	[a-z].*[0-9].*	
+4806	lines with a number before a lower-case letter or a character	([0-9]).*(([a-z])|(.)).*	
+332	lines starting with the string <M0> before the string <M1> or the string <M2>	(((dog).*(truck).*)|(ring))(.*)	
+6603	lines having either a vowel, a character, or a number before the string <M0>	(([AEIOUaeiou])|(.)|([0-9])).*(dog).*	
+5730	lines with a lower-case letter before a number and a character	([a-z]).*(([0-9])&(.)).*	
+4337	lines with words with the string <M0> and a number followed by the string <M1>	\b(dog)&([0-9].*truck.*)\b	
+1545	lines ending with a vowel before a lower-case letter	((.*)([AEIOUaeiou])).*([a-z]).*	
+1371	lines not having a character, not a lower-case letter, and not a letter	~((.)&([a-z])&([A-Za-z]))	
+3962	lines ending with a letter before the string <M0>, zero or more times	((.*)([A-Za-z])).*((dog)*).*	
+8517	lines with words with the string <M0>, a number, and the string <M1>	\b(dog)&([0-9])&(truck)\b	
+3481	lines with a character at least once and starting with the string <M0>	((.)+)&((dog)(.*))	
+1142	lines with words with ending with the string <M0> or the string <M1>	\b(.*)((dog)|(truck))\b	
+6186	lines with words with a character, 2 or more times	\b(.){2,}\b	
+2593	lines starting with a vowel or not a letter	(([AEIOUaeiou])|(~([A-Za-z])))(.*)	
+47	lines containing a letter followed by a vowel, zero or more times	.*([A-Za-z].*[AEIOUaeiou].*)*.*	
+7282	lines with words that contain a vowel, 2 or more times	\b.*([AEIOUaeiou]){2,}.*\b	
+6428	lines having a vowel, a letter, and the string <M0> before a character	(([AEIOUaeiou])&([A-Za-z])&(dog)).*(.).*	
+3079	lines with a character or a lower-case letter, zero or more times	((.)|([a-z]))*	
+3537	lines not containing a character	~(.*..*)	
+5937	lines with a letter, 6 or more times before a number	(([A-Za-z]){6,}).*([0-9]).*	
+1783	lines with a letter at least once before not a number	(([A-Za-z])+).*(~([0-9])).*	
+3588	lines with words with a number, the string <M0>, and a capital letter	\b([0-9])&(dog)&([A-Z])\b	
+4141	lines with words with ending with a capital letter or a character	\b(.*)(([A-Z])|(.))\b	
+4919	lines with a letter followed by a character before the string <M0>	([A-Za-z].*..*).*(dog).*	
+9698	lines with a capital letter or a letter, 7 or more times	(([A-Z])|([A-Za-z])){7,}	
+147	lines with a character, 4 or more times or the string <M0>, the string <M1>, and a vowel	((.){4,})|((dog)&(truck)&([AEIOUaeiou]))	
+9250	lines with a capital letter before the string <M0>, 3 or more times	([A-Z]).*((dog){3,}).*	
+2842	lines with words with either a number, a letter, or a capital letter	\b([0-9])|([A-Za-z])|([A-Z])\b	
+490	lines with the string <M0> followed by a letter before a vowel	(dog.*[A-Za-z].*).*([AEIOUaeiou]).*	
+4450	lines containing a lower-case letter before the string <M0>	(.*[a-z].*).*(dog).*	
+9569	lines with a letter at least once and starting with a vowel	(([A-Za-z])+)&(([AEIOUaeiou])(.*))	
+4574	lines ending with a vowel, 5 or more times	((.*)([AEIOUaeiou])){5,}	
+3940	lines containing a lower-case letter, a letter, and the string <M0>	.*([a-z])&([A-Za-z])&(dog).*	
+9262	lines not having a number, not the string <M0>, and not a capital letter	~(([0-9])&(dog)&([A-Z]))	
+9482	lines with the string <M0> before not the string <M1>, zero or more times	(dog).*(~((truck)*)).*	
+6576	lines containing a capital letter followed by the string <M0>	.*[A-Z].*dog.*.*	
+1064	lines ending with a number or starting with the string <M0>	((.*)([0-9]))|((dog)(.*))	
+7372	lines ending with words with a character and a letter	(.*)(\b(.)&([A-Za-z])\b)	
+38	lines having either a character, a lower-case letter, or the string <M0> before a letter	((.)|([a-z])|(dog)).*([A-Za-z]).*	
+3515	lines starting with the string <M0> followed by a character, zero or more times	((dog.*..*)*)(.*)	
+4408	lines with words with a capital letter followed by a character, zero or more times	(\b[A-Z].*..*\b)*	
+8447	lines containing ending with a lower-case letter, 2 or more times	.*(.*)(([a-z]){2,}).*	
+9283	lines with a character before either a lower-case letter, the string <M0>, or a number	(.).*(([a-z])|(dog)|([0-9])).*	
+2492	lines with words with either a vowel, the string <M0>, or a lower-case letter	\b([AEIOUaeiou])|(dog)|([a-z])\b	
+1398	lines containing a number or ending with a capital letter	.*([0-9])|((.*)([A-Z])).*	
+5693	lines with a number before the string <M0> and not a character	(([0-9]).*(dog).*)&(~(.))	
+787	lines with a letter, 5 or more times before a lower-case letter	(([A-Za-z]){5,}).*([a-z]).*	
+1250	lines ending with a letter, 3 or more times	((.*)([A-Za-z])){3,}	
+6427	lines not having the string <M0> and not a lower-case letter or a capital letter	~(((dog)&([a-z]))|([A-Z]))	
+9374	lines containing a character and a lower-case letter at least once	(.*(.)&([a-z]).*)+	
+8694	lines with a character before not a letter	(.).*(~([A-Za-z])).*	
+3650	lines not having the string <M0>, the string <M1>, or a lower-case letter	~((dog)|(truck)|([a-z]))	
+8650	lines not having the string <M0>, a lower-case letter, or the string <M1>	~((dog)|([a-z])|(truck))	
+9498	lines containing the string <M0> or not the string <M1>	.*(dog)|(~(truck)).*	
+3574	lines ending with containing a lower-case letter	(.*)(.*[a-z].*)	
+7960	lines with the string <M0>, 7 or more times	(dog){7,}	
+9409	lines with words with a number before a letter	\b([0-9]).*([A-Za-z]).*\b	
+3701	lines with a character or a lower-case letter before the string <M0>	((.)|([a-z])).*(dog).*	
+6092	lines with a character, 7 or more times before a number	((.){7,}).*([0-9]).*	
+7395	lines ending with containing only the string <M0>, 2 or more times	((.*)(dog)){2,}	
+4894	lines starting with a letter followed by a character	([A-Za-z].*..*)(.*)	
+5545	lines starting with words that contain a letter	(\b.*[A-Za-z].*\b)(.*)	
+5478	lines with words with a letter, a number, and a lower-case letter	\b([A-Za-z])&([0-9])&([a-z])\b	
+8458	lines with words that contain the string <M0>, a number, and the string <M1>	\b.*(dog)&([0-9])&(truck).*\b	
+3691	lines starting with a character followed by a capital letter	(..*[A-Z].*)(.*)	
+6305	lines ending with a capital letter followed by a vowel	(.*)([A-Z].*[AEIOUaeiou].*)	
+5889	lines ending with the string <M0> followed by the string <M1> before the string <M2>	((.*)(dog.*truck.*)).*(ring).*	
+4261	lines with a letter before either a number, the string <M0>, or the string <M1>	([A-Za-z]).*(([0-9])|(dog)|(truck)).*	
+5291	lines having a lower-case letter, the string <M0>, and a capital letter before the string <M1>	(([a-z])&(dog)&([A-Z])).*(truck).*	
+8325	lines starting with a number before the string <M0>	(([0-9])(.*)).*(dog).*	
+7796	lines with the string <M0> before a character, a letter, and the string <M1>	(dog).*((.)&([A-Za-z])&(truck)).*	
+3521	lines with a letter or a lower-case letter before a number	(([A-Za-z])|([a-z])).*([0-9]).*	
+9984	lines not having a lower-case letter and not a capital letter	~(([a-z])&([A-Z]))	
+4223	lines with a letter followed by a vowel, 4 or more times	([A-Za-z].*[AEIOUaeiou].*){4,}	
+5158	lines with a letter before the string <M0>, a lower-case letter, and the string <M1>	([A-Za-z]).*((dog)&([a-z])&(truck)).*	
+5324	lines with words that don't have a vowel or the string <M0>	\b~(([AEIOUaeiou])|(dog))\b	
+7553	lines having a capital letter, a vowel, and a number before a letter	(([A-Z])&([AEIOUaeiou])&([0-9])).*([A-Za-z]).*	
+8586	lines containing a lower-case letter or a capital letter before a vowel	(.*[a-z].*)|(([A-Z]).*([AEIOUaeiou]).*)	
+4355	lines with a vowel, 5 or more times before a character	(([AEIOUaeiou]){5,}).*(.).*	
+7005	lines with the string <M0> or a character, zero or more times	((dog)|(.))*	
+6285	lines with words with a capital letter before a character	\b([A-Z]).*(.).*\b	
+9814	lines with a vowel followed by a character at least once	([AEIOUaeiou].*..*)+	
+5900	lines with words with the string <M0> and the string <M1> before the string <M2>	\b((dog)&(truck)).*(ring).*\b	
+8269	lines with a vowel or the string <M0>, 3 or more times	(([AEIOUaeiou])|(dog)){3,}	
