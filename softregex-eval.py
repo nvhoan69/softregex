@@ -286,11 +286,12 @@ with torch.no_grad():
             perfect_samples = perfect_samples + 1
             dfa_perfect_samples = dfa_perfect_samples + 1
             print('String Equivalent')
-        elif str(pos_example)[2] == '1':
-            print("DFA Equivalent")
-            dfa_perfect_samples = dfa_perfect_samples + 1
+        # elif str(pos_example)[2] == '1':
+        #     print("DFA Equivalent")
+        #     dfa_perfect_samples = dfa_perfect_samples + 1
 
         else:
+            print("pos_example: " + pos_example)
             print("DFA not Equivalent")
 
         
