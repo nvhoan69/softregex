@@ -1,0 +1,618 @@
+579	lines that contain three words that start with the letter <M0>.	(.*\bY[A-Za-z]*\b.*){3}	
+471	lines with the word <M0> between <M1> and <M2>	.*zyx.*\band\b.*cba.*|.*cba.*\band\b.*zyx.*	
+662	lines using the word <M0> followed by the word <M1>.	(.*\bhurry\b.*)(.*\bup\b.*)	
+652	lines that include words with <M0>.	.*((\b[A-Za-z]+\b)&(.*ra.*)).*	
+514	lines using 4 or more words	(.*\b[A-Za-z]+\b.*){4,}	
+1	lines that contain only the letters <M0>.	agde	
+195	lines that have more than 6 numbers.	(.*[0-9].*){7,}	
+212	lines containing words that start with and end with <M0>	xyz(.*xyz)?	
+126	Find lines that mention dogs or cats but not any with mice	(.*(dogs|cats).*)&(~(.*mice.*))	
+477	lines that have <M0> after <M1> or <M2>.	.*(pl|tr).*ace.*	
+694	lines that have three words of five letters each.	(.*\b[A-Za-z]{5}\b.*){3}	
+508	lines that contain a word with five or more vowels.	.*((\b[A-Za-z][A-Za-z]*\b)&(.*[AEIOUaeiou].*){5}).*	
+565	lines that contain 7 or more words	(.*\b[A-Za-z]+\b.*){7}	
+554	lines using five letter words.	.*\b[A-Za-z]{5}\b.*	
+26	lines that contain 'World War II' and contain <M0>.	(.*World War II.*)&(.*casualties.*)	
+256	lines using 2 or more words comprised of 5 letters	(.*\b[A-Za-z]{5}\b.*){2,}	
+706	lines using words that end with a vowel.	.*\b[A-Za-z]*[aeiouAEIOU]\b.*	
+799	lines that contain words with <M0>.	.*\b[A-Za-z]*re[A-Za-z]*\b.*	
+590	lines that have <M0> between <M1> and <M2>	.*bcb.*aba.*cbc.*|.*cbc.*aba.*bcb.*	
+426	lines that contain words ending in <M0>.	.*(.*\b[A-Za-z]*e\b.*).*	
+321	lines containing an instance of the name <M0>.	.*Beaker.*	
+33	lines using more than 1 character	.*.{2,}.*	
+316	lines that contain the word <M0>	.*\bthe\b.*	
+522	lines using the vowel combination <M0> and <M1>.	(.*ou.*)&(.*th.*)	
+485	lines containg the number <M0>.	.*9.*	
+394	lines using words ending with <M0>.	.*((\b.*mo\b)&([A-Za-z]+)).*	
+518	lines that have at least 3 words.	(.*\b[A-Za-z]+\b.*){3}	
+646	lines with three numbers and the word <M0>.	(.*[0-9].*){3}&(.*\bkitten\b.*).*	
+116	lines that have 6 words.	(.*\b[A-Za-z]+\b.*){6}	
+599	lines using 5 or more words.	(.*\b[A-Za-z]+\b.*){5}	
+533	lines that utilize words starting with <M0>.	.*\bab[A-Za-z]*\b.*	
+326	lines that contain <M0> and <M1>	(.*tumeric.*)&(.*saffron.*)	
+777	lines that contain words between <M0> and <M1>	.*I.*\b[A-Za-z]+\b.*you.*|.*you.*\b[A-Za-z]+\b.*I.*	
+739	lines containing 3 or more ';' 	(.*;.*){3,}	
+135	lines that have <M0>	.*turn.*	
+129	lines using three character words begining with the letters <M0>.	.*\bCE[A-Za-z]\b.*	
+697	lines that contain the word <M0> but not <M1>.	(.*tron.*)&(~(.*bot.*))	
+278	lines which have a th after a <M0>.	.*ch.*th.*	
+457	6 letter lines	[A-Za-z]{6}	
+42	lines that contain words ending in <M0>	.*((\b[A-Za-z][A-Za-z]*\b)&(.*g)).*	
+738	lines that end with '...'	.*\.\.\.	
+383	lines beginning with words that have a vowel as the first letter.	\b[AEIOUaeiou][A-Za-z]*\b.*	
+415	lines that have <M0> before <M1> and <M2> after <M3>.	(.*de.*st.*)&(.*col.*re.*)	
+61	lines that feature <M0> followed by the word <M1>.	.*email.*\bspam\b.*	
+803	lines containing 3 or more vowels.	(.*[AEIOUaeiou].*){3,}	
+169	lines which have both uppercase letters and lowercase letters.	(.*[A-Z].*)&(.*[a-z].*)	
+661	lines that contain the text, 'New York'.	.*New York.*	
+40	lines that have <M0> but not the word <M1>	(.*sandwich.*)&(~(.*\bham\b.*))	
+422	lines using words ending with <M0>.	.*\b[A-Za-z]*on\b.*	
+786	lines that contain words using <M0> in them.	.*\b[A-Za-z]*oo[A-Za-z]*\b.*	
+48	lines that contain at least one vowel and at least two numbers.	(.*[AEIOUaeiou].*)&(.*[0-9].*){2}	
+532	lines starting with <M0>	sign.*	
+812	lines that contain a nine letter word.	.*\b[A-Za-z]{9}\b.*	
+576	lines that utilize words starting with <M0>.	.*(([A-Za-z]+)&(\bbu.*\b)).*	
+602	lines containing the word <M0>.	.*\bpreordained\b.*	
+814	lines utilizing words ending with <M0>.	.*((\b[A-Za-z]+\b)&(.*fe)).*	
+486	lines that utilize words starting with <M0> followed by the word <M1>	.*((\b[A-Za-z]+\b)&(ni.*)).*\bknight\b.*	
+292	lines that contain words ending with <M0>.	.*((\b[A-Za-z][A-Za-z]*\b)&(.*d)).*	
+205	lines utilizing words starting with <M0>.	.*\bb[A-Za-z]*\b.*	
+455	lines containing 3 or more vowels and 5 or more words	(.*[AEIOUaeiou].*){3,}&(.*\b[A-Za-z]+\b.*){5,}	
+439	lines that contain at least one <M0>	.*z.*	
+187	lines that contain the text <M0>	.*NOW.*	
+701	lines that contain words starting with <M0>.	.*\bda[A-Za-z]*\b.*	
+550	lines that contain words ending in <M0>	.*\b[A-Za-z]*os\b.*	
+133	lines containing the word <M0>.	.*\bcrack\b.*	
+603	lines that feature the word <M0>, and at least 3 words of 6 letters or more.	(.*\bmoot\b.*)&(.*\b[A-Za-z]{6,}\b.*){3,}	
+665	lines where there are three characters between instances of <M0> and <M1>	.*ABC.*.{3}.*WEX.*|.*WEX.*.{3}.*ABC.*	
+483	lines with <M0>	.*buck.*	
+562	lines using <M0> or <M1>	.*(B|b)ill.*	
+465	lines that utilize words starting with <M0>.	.*\bko[A-Za-z]*\b.*	
+83	lines containing a letter	.*[A-Za-z].*	
+228	lines containing <M0>	(.*ast.*).*	
+206	lines that use the word <M0> followed by words starting with <M1>	.*\bboom\b.*\bka[A-Za-z]*\b.*	
+560	lines that contain 5 numbers and 2 words that contain <M0>.	.*(.*[0-9].*){5}&(.*\b[A-Za-z]*ly[A-Za-z]*\b.*){2}.*	
+364	lines containing the word <M0>	.*\bblog\b.*	
+32	lines containing a word using the letters <M0>.	.*\b[A-Za-z]*tt[A-Za-z]*\b.*	
+112	lines that end containing the letter <M0>.	.*z	
+29	lines using <M0> after <M1> or <M2>.	.*(son|soon).*su.*	
+376	lines using the word <M0> next to a number.	(.*\bWestbury\b.*)&(.*[0-9].*)	
+813	lines with fox that do not contain the word chicken.	(.*fox.*)&(~(.*\bchicken\b.*))	
+497	lines that utilize words starting with <M0>.	.*\br[A-Za-z]*\b.*	
+531	lines containing vowels	.*[AEIOUaeiou].*	
+140	lines using 5 <M0>	(.*d.*){5}	
+818	lines using <M0> and containing the words <M1> and <M2>.	(.*gophers.*)&(.*\bgrass\b.*)&(.*\bseeds\b.*)	
+270	lines that do not have the letter <M0>	~(.*a.*)	
+566	lines using words starting with <M0>.	.*((\b[A-Za-z]+\b)&(be.*)).*	
+378	lines that contain digits.	.*[0-9].*	
+335	lines that contain the word <M0> followed by at least one number.	.*\bsea\b.*[0-9].*	
+612	lines using <M0>, <M1>, or <M2>	.*li(ves|fes|fe).*	
+111	lines not containing 4 or more characters	~(.*.{4,}.*)	
+571	lines that end in <M0> and begins in <M1>.	a.*y	
+128	lines starting with <M0>	abc.*	
+698	lines that have <M0> followed by the word <M1>	.*efg.*\bcar\b.*	
+302	lines that have at least two words that start with <M0>.	(.*\bs[A-Za-z]*\b.*){2}	
+226	lines which contain only vowels.	[AEIOUaeiou]*	
+687	lines that use <M0> followed by words starting with <M1>	.*mo.*((\b[A-Za-z]+\b)&(fo.*)).*	
+122	lines that do not contain the letter <M0>	~(.*a.*)	
+80	lines that have all of its letters capitalized.	~(.*[a-z].*)	
+634	lines that contain either of <M0> or <M1>	.*(y|z).*	
+396	lines containing usage of the word <M0>.	.*\bfried\b.*	
+434	lines that have 3 or more words containing the letters <M0>.	(.*((\b[A-Za-z]+\b)&(.*ly.*)).*){3,}	
+716	lines that only contain vowels.	[AEIOUaeiou]*	
+190	lines that have words ending with <M0>.	.*\b[A-Za-z]*ge\b.*	
+399	lines using more than 3 characters	.*.{4,}.*	
+106	lines using words with <M0>.	.*\b[A-Za-z]*ca[A-Za-z]*\b.*	
+720	lines containing both letters and numbers, but no capitals.	(.*[A-Za-z].*)&(.*[0-9].*)&(~(.*[A-Z].*))	
+481	lines that have 3 words and two numbers.	(.*\b[A-Za-z]+\b.*){3}&(.*[0-9].*){2}	
+425	lines beginning with <M0>	begin.*	
+348	lines containing <M0> or <M1> before <M2> or <M3> 	.*(mean|nic).*(est|test).*	
+760	lines containing a 5 letter word beginning with <M0>	.*\bt[A-Za-z]{4}\b.*	
+172	lines which contain five or more <M0>	(.*y.*){5,}	
+557	lines that have at least 6 characters	.{6,}	
+287	lines with 7 or more words	(.*\b[A-Za-z]+\b.*){7,}	
+604	lines using 2 instances of <M0>	.*(.*irl.*){2}.*	
+624	lines that contain words ending in <M0>	.*\b[A-Za-z]*az\b.*	
+651	lines using 3 instances of <M0>	.*(.*b.*){3}.*	
+381	lines using words that begin with <M0> but do not have a <M1>.	.*\b(([A-Za-z]+)&(q.*)&(~(.*u.*)))\b.*	
+51	lines that contain between two to seven words.	([^A-Za-z]*\b[A-Za-z][A-Za-z]*\b[^A-Za-z]*){2,7}	
+170	lines containing 5 letter words.	.*\b[A-Za-z]{5}\b.*	
+184	lines containing words that start with <M0>	.*\bth[A-Za-z]*\b.*	
+330	lines composed with a word	.*\b[A-Za-z]+\b.*	
+299	lines which have the word <M0>	.*\begg\b.*	
+176	lines that end with <M0>	.*gh	
+318	lines that contain 6 letter words beginning with the letter <M0>.	.*\by[A-Za-z]{5}\b.*	
+272	lines that contain the word <M0>.	.*\btrust\b.*	
+718	lines with <M0> as a stand alone word.	.*\bQuasi\b.*	
+334	lines that contain words beginning in <M0>	.*\bp[A-Za-z]*\b.*	
+441	lines that have <M0> after <M1> or <M2>.	.*(lin|ku).*ser.*	
+754	lines that contain words with <M0>.	.*((\b[A-Za-z]+\b)&(.*ci.*)).*	
+656	lines that contain the word <M0>	.*\bbar\b.*	
+242	lines that start with <M0>.	(the.*).*	
+87	lines that using the symbol '+' or '-'.	.*(\+|-).*	
+363	lines that contin words ending in <M0>.	.*\b[A-Za-z]*e\b.*	
+250	lines containing at least 2 words	(.*\b[A-Za-z]+\b.*){2,}	
+780	lines with <M0> where the word <M1> does not appear before <M0> in that line.	(.*helper.*)&(~(.*\blittle\b.*helper.*))	
+773	lines ending in <M0> preceded by a word that ends in <M1>	.*\b[A-Za-z]*nt\b.*z	
+615	lines that have less than 6 words but more than 3 words.	([^A-Za-z]*\b[A-Za-z]+\b[^A-Za-z]*){0,5}&(.*\b[A-Za-z]+\b.*){4,}	
+333	lines containing words that end with <M0>	.*\b[A-Za-z]*L\b.*	
+820	lines using <M0> before <M1>	.*x.*z.*	
+359	lines that end with the letter <M0>	.*o	
+763	lines that contain <M0> or <M1>	.*(day|to).*	
+55	lines which contain only the number <M0>.	3	
+785	lines that contain words starting with a vowel and ending with a vowel.	.*((\b[A-Za-z]+\b)&([AEIOUaeiou].*)&(.*[AEIOUaeiou])).*	
+30	lines that utilize words starting with <M0>.	.*(([A-Za-z]+)&(\bdo.*\b)).*	
+98	lines containing <M0>, or <M1>	.*(h|i).*	
+484	lines containing words which begin with <M0> and end with <M1>	.*\bc[A-Za-z]*d\b.*	
+524	lines that have any instance of <M0>.	.*ight.*	
+268	lines which begin with the word <M0>	((\b[A-Za-z]+\b)&(how)).*	
+509	lines which do not begin with an uppercase letter.	~([A-Z].*)	
+649	lines containing the word <M0>.	.*\bhouse\b.*	
+501	lines using words that have <M0>	.*\b[A-Za-z]*ire[A-Za-z]*\b.*	
+286	lines containing words starting with the letter <M0>.	.*\bx[A-Za-z]*\b.*	
+137	lines which contain a mix of uppercase letters and lowercase letters	(.*[A-Z].*)&(.*[a-z].*)	
+123	lines using the word <M0>.	.*\bhero\b.*	
+107	lines that have only 3 words	(([^A-Za-z])*\b[A-Za-z]+\b([^A-Za-z])*){3}	
+57	lines that contain only three words.	(([^A-Za-z])*\b[A-Za-z]+\b([^A-Za-z])*){3}	
+208	lines that use words with <M0>.	.*((\b[A-Za-z]+\b)&(.*ce.*)).*	
+134	lines that have at least three <M0>.	(.*j.*){3}	
+213	lines containing <M0> and containing <M1> too	(.*x.*)&(.*y.*)	
+489	lines that contain the 'staphyloccus aureus.'	.*staphyloccus aureus.*	
+619	lines which have words beginning with <M0>.	.*\bH[A-Za-z]*\b.*	
+74	lines that use words starting with <M0>.	.*\bbi[A-Za-z]*\b.*	
+726	lines that use words ending in <M0>	.*((.*g)&(\b[A-Za-z][A-Za-z]*\b)).*	
+97	lines containing <M0> before <M1>	.*a.*b.*	
+431	lines that utilize <M0> following words starting with <M1>.	.*\bpe[A-Za-z]*\b.*pan.*	
+269	lines using at least three numerical characters	(.*[0-9].*){3,}	
+605	lines that contain 4 or more capital letters	.*(.*[A-Z].*){4}.*	
+725	lines using a word starting with a vowel and ending with <M0>	.*\b[AEIOUaeiou][A-Za-z]*y\b.*	
+10	lines that have at least 5 numbers.	(.*[0-9].*){5,}	
+714	lines which contain multiple quoted words.	(.*\'[A-Za-z]+\'.*){2,}	
+784	lines using 6 <M0>	(.*e.*){6}	
+691	lines composed of at least 3 words of 4 or more letters	(.*\b[A-Za-z]{4,}\b.*){3,}	
+22	lines that contain at least one numeric in it.	.*[0-9].*	
+247	lines using at least 6 characters	.*.{6}.*	
+338	lines that contain <M0> before <M1> or <M2>.	.*ugly.*(betty|thomas).*	
+802	lines using the letter pair <M0>	.*no.*	
+221	lines with words ending in <M0>.	.*\b[A-Za-z]*y\b.*	
+583	lines that use the number <M0>.	.*33.*	
+519	lines which have 3 words.	.*(.*\b[A-Za-z]+\b.*){3}.*	
+711	lines which have <M0> and <M1> but not <M2> or <M3>.	((.*ing.*)&(.*out.*)&(~(.*(sh|cl).*)))	
+234	lines that contain words with <M0>.	.*\b[A-Za-z]*ri[A-Za-z]*\b.*	
+573	lines which end with <M0> 	.*hula	
+223	lines that contain at least 2 capital letters.	(.*[A-Z].*){2,}	
+707	lines that have words ending with <M0>.	.*((\b.*as\b)&([A-Za-z]+)).*	
+628	lines which do not have numbers.	~(.*[0-9].*)	
+728	lines that start with <M0>	an.*	
+735	lines which contain <M0> and <M1>	.*q.*u.*|.*u.*q.*	
+798	lines using a word which has uppercase letters and has lowercase letters	.*\b(([A-Za-z]*[A-Z][A-Za-z]*)&([A-Za-z]*[a-z][A-Za-z]*))\b.*	
+660	lines containing only one word	([^A-Za-z])*\b[A-Za-z]+\b([^A-Za-z])*	
+387	lines containing at least 3 words	(.*\b[A-Za-z]+\b.*){3,}	
+416	lines which contain 5 words starting with <M0>	(.*\bf[A-Za-z]*\b.*){5,}	
+671	lines that start with the letter <M0>	c.*	
+177	lines which contain <M0> 	.*sorry.*	
+545	lines that contain <M0> and contain <M1>	(.*fast.*)&(.*2.*)	
+375	lines that contain the word <M0> but not the word <M1>.	(.*\bunifax\b.*)&(~(.*\bcolorado\b.*))	
+505	lines that contain the letter <M0> in the middle of a word.	.*(\b[A-Za-z]+a[A-Za-z]+\b).*	
+569	lines that have a number, but only if it is followed by <M0>	.*[0-9].*ABC.*	
+693	lines that use the '@' symbol	.*\@.*	
+815	lines that do not have any word consisting of 4 letters.	~(.*\b[A-Za-z]{4}\b.*)	
+696	lines of 6 characters that end with the letter <M0>.	.{5}s	
+653	lines having words ending with <M0>.	.*((\b[A-Za-z]+\b)&(.*oo)).*	
+211	lines that have <M0>	.*twist.*	
+755	lines containing words ending in <M0> 	.*\b[A-Za-z]*re\b.*	
+823	lines using numbers that show two or more <M0>.	.*(.*0.*){2,}.*	
+258	lines that contain <M0> 	.*in.*	
+482	lines using words starting with <M0>.	.*\bfi[A-Za-z]*\b.*	
+630	lines containing words that  have 5 letters in them.	.*\b[A-Za-z]{5}\b.*	
+89	lines using words containing <M0> before <M1>.	.*((\b[A-Za-z][A-Za-z]*\b)&(.*e.*i.*)).*	
+276	lines that have the word <M0> included	.*\bcouch\b.*	
+160	lines that have 4 words or less where at least 1 of those words contains the letter sequence <M0>.	([^A-Za-z]*\b[A-Za-z]+\b[^A-Za-z]*){0,4}&(.*((\b[A-Za-z]+\b)&(.*uin.*)).*){1,}	
+432	lines that have the word <M0>	.*\bFacebook\b.*	
+810	lines containing the word <M0>.	.*\brevolution\b.*	
+429	lines that contain 1 to 5 numbers and 1 letter.	([^0-9]*[0-9][^0-9]*){1,5}&(.*[A-Za-z].*)	
+435	lines with instances of <M0> between <M1> and a comma	.*XYX.*ABC.*\,.*|.*\,.*ABC.*XYX.*	
+417	lines which mention <M0>.	.*puppy.*	
+418	lines that contain DEF' with a period immediately after it.'	.*DEF\..*	
+547	lines containing only a letter	[A-Za-z]	
+410	lines that have at least 2 words of 3 or more letters	(.*\b[A-Za-z]{3,}\b.*){2,}	
+266	lines that contain the word <M0> within 5 characters of the word <M1>.	.*(\bhello\b.{1,5}\bworld\b|\bworld\b.{1,5}\bhello\b).*	
+23	lines that end in an <M0>	.*o	
+183	lines utilizing words starting with <M0>.	.*((w.*)&(\b[A-Za-z][A-Za-z]*\b)).*	
+281	lines containing either a <M0> or <M1> character.	.*(w|s).*	
+618	lines containing <M0>, but not <M1>	(.*GHF.*)&(~(.*JFK.*))	
+150	lines that contain words with <M0>.	.*((\b[A-Za-z]+\b)&(.*oo.*)).*	
+523	lines which contain <M0> but do not contain the letter <M1>.	(.*rh.*)&~(.*y.*)	
+161	lines that contain words ending in <M0>	.*\b[A-Za-z]*n\b.*	
+167	lines that start with a <M0> and end with an <M1>.	z.*a	
+193	lines containing three vowels	(.*[AEIOUaeiou].*){3}	
+13	lines using only three words	(([^A-Za-z])*\b[A-Za-z]+\b([^A-Za-z])*){3}	
+357	lines that contain the letter <M0> and the number <M1>.	(.*V.*)&(.*33.*)	
+715	lines that contain the word <M0> but do not contain the word <M1>.	(.*\bKelly\b.*)&(~(.*\bChris\b.*))	
+290	lines that contain words ending with <M0>.	.*((\b.*le\b)&([A-Za-z]+)).*	
+153	lines that contain words ending with <M0>.	.*((\b[A-Za-z][A-Za-z]*\b)&(.*ol)).*	
+561	lines that utilize only three words	(([^A-Za-z])*\b[A-Za-z]+\b([^A-Za-z])*){3}	
+768	lines that have <M0>	.*car.*	
+774	lines using the word <M0> followed by the letters <M1>	.*\bday\b.*abc.*	
+263	lines having words starting with <M0>.	.*\bdi[A-Za-z]*\b.*	
+667	lines that have more than 5 words ending with a 'c.'	(.*\b[A-Za-z]*c\b.*){6,}	
+529	lines that list the word <M0>.	.*\bBean\b.*	
+291	lines that contain words and 4 numbers.	(.*\b[A-Za-z]+\b.*)&(.*[0-9].*){4}	
+155	lines using a word having the string <M0>	.*\b[A-Za-z]*der[A-Za-z]*\b.*	
+746	lines that contain <M0> before <M1> or <M2>.	.*if.*(then|else).*	
+797	lines containing words that end with <M0>	.*((\b.*P\b)&([A-Za-z]+)).*.*	
+443	lines ending in <M0>	.*az	
+577	lines that contain 'Freddie Mercury' and contain <M0>.	(.*Freddie Mercury.*)&(.*AIDS.*)	
+454	lines which start with the word <M0>	\bThe\b.*	
+139	lines using <M0> in the middle of a word.	.*\b[A-Za-z]+d[A-Za-z]+\b.*	
+613	lines that contain the text 'then I said'.	.*then I said.*	
+181	lines that contain the number <M0> and <M1> and begin with <M2>.	(.*2005.*)&(.*May.*)&(Mary.*)	
+808	lines containing at least one uppercase letter, and at least one lowercase letter	(.*[A-Z].*)&(.*[a-z].*)	
+337	lines that contain at least three five letter words	(.*\b[A-Za-z]{5}\b.*){3}	
+731	lines that begin with a vowel and end with a vowel	[aeiouAEIOU](.*[aeiouAEIOU])?	
+289	lines that contain 5 or more letters	.*(.*[A-Za-z].*){5,}.*	
+513	lines having words with <M0>.	.*\b[A-Za-z]*ro[A-Za-z]*\b.*	
+90	lines that have at least one capital letter.	.*[A-Z].*	
+685	lines that begin with the word <M0>.	\bTopo\b.*	
+684	lines in which there are words that begin with <M0>.	.*\bth[A-Za-z]*\b.*	
+336	lines that contain a word containing 5 or more letters.	.*\b[A-Za-z]{5,}\b.*	
+58	lines that mention <M0> in the same line as <M1>.	(.*Dylan.*Lynda.*)|(.*Lynda.*Dylan.*)	
+78	lines that contain 5 words	(.*\b[A-Za-z]+\b.*){5}	
+476	lines that end with vowels.	.*[AEIOUaeiou]	
+384	lines that begin with a numeral	[0-9].*	
+498	lines using words that end with the letter <M0>	.*\b[A-Za-z]*n\b.*	
+647	lines that have no letters.	~(.*[A-Za-z].*)	
+553	lines using 1 number and 2 letters	.*(.*[0-9].*)&(.*[A-Za-z].*){2}.*	
+225	lines where the letter c appears more than one time	(.*c.*){2,}	
+110	lines that include words starting with <M0>.	(.*((\b[A-Za-z]+\b)&(fe.*)).*).*	
+723	lines containing the letter <M0> but not the letter <M1>.	(.*z.*)&(~(.*q.*))	
+639	lines with numbers	.*[0-9].*	
+62	lines that have within them words ending in <M0>.	.*\b[A-Za-z]*ch\b.*	
+235	lines which contain 3 or more vowels.	(.*[AEIOUaeiou].*){3,}	
+379	lines that contain three <M0>.	(.*she.*){3}	
+49	lines using at least 3 characters	.*.{3}.*	
+260	lines that contain words starting with <M0>.	.*\bki[A-Za-z]*\b.*	
+680	lines that have the word <M0>, and at least 1 number.	(.*\blaugh\b.*)&(.*[0-9].*)	
+556	lines using 6 instances of <M0>	.*(.*fu.*){6}.*	
+79	lines that have a word beginning with th and a number that begins in <M0>	(.*\bth[A-Za-z]*\b.*)&(.*7[0-9]*.*)	
+758	lines that end in <M0>	.*t	
+623	lines that contain 5 or more words.	.*(.*\b[A-Za-z][A-Za-z]*\b.*){5}.*	
+614	lines that contain the word <M0> in them.	.*\bmovie\b.*	
+616	lines using at least 2 instances of <M0>	(.*ly.*){2,}	
+527	lines that feature <M0> or <M1> before words that start with capital letters.	.*(c|d).*\b[A-Z][A-Za-z]*\b.*	
+5	lines with words that contain 3 vowels.	.*((\b[A-Za-z]+\b)&(.*[AEIOUaeiou].*){3}).*	
+81	lines using <M0> after <M1>	.*pqr.*mno.*	
+585	lines that have only two words in them.	(([^A-Za-z])*\b[A-Za-z]+\b([^A-Za-z])*){2}	
+488	lines containing <M0> and containing <M1> too	(.*tal.*)&(.*tel.*)	
+117	lines that do not contain any number	~(.*[0-9].*)	
+730	lines in which all words start with the letter <M0>.	~(.*((\b[A-Za-z]+\b)&([^a].*)).*)	
+495	lines that end with <M0> 	.*hey	
+750	lines composed of 3 or more characters	.*.{3,}.*	
+744	lines using words which have a vowel.	.*\b[A-Za-z]*[aeiouAEIOU][A-Za-z]*\b.*	
+732	lines that contain words starting with <M0>.	.*\bna[A-Za-z]*\b.*	
+141	lines with capital letters	.*[A-Z].*	
+71	lines that have words ending with <M0>.	.*\b[A-Za-z]*ti\b.*	
+459	lines using a capital letter followed by a number	.*[A-Z].*[0-9].*	
+753	lines with words that end with <M0> before words that end with <M1>	.*\b[A-Za-z]*ca\b.*\b[A-Za-z]*att\b.*	
+345	lines that use words that are only four letters long.	.*\b[A-Za-z]{4}\b.*	
+642	lines that have two words containing 5 or more letters.	(.*\b[A-Za-z]{5,}\b.*){2}	
+822	4 letter lines	[A-Za-z]{4}	
+219	lines using <M0> or <M1>	.*(ent|ong).*	
+404	lines that contain at least 4 words.	(.*\b[A-Za-z]+\b.*){4,}	
+320	lines with <M0> where the word <M1> comes before <M0>.	(.*helper.*)&(.*\blittle\b.*helper.*)	
+389	lines that contain the phrase <M0>.	.*Booyah.*	
+568	lines which mention <M0> with the word <M1>.	.*(.*Pat.*)&(.*\bturkey\b.*).*	
+390	lines that contain both the word <M0> and the word <M1>	.*(.*\bbar\b.*)&(.*\bstress\b.*).*	
+598	lines containing <M0> and containing the word <M1>	.*lake.*&(.*\bhouse\b.*)	
+747	lines using words that begin with the letter <M0>.	.*\bG[A-Za-z]*\b.*	
+597	lines that begin with <M0> and end with <M1>	a.*z	
+588	lines which have instances of <M0>.	.*tch.*	
+280	lines that end with <M0> and contain words that begin with <M1>	.*\bSel[A-Za-z]*\b.*2	
+158	lines that begin with the word <M0>.	once\b.*	
+377	lines with <M0> and <M1>	(.*little.*)&(.*helper.*)	
+275	lines that end with <M0>	.*boby	
+301	lines using <M0> between <M1> and <M2>	.*a.*ss.*le.*	
+456	lines that contain words starting with <M0>.	.*\bbo[A-Za-z]*\b.*	
+469	lines that are only comprised of uppercase letters.	[A-Z]*	
+794	lines that contain words ending with a vowel.	.*\b[A-Za-z]*[AEIOUaeiou]\b.*	
+341	lines using more than 4 characters	.*.{5,}.*	
+361	lines that contain a word and five numbers.	(.*\b[A-Za-z][A-Za-z]*\b.*)&(.*[0-9].*){5}	
+670	lines using a 3 letter sequence starting with <M0>	.*n[A-Za-z]{2}.*	
+511	lines that contain at least two words beginging with <M0>.	(.*\by[A-Za-z]*\b.*){2}	
+510	lines which start with <M0> and end with <M1>	(n.*)&(.*y)	
+817	lines that do not contain numerical characters.	~(.*[0-9].*)	
+767	lines starting and ending with <M0>	a(.*a)?	
+520	lines utilizing the phrase 'this is it'.	.*this is it.*	
+587	lines containing words using the letters <M0>.	.*\b[A-Za-z]*ers[A-Za-z]*\b.*	
+392	lines that contain 3 numbers and one number contains 1.	(.*[0-9].*)&(.*1.*)	
+368	lines that contain three letter words.	.*\b[A-Za-z]{3}\b.*	
+297	lines that contain 4 letter words ending in <M0>	.*\b[A-Za-z]{3}s\b.*	
+787	lines which contain <M0> 	.*out.*	
+11	lines that ends with letter <M0>	.*f	
+470	lines using <M0> before <M1>	.*lugg.*age.*	
+294	lines containing the word <M0>.	.*\binoperative\b.*	
+331	lines which do not contain a vowel.	~(.*[AEIOUaeiou].*)	
+114	lines with <M0> before <M1>.	.*sec.*mun.*	
+24	lines that have all the letters <M0> , <M1> and <M2>	(.*a.*)&(.*b.*)&(.*c.*)	
+567	lines that use words ending with <M0>.	.*\b[A-Za-z]*at\b.*	
+682	lines using <M0> immediately after <M1>	.*stupid.*	
+539	lines that have 5 or more words of 3 or fewer letters.	(.*\b[A-Za-z]{1,3}\b.*){5,}	
+237	lines that contain instances of <M0>, but only if its one of the first three words.	([^A-Za-z]*\b[A-Za-z]+\b[^A-Za-z]*){0,2}[^A-Za-z]*\bape\b.*	
+742	lines that contain words starting with <M0>.	.*\bge[A-Za-z]*\b.*	
+420	lines containing <M0>	.*ant.*	
+620	lines where there is at least one word in which <M0> follows <M1>	.*((\b[A-Za-z][A-Za-z]*\b)&(.*i.*e.*)).*	
+103	lines that carry the word <M0> located in between <M1> and <M2>.	.*Stacks.*\bJim\b.*Slim.*|.*Slim.*\bJim\b.*Stacks.*	
+295	lines with all words beginning with <M0>.	~(.*((\b[A-Za-z]+\b)&(~(a.*))).*)	
+581	lines that contain a word starting with <M0> and ending with <M0>	.*\ba([A-Za-z]*a)?\b.*	
+451	lines that contain <M0> but do not contain <M1>.	(.*Beaker.*)&(~(.*Bunsen.*))	
+186	lines containing <M0> and containing <M1> too	(.*st.*)&(.*gy.*)	
+749	lines that start with <M0> 	gates.*	
+606	lines that end with <M0> 	.*after	
+264	lines that contain five vowels	(.*[AEIOUaeiou].*){5}	
+683	lines that start with <M0> 	news.*	
+124	lines that have words starting with <M0>.	.*((\b[A-Za-z][A-Za-z]*\b)&(pi.*)).*	
+490	lines that use <M0> but not <M1> or <M2>.	(.*Jane.*)&(~(.*(Janet|2).*))	
+430	lines that end with <M0>	.*and	
+149	lines that contain the letter <M0> followed by a vowel.	.*A.*[AEIOUaeiou].*	
+582	lines that start with words containing <M0>.	\b[A-Za-z]*w[A-Za-z]*\b.*	
+9	lines using words that begin with <M0>.	.*\bz[A-Za-z]*\b.*	
+621	lines having words ending with <M0>.	.*((\b[A-Za-z]+\b)&(.*te)).*	
+303	lines comprised of 5 or more words containing 5 or fewer letters	(.*((\b[A-Za-z]+\b)&([A-Za-z]{0,5})).*){5,}	
+444	lines which begin with the letter <M0>.	z.*	
+371	lines that have the word <M0>	.*sandwich.*	
+224	lines containing a 6 letter sequence	.*[A-Za-z]{6}.*	
+388	lines that have <M0> but not <M1>	(.*JFK.*)&(~(.*WAS.*))	
+204	lines using the word <M0> and the number <M1>.	.*(.*\bGeorge\b.*)&(.*62.*).*	
+64	lines that contain <M0> before <M1> or <M2>.	.*news.*(paper|show).*	
+282	lines which contain 2 or more <M0>.	(.*q.*){2,}	
+659	lines that ends with <M0> and contain two numbers.	(.*[0-9].*){2}ABC	
+528	lines using <M0> between <M1> and <M2>	.*(car.*foo.*cop|cop.*foo.*car).*	
+351	lines containing <M0> after <M1> or <M2>.	.*(re|per).*tain.*	
+622	lines that contain words that end in <M0> that do not begin with <M1>	.*((\b[A-Za-z]+\b)&(.*y)&(~(w.*))).*	
+373	lines that begin with the phrase 'once upon a time'	once upon a time.*	
+570	lines that contain two words that have two letters.	(.*\b[A-Za-z]{2}\b.*){2}	
+152	lines which end with <M0> 	.*you	
+309	lines that contain words starting with <M0>.	.*((\b[A-Za-z]+\b)&(gi.*)).*	
+695	lines that begin with the word <M0>.	the\b.*	
+308	lines using 4 letter words	.*\b[A-Za-z]{4}\b.*	
+52	lines that use words starting with <M0>.	.*\bga[A-Za-z]*\b.*	
+84	lines that contain the word <M0>.	.*\borange\b.*	
+673	lines that have <M0>.	.*oe.*	
+543	lines that use a numerical number.	.*[0-9].*	
+635	lines using three letter words.	.*\b[A-Za-z]{3}\b.*	
+512	lines that have a word containing the string <M0>	.*\b[A-Za-z]*ude[A-Za-z]*\b.*	
+342	lines that contain any three vowels	(.*[AEIOUaeiou].*){3}	
+138	lines where no word is more than 5 characters	~(.*\b[A-Z-a-z]{6,}\b.*)	
+474	lines that mention <M0> and also contain <M1>	(.*Randy.*)&(.*fox.*)	
+401	lines using a word which contains at least 5 letters.	.*\b[A-Za-z]{5,}\b.*	
+644	lines that have 4 characters	.{4}	
+311	lines that end in <M0>	.*e	
+238	lines which contain a word starting with the letter <M0> and a word starting with the letter <M1>.	(.*\ba[A-Za-z]*\b.*)&(.*\bz[A-Za-z]*\b.*)	
+248	lines that contain the word <M0>.	.*\bzoo\b.*	
+173	lines that include words starting with <M0>.	.*\bne[A-Za-z]*\b.*	
+669	lines that contain <M0> or <M1>	.*(dre|ber).*	
+220	lines containing words using a vowel.	.*\b[A-Za-z]*[aeiouAEIOU][A-Za-z]*\b.*	
+575	lines using the word <M0>.	.*(.*\bGod\b.*).*	
+262	lines that have two vowels	(.*[AEIOUaeiou].*){2}	
+93	lines that have 1 word in them	.*\b[A-Za-z][A-Za-z]*\b.*	
+329	lines containing both <M0> and <M1>	(.*ac.*)&(.*dc.*)	
+232	lines that contain at least one vowel and at least two numbers	((.*[AEIOUaeiou].*)&(.*[0-9].*){2})	
+209	lines which have at least 1 numeric character.	.*[0-9].*	
+395	lines that contain the word <M0>.	.*\bBoby\b.*	
+617	lines containing words that start with <M0>	.*\bfa[A-Za-z]*\b.*	
+473	lines that are composed of the letters <M0>, <M1>, and <M2>.	(a|b|d)*	
+245	lines that contain both a <M0> and a <M1>.	(.*B.*)&(.*b.*)	
+109	lines that have a 2 letter sequence	.*[A-Za-z]{2}.*	
+25	lines having words ending with <M0>.	.*\b[A-Za-z]*ne\b.*	
+353	lines that contain <M0> and <M1> but not <M2>.	(.*x.*)&(.*y.*)&(~(.*z.*))	
+729	lines utilizing words with <M0>.	.*((\b[A-Za-z]+\b)&(.*be.*)).*	
+166	lines which start with a number.	[0-9].*	
+16	lines that have words ending in <M0>	.*\b[A-Za-z]*ing\b.*	
+631	lines with instances of <M0>.	.*at.*	
+406	lines that contain an <M0>	.*x.*	
+293	lines using a word containing the letter <M0>.	.*((\b[A-Za-z]+\b)&(.*l.*)).*	
+312	lines end in an <M0>	.*a	
+499	lines that use numbers.	.*[0-9].*	
+724	lines containing 3 letter words starting with <M0> 	.*\bz[A-Za-z]{2}\b.*	
+821	lines beginning with the letter <M0>	f.*	
+626	lines utilizing the number <M0>.	.*1.*	
+804	lines which contain a word using 2 or more letters	.*\b[A-Za-z]{2,}\b.*	
+365	lines using a word	.*\b[A-Za-z]+\b.*	
+339	lines that contain words starting with <M0>.	.*\bfa[A-Za-z]*\b.*	
+47	lines that have 5 characters and no vowels.	(.{5})&(~(.*[AEIOUaeiou].*))	
+761	lines ending with <M0>	.*uns	
+766	lines that contain at least one digit.	.*[0-9].*	
+273	lines which contain the letter <M0> and the letter <M1>	(.*x.*)&(.*y.*)	
+563	lines that have no vowels.	~(.*[AEIOUaeiou].*)	
+657	lines that contain <M0> after <M1> or <M2>.	.*(er|let).*wig.*	
+717	lines that have words ending in <M0> or <M1>.	.*\b[A-Za-z]*(ing|est)\b.*	
+515	lines using at least 4 <M0>	(.*c.*){4,}	
+466	lines that show the text '1:15' and the word <M0>.	(.*1:15.*)&(.*\bmidnight\b.*)	
+586	lines that contain 4 or more <M0>	(.*b.*){4}	
+343	lines having words ending with <M0>.	.*((\b.*ta\b)&([A-Za-z]+)).*	
+709	lines where numbers exist only after a sequence of <M0> and <M1>	([^0-9]*)|((([^0-9]*)&(.*ABC.*)&(.*XYZ.*)).*)	
+424	lines that use words starting with <M0>.	.*\bfu[A-Za-z]*\b.*	
+403	lines that match the words 'and in this life'.	.*\band in this life\b.*	
+770	lines beginning with the letter <M0> and ending with the letter <M1>	s.*y	
+240	lines that use words starting with <M0>.	.*\bno[A-Za-z]*\b.*	
+756	lines that use only four words	(([^A-Za-z])*\b[A-Za-z]+\b([^A-Za-z])*){4}	
+702	lines that have the numbers <M0> and <M1>.	(.*12345.*)&(.*54321.*)	
+629	lines that end with numbers.	.*[0-9]	
+743	lines containing words that end with s.	.*\b[A-Za-z]*s\b.*	
+819	lines containing <M0> and <M1> that do not have a <M2> anywhere.	(.*annou.*)&(.*irth.*)&(~(.*c.*))	
+446	lines that contain 2 numbers and 3 words and contain the letter <M0>.	.*(.*[0-9].*){2}&(.*\b[A-Za-z]+\b.*){3}&(.*t.*).*	
+548	lines containing the word <M0>	.*\bcountry\b.*	
+414	lines that show <M0> in the beginning of the word  and <M1> at the end of the word.	.*((\bs[A-Za-z]*\b)&(\b[A-Za-z]*t\b)).*	
+438	lines containing two or more words containing <M0>.	(.*\b[A-Za-z]*y[A-Za-z]*\b.*){2,}	
+757	lines ending with the letter <M0>	.*f	
+558	lines that have six letter words ending in <M0>.	.*\b[A-Za-z]{4}th\b.*	
+721	lines using at least two numbers, <M0>, and <M1>.	(.*[0-9].*){2}&(.*aby.*)&(.*oz.*)	
+328	lines containing words that start with <M0> and end with <M1>.	.*\bh[A-Za-z]*e\b.*	
+54	lines containing any number with an <M0> in it.	.*8.*	
+703	lines that have words that start with <M0>.	.*\bb[A-Za-z]*\b.*	
+267	lines that end with the number <M0>.	.*100	
+163	lines that contain three letter words in them.	.*\b[A-Za-z]{3}\b.*	
+96	lines that have one number	.*[0-9].*	
+663	lines which do have numbers.	.*[0-9].*	
+398	lines that use words ending with <M0>.	.*\b[A-Za-z]*ot\b.*	
+705	2 letter lines	[A-Za-z]{2}	
+453	lines that contain a word in all uppercase.	.*\b[A-Z]+\b.*	
+340	lines that contain <M0> before <M1> or <M2>.	.*fu.*(ba|bar).*	
+121	lines where the  word <M0> precedes the word <M1>	.*\bHomer\b.*\bOdyssey\b.*	
+199	lines that have the word <M0> preceeding the word <M1>.	.*\blove\b.*\byou\b.*	
+19	lines containing the word <M0>	.*\bart\b.*	
+265	lines containing <M0> and containing <M1> too	(.*tt.*)&(.*bb.*)	
+151	lines which have at least 7 numbers.	.*(.*[0-9].*){7}.*	
+120	lines that contain words starting with <M0>.	.*\bh[A-Za-z]*\b.*	
+436	lines that have a word containing <M0> or <M1>	.*\b([A-Za-z]+&.*(a|b).*)\b.*	
+229	lines using <M0>	.*the.*	
+572	lines that match to the text 'I went into'.	.*I went into.*	
+463	lines that have words ending with a <M0>	.*((\b.*g\b)&([A-Za-z]+)).*	
+216	lines that contain at least one number.	.*[0-9].*	
+741	lines that contain the phrase <M0> or <M1>.	.*(bedrock|yabadabadoo).*	
+56	lines that contain words starting with <M0>.	.*\bpa[A-Za-z]*\b.*	
+201	lines starting with a <M0>.	T.*	
+591	lines containing the country name 'New Zealand'.	.*New Zealand.*	
+655	lines using 7 <M0>	(.*f.*){7}	
+762	lines ending with <M0>	.*end	
+39	lines using the word <M0> followed by <M1>.	.*\bgoing\b.*d.*	
+284	lines having words ending with <M0>.	.*((\b[A-Za-z]+\b)&(.*fa)).*	
+344	lines which contain 'I am mad'.	.*I am mad.*	
+382	lines that contain words starting with <M0>.	.*((\b[A-Za-z][A-Za-z]*\b)&(du.*)).*	
+551	lines that have words ending in <M0>.	.*\b[A-Za-z]*ing\b.*	
+85	lines using a word of 5 letters or less.	.*\b[A-Za-z]{1,5}\b.*	
+542	lines that contain at least 2 digits.	(.*[0-9].*){2,}	
+759	lines that start with the letter <M0>.	t.*	
+305	lines that end with the word <M0>.	.*\bfree	
+678	lines that have the letter <M0> at the end of a word.	.*\b[A-Za-z]*X\b.*	
+722	lines that utilize the number <M0>	.*1.*	
+68	lines that contain at least two words starting with <M0> in them.	(.*\bh[A-Za-z]*\b.*){2}	
+433	lines that have words with <M0>.	.*\b[A-Za-z]*re[A-Za-z]*\b.*	
+127	lines that use <M0> or <M1> before words ending with <M2>.	.*(a|b).*\b[A-Za-z]*er\b.*	
+625	lines that contain any numbers.	.*[0-9].*	
+70	lines that begin with a number	[0-9].*	
+178	lines with <M0> but not <M1>.	(.*tch.*)&(~(.*wi.*))	
+764	lines that contain at least one word and the number <M0>	.*(.*\b[A-Za-z]+\b.*)&(.*12.*).*	
+679	lines using at least 4 characters	.*.{4}.*	
+467	lines that contain three or more digits	(.*[0-9].*){3}	
+788	lines using words ending with <M0>.	.*\b[A-Za-z]*tu\b.*	
+791	lines that contain more than five words.	(.*\b[A-Za-z]+\b.*){6,}	
+526	lines having words ending with <M0>.	.*\b[A-Za-z]*lo\b.*	
+496	lines that have no instances of <M0> but at least one instance of <M1>.	(~(.*old.*))&((.*ion.*){1,})	
+283	lines that contain words starting with <M0>.	.*\ban[A-Za-z]*\b.*	
+304	lines that contain a number ending with <M0>	.*[0-9]*0.*	
+782	lines that each begin with a vowel	[AEIOUaeiou].*	
+236	lines using 3 instances of <M0>	.*(.*sw.*){3}.*	
+346	lines that have five words that all end with the letter <M0>.	(.*((\b.*G\b)&([A-Za-z]+)).*){5}	
+41	lines containing words starting with <M0>.	.*((\bt.*\b)&([A-Za-z]+)).*	
+358	lines starting with <M0> followed by a word with <M1>.	X.*((\b[A-Za-z]+\b)&(.*oa.*)).*	
+28	lines with the word <M0> followed by words that start with <M1>	.*\bTriple\b.*\bX[A-Za-z]*\b.*	
+34	lines that contain words with <M0>.	.*\b[A-Za-z]*ru[A-Za-z]*\b.*	
+460	lines that start with <M0> and end with <M1>	ABC.*TRY	
+319	lines that contain a word starting with a vowel.	.*\b[AEIOUaeiou][A-Za-z]*\b.*	
+244	lines using <M0> after <M1> or <M2>.	.*(e|ky).*din.*	
+385	lines which contain the word <M0> but do not contain the word <M1>	(.*\bmobile\b.*)&~(.*\bphone\b.*)	
+419	lines using the word <M0>	.*\bintellectual\b.*	
+197	lines beginning with <M0>	Therefore.*	
+95	lines that have words with 7 letters.	.*\b[A-Za-z]{7}\b.*	
+317	lines that contain the number <M0>.	.*10.*	
+487	lines which begin with <M0>, has a <M1> in the middle and end in a number.	y.*z.*[0-9]	
+592	lines which contain both <M0> and <M1> but no instances of <M2>.	(.*i.*)&(.*e.*)&(~(.*u.*))	
+37	lines that contain at least three words and at least one number.	(.*\b[A-Za-z][A-Za-z]*\b.*){3}&(.*[0-9].*)	
+349	lines that use words with <M0>.	.*((\b[A-Za-z]+\b)&(.*ca.*)).*	
+643	lines using <M0> or <M1>	.*(life|lives).*	
+402	lines that use words of at least 9 letters.	.*\b[A-Za-z]{9,}\b.*	
+801	lines that have three characters before the sequence <M0>	.*.{3}SBC.*	
+775	lines that contain words starting with <M0>.	.*\bgu[A-Za-z]*\b.*	
+130	lines that contain 3 words and have at least 2 numbers.	.*(.*\b[A-Za-z]+\b.*){3}&(.*[0-9].*){2}.*	
+386	lines containing words that begin with <M0> and end with <M1>	.*\bG[A-Za-z]*y\b.*	
+207	lines that end in a number	.*[0-9]	
+157	lines containing a word	.*\b[A-Za-z]+\b.*	
+327	lines that start with <M0>.	apartheid.*	
+733	lines that mention <M0> but not <M1>.	(.*fireflies.*)&(~(.*butterflies.*))	
+21	lines which contain only an uppercase letter	[A-Z]	
+255	lines containing the word <M0> and containing the word <M1> 	(.*\bshoe\b.*)&(.*\blace\b.*)	
+411	lines that contain '-' between words <M0> and <M1>.	.*(\ba\b.*\-.*\blot\b|\blot\b.*\-.*\ba\b).*	
+601	lines that have <M0> after <M1>	.*red.*eak.*	
+372	lines ending in <M0>	.*ia	
+300	lines that contain <M0> or <M1>	.*(is|it).*	
+231	lines that mention <M0>.	.*trolls.*	
+530	lines which have at least one word which has six or more letters.	.*\b[A-Za-z]{6,}\b.*	
+704	lines that contain at least one word without any vowels.	.*((\b[A-Za-z]+\b)&(~(.*[AEIOUaeiou].*))).*	
+196	lines with the word <M0> in them.	.*((\b[A-Za-z]+\b)&(Goal)).*	
+668	lines containing <M0> and also containing <M1>	(.*left.*)&(.*right.*)	
+288	lines that contain <M0> and mention <M1>.	(.*jellyfish.*)&(.*breeding.*)	
+609	lines that contain <M0> 	.*on.*	
+650	lines that utilize the number <M0>.	.*7.*	
+589	lines using the string <M0>	.*gue.*	
+494	lines which do not contain <M0>	~(.*excellent.*)	
+314	lines which contain a 3 letter string	.*([A-Za-z]{3}).*	
+600	lines that contain words with at least 3 vowels	.*((\b[A-Za-z]+\b)&(.*[AEIOUaeiou].*){3}).*	
+73	lines using words containing <M0>.	.*\b[A-Za-z]*ope[A-Za-z]*\b.*	
+210	lines that contain at least one word starting with <M0>.	.*\bq[A-Za-z]*\b.*	
+354	lines that end in <M0>	.*e	
+72	lines that do not contain the character <M0>	~(.*x.*)	
+713	lines using more than 5 characters	.*.{6,}.*	
+479	lines containing one instance of <M0> followed by an <M1> or a <M2>	.*(.*ca.*(r|t).*).*	
+259	lines using <M0> 	.*ick.*	
+222	lines that contain 2 numbers that contain <M0>.	(.*19.*){2}	
+478	lines starting with <M0>	tra.*	
+63	lines using the word <M0>	.*\bclue\b.*	
+428	lines starting with the word <M0>.	\bthe\b.*	
+538	lines that does not contain any vowels.	~(.*[AEIOUaeiou].*)	
+279	lines which contain the letter <M0> twice.	(.*z.*){2,}	
+99	lines that contain words starting with <M0>.	.*((\bde.*\b)&([A-Za-z]+)).*	
+367	lines having words ending with <M0>.	.*\b[A-Za-z]*en\b.*	
+159	lines that contain words starting with <M0>.	.*((\b[A-Za-z][A-Za-z]*\b)&(ac.*)).*	
+15	lines that have 2 words using 4 letters	(.*\b[A-Za-z]{4}\b.*){2}	
+393	lines which begin with <M0>	omega.*	
+500	lines having words starting with <M0>.	.*((\b[A-Za-z][A-Za-z]*\b)&(fo.*)).*	
+192	lines using an instance of <M0>	.*itch.*	
+20	lines with a word ending in <M0> that contain only one word	([^A-Za-z])*\b[A-Za-z]*aought\b([^A-Za-z])*	
+243	lines that show the letter <M0> and number <M1>.	(.*a.*)&(.*5.*)	
+449	lines that start with the letter <M0> followed by the word <M1>.	e.*\bjr\b.*	
+285	lines ending with <M0>	.*vem	
+360	lines using any instance of <M0> or <M1> followed by <M2> or <M3>	.*(d|e).*(s|r).*	
+274	lines that have a word of 3 letters	.*\b[A-Za-z]{3}\b.*	
+44	lines that use words starting with <M0>.	.*\bs[A-Za-z]*\b.*	
+516	lines starting with <M0>	cl.*	
+156	lines that are 20 characters or less	.{0,20}	
+806	lines using 4 instances of <M0>	.*(.*ug.*){4}.*	
+347	lines containing words that start with <M0>.	.*\bi[A-Za-z]*\b.*	
+322	lines which contain <M0> at the start	qu.*	
+198	lines using 2 or more words containing the letters <M0>. 	(.*(\b[A-Za-z]+\b&(.*ing.*)).*){2,}	
+468	lines using <M0> or <M1>	.*(ness|ed).*	
+779	lines containing the text 'and so it came to pass'	.*and so it came to pass.*	
+633	lines that do not use the word <M0>	~(.*\bthe\b.*)	
+445	lines containing <M0> after <M1> or <M2>.	.*(mar|is).*ku.*	
+552	lines that include both <M0> and <M1>.	(.*cake.*)&(.*candles.*)	
+809	lines that contain the phrase <M0> but not <M1>.	(.*Wednesday.*)&(~(.*Sunday.*))	
+413	lines using <M0> or <M1>	.*l(ay|ie).*	
+108	lines that have 2 or more numbers.	(.*[0-9].*){2,}	
+164	lines that contain five letter words.	.*\b[A-Za-z]{5}\b.*	
+115	lines that have two or more words ending in <M0>.	.*(.*\b[A-Za-z]*a\b.*){2}.*	
+43	lines that contain words ending with vowels.	.*\b[A-Za-z]*[AEIOUaeiou]\b.*	
+672	lines with <M0> 	.*un.*	
+491	lines that contain words starting with <M0>.	.*\bgo[A-Za-z]*\b.*	
+437	lines using the word <M0> or the word <M1> 	(.*\bof\b.*)|(.*\bin\b.*)	
+549	lines that have words containing <M0>	.*\b[A-Za-z]*ei[A-Za-z]*\b.*	
+405	lines using at least 3 <M0>	(.*b.*){3,}	
+450	lines containing <M0>, or <M1>	.*(b|c).*	
+462	lines that contain a number.	.*[0-9].*	
+677	lines containing <M0> and containing a <M1> as well.	.*(.*8.*)&(.*3.*).*	
+227	lines that contain words ending in <M0>.	.*\b[A-Za-z]*i\b.*	
+18	lines that contain the number <M0> at least twice.	(.*254.*){2}	
+440	lines that contain a word using the letters <M0>	.*((\b[A-Za-z]+\b)&(.*ire.*)).*	
+719	lines containing the word <M0>.	.*\btag\b.*	
+778	lines that contain 3 words with at least 1 number in between the 1st and 3rd word.	[^A-Za-z]*\b[A-Za-z]+\b((.*\b[A-Za-z]+\b.*)&(.*[0-9].*))\b[A-Za-z]+\b[^A-Za-z]*	
+182	lines with an <M0> that comes after a <M1>.	.*5.*8.*	
+271	lines that contain words ending in <M0>	.*\b[A-Za-z]*ch\b.*	
+689	lines that contain at least one vowel in each word.	~(.*((\b[A-Za-z]+\b)&([^AEIOUaeiou]*)).*)	
+3	lines which contain only lowercase letters.	[a-z]*	
+407	lines that contain the symbol '-'.	.*-.*	
+475	lines utilizing '!'	.*\!.*	
+546	lines where there is only one word.	[^A-Za-z]*\b[A-Za-z]+\b[^A-Za-z]*	
+648	lines using <M0> or <M1>	.*(art|led).*	
+464	lines that contain 2 repetitions of the word <M0>	(.*\ba\b.*){2}	
+86	lines that have words with <M0>.	.*\b[A-Za-z]*la[A-Za-z]*\b.*	
+541	lines that begin with a number	[0-9].*	
