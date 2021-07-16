@@ -1,0 +1,1000 @@
+lines which are  ending with the string <M0> and the string <M1> before the string <M2>	( ( . * ) ( <M0> ) ) & ( ( <M1> ) . * ( <M2> ) . * )
+lines with a letter followed by a lower-case letter, zero or more times in them	( [ <LET> ] . * [ <LOW> ] . * ) *
+Items with <M0>, a small letter, and a numeral.	. * ( [ <NUM> ] ) & ( <M0> ) & ( [ <LOW> ] ) . *
+lines that doesn't have <M0> and doesn't end with a lower-case letter	~ ( ( <M0> ) & ( ( . * ) ( [ <LOW> ] ) ) )
+The string <M0>, the string <M1> and a letter or the string <M2> appears in the beginning of the lines	( ( ( <M0> ) & ( <M1> ) & ( [ <LET> ] ) ) | ( <M2> ) ) ( . * )
+lines starting with <M0> followed by <M1> 2 times	( ( <M0> . * <M1> . * ) ( . * ) ) { 2 , }
+A line starting with a number that is repeated 3 or more times	( ( [ <NUM> ] ) ( . * ) ) { 3 , }
+lines containing the string <M0> or <M1>	. * ( <M0> ) | ( ~ ( <M1> ) ) . *
+lines with string <M0> before string <M1> or number, 4 or more times	( ( <M0> ) . * ( <M1> ) . * ) | ( ( [ <NUM> ] ) { 4 , } )
+lines starting with words and the string <M0> before a letter	( \ b ( <M0> ) . * ( [ <LET> ] ) . * \ b ) ( . * )
+lines with words with vowel or containing a capital	\ b ( [ <VOW> ] ) | ( . * [ <CAP> ] . * ) \ b
+lines containing either string <M0>, number, or string <M1>	. * ( <M0> ) | ( [ <NUM> ] ) | ( <M1> ) . *
+lines with the string <M0> or <M1> or a letter before a number	( ( <M0> ) | ( <M1> ) | ( [ <LET> ] ) ) . * ( [ <NUM> ] ) . *
+lines having a number, a lower-case letter and a letter	. * ( [ <NUM> ] ) & ( [ <LOW> ] ) & ( [ <LET> ] ) . *
+lines starting in a character before a vowel	( ( . ) ( . * ) ) . * ( ( [ <VOW> ] ) + ) . *
+lines with 3 or more of a vowel or number	( ( [ <VOW> ] ) | ( [ <NUM> ] ) ) { 3 , }
+lines containing letter before the string <M0> or a number	( [ <LET> ] ) . * ( ( <M0> ) | ( [ <NUM> ] ) ) . *
+Lines without the string <M0> or without a letter	~ ( ( ( <M0> ) * ) | ( [ <LET> ] ) )
+lines without words having a vowel before the string <M0>	~ ( \ b ( [ <VOW> ] ) . * ( <M0> ) . * \ b )
+lines that end with a character	( . * ) ( . )
+lines not having a character or a letter	( ~ ( . ) ) | ( . * [ <LET> ] . * )
+lines that contain the string "dog", along with a lower-case letter and vowel	. * ( [ <LOW> ] ) & ( [ <VOW> ] ) & ( <M0> ) . *
+lines ending with numeral or lower-case letter	( . * ) ( . * ( [ <NUM> ] ) | ( [ <LOW> ] ) . * )
+lines with the string <M0>, a capital letter, and a number	. * ( <M0> ) & ( [ <CAP> ] ) & ( [ <NUM> ] ) . *
+lines with words that don't have a lower-case letter followed by string <M0>	\ b ~ ( [ <LOW> ] . * <M0> . * ) \ b
+lines with words that has at least four occurrences of the string <M0>	\ b ( <M0> ) { 4 , } \ b
+lines with a character and capital letter before a number	( ( . ) & ( [ <CAP> ] ) ) . * ( . * [ <NUM> ] . * ) . *
+lines ending with words with character or string <M0>	( . * ) ( \ b ( . ) | ( <M0> ) \ b )
+Items with any letter, at least six times.	( ( [ <LET> ] ) | ( [ <CAP> ] ) ) { 6 , }
+lines with a lower-case letter 3 times	( ( [ <LOW> ] ) { 3 , } ) . * ( [ <LET> ] ) . *
+Lines not having vowel, at least seven times.	~ ( ( [ <VOW> ] ) { 7 , } )
+lines that end with the string <M0> followed by the string <M1>	( . * ) ( . * <M0> . * <M1> . * . * )
+lines starting in number before non vowel	( ( [ <NUM> ] ) ( . * ) ) . * ( ~ ( [ <VOW> ] ) ) . *
+Lines with a series of different numbers, letters and characters	( [ <NUM> ] . * [ <LOW> ] . * ) & ( ( [ <LET> ] ) | ( . ) )
+Items with a character preceding a numeral.	( . . * [ <NUM> ] . * ) *
+lines with 7 or more of a letter before a lower-case letter	( [ <LET> ] ) . * ( ( [ <LOW> ] ) { 7 , } ) . *
+Items with a capital letter or character at least thrice.	( ( . ) | ( [ <CAP> ] ) ) { 3 , }
+lines not having a letter followed by string "dog"	~ ( [ <LET> ] . * <M0> . * )
+lines having either a number, string <M0>, or a vowel before string <M1>	( ( [ <NUM> ] ) | ( <M0> ) | ( [ <VOW> ] ) ) . * ( <M1> ) . *
+Items with words containing a vowel preceding a numeral.	\ b [ <VOW> ] . * [ <NUM> ] . * \ b
+lines with either a letter, the string <M0>, or the string <M1> followed by a capital letter	( ( [ <LET> ] ) | ( <M0> ) | ( <M1> ) ) . * ( [ <CAP> ] ) . *
+lines with a letter or a lower-case letter, 6 or more times in them	( ( [ <LET> ] ) | ( [ <LOW> ] ) ) { 6 , }
+lines containing a number followed by the word "dog" and "truck"	( <M0> ) . * ( ( [ <NUM> ] ) & ( <M1> ) ) . *
+lines with a capital letter and the string <M0> or a lower-case letter	( . * [ <CAP> ] . * ) & ( ( <M0> ) | ( [ <LOW> ] ) )
+lines with the strings <M0>, then <M1>, then <M2>	( ( <M0> ) ( . * ) ) . * ( <M1> . * <M2> . * ) . *
+lines starting in string <M0> or capital letter	( ( ( <M0> ) + ) | ( [ <CAP> ] ) ) ( . * )
+lines with only less than 5 vowels	~ ( ( [ <VOW> ] ) { 5 , } )
+lines ending in string <M0> before number	( . * ) ( <M0> . * [ <NUM> ] . * )
+lines with a lower-case letter, vowel, or string <M0>	. * ( [ <LOW> ] ) | ( [ <VOW> ] ) | ( <M0> ) . *
+lines that begin with a letter or anything other than a character	( ( [ <LET> ] ) | ( ~ ( . ) ) ) ( . * )
+lines with words with a capital followed by character at least once	\ b ( [ <CAP> ] . * . . * ) + \ b
+lines with a vowel, the string <M0>, and the string <M1>	. * ( <M0> ) & ( <M1> ) & ( [ <VOW> ] ) . *
+lines which have a capital letter before ending with a lower-case letter	( [ <CAP> ] ) . * ( ( . * ) ( [ <LOW> ] ) ) . *
+Lines not having letter, a character, or a number	~ ( ( [ <LET> ] ) | ( . ) | ( [ <NUM> ] ) )
+lines containing the string <M0> not preceded by a character	( ~ ( . ) ) . * ( <M0> ) . *
+A number appears before a character and have the string <M0> in the lines	( ( [ <NUM> ] ) . * ( . ) . * ) & ( . * <M0> . * )
+lines ending with the string <M1> after the string <M0> or a character	( . * ) ( ( <M0> ) | ( . . * <M1> . * ) )
+lines with <M0> or a number 3 times	( ( <M0> ) | ( [ <NUM> ] ) ) { 3 , }
+lines with the string <M0> and number before a letter	( ( <M0> ) & ( [ <NUM> ] ) ) . * ( [ <LET> ] ) . *
+lines starting with words ending with the string <M0>	( \ b ( . * ) ( <M0> ) \ b ) ( . * )
+four or more lines with a lower-case letter then a number	( [ <LOW> ] . * [ <NUM> ] . * ) { 4 , }
+Items with words containing a numeral, <M0>, and a character.	\ b ( . ) & ( [ <NUM> ] ) & ( <M0> ) \ b
+lines with zero or more of a letter and lower-case letter	( . * [ <LET> ] . * ) & ( ( [ <LOW> ] ) * )
+lines with a capital letter, character, and vowel	. * ( [ <CAP> ] ) & ( . ) & ( [ <VOW> ] ) . *
+lines which contain the string <M0> and a character followed by a number	( ( <M0> ) & ( . ) ) . * ( [ <NUM> ] ) . *
+lines with the string <M0> before <M1> and vowel	( <M0> ) . * ( ( <M1> ) & ( [ <VOW> ] ) ) . *
+lines with a lower case letter or vowel	( ( [ <LOW> ] ) | ( [ <VOW> ] ) ) +
+lines with or without a number followed by a lower-case letter, the string <M0>, as well as the string <M1>	( ( [ <NUM> ] ) * ) . * ( ( [ <LOW> ] ) & ( <M0> ) & ( <M1> ) ) . *
+Lines beginning with the string <M0> at least 4 times or with a capital letter	( ( ( <M0> ) { 4 , } ) | ( [ <CAP> ] ) ) ( . * )
+lines with 6 or more of the string <M0>	~ ( ( <M0> ) { 6 , } )
+lines with zero or less string <M0> or character	( ( ~ ( <M0> ) ) | ( . ) ) *
+lines with the string <M0> followed by a letter before a number in them	( <M0> . * [ <LET> ] . * ) . * ( [ <NUM> ] ) . *
+lines wherein the string <M0> precedes a vowel or the string <M1>	( <M0> ) . * ( ( [ <VOW> ] ) | ( <M1> ) ) . *
+Items with a letter, a small letter, and a vowel before <M0>.	( ( [ <VOW> ] ) & ( [ <LOW> ] ) & ( [ <LET> ] ) ) . * ( <M0> ) . *
+lines with the string <M0> and a vowel or string <M1>	( ( <M0> ) + ) & ( ( [ <VOW> ] ) | ( <M1> ) )
+lines with a lower-case letter followed by a number before anything not being the string <M0>	( [ <LOW> ] . * [ <NUM> ] . * ) . * ( ~ ( <M0> ) ) . *
+lines with the string <M0>, zero or more times or the string <M1> and a character in them	( ( <M0> ) * ) | ( ( <M1> ) & ( . ) )
+Items with <M0> preceding an upper case letter preceding a character.	( <M0> ) . * ( [ <CAP> ] . * . . * ) . *
+lines containing only a letter	. * ( [ <LET> ] ) * . *
+lines with a vowel followed by a character before the string <M0> in them	( [ <VOW> ] . * . . * ) . * ( <M0> ) . *
+The string <M0> before <M1>	( ( . * ) ( <M0> ) ) . * ( <M1> ) . *
+lines with 7 or more of a capital letter before string <M0>	( . * ( [ <CAP> ] ) . * ( <M0> ) . * . * ) { 7 , }
+lines with less than 7 numbers	~ ( ( [ <NUM> ] ) { 7 , } )
+lines containing a number, a lower-case letter, and a letter	\ b ( [ <NUM> ] ) & ( [ <LOW> ] ) & ( [ <LET> ] ) \ b
+lines without a number, lower-case letter, or character	~ ( ( [ <NUM> ] ) | ( [ <LOW> ] ) | ( . ) )
+Items terminating with a numeral or upper case letter, <M0>, or <M1>.	( ( . * ) ( [ <NUM> ] ) ) & ( ( [ <CAP> ] ) | ( <M0> ) | ( <M1> ) )
+lines with a character before number and string <M0> before <M1>	( ( . ) . * ( [ <NUM> ] ) . * ) & ( <M0> . * <M1> . * )
+lines starting in a character ending in letter	( ( . ) ( . * ) ) . * ( ( . * ) ( [ <LET> ] ) ) . *
+lines containing a letter, a character, or the string <M0>	\ b ( [ <LET> ] ) | ( . ) | ( <M0> ) \ b
+lines containing lower case	. * [ <LOW> ] . *
+lines having a lower-case letter, string <M0>, and string <M1> before a vowel	( ( [ <LOW> ] ) & ( <M0> ) & ( <M1> ) ) . * ( [ <VOW> ] ) . *
+lines without a number, capital letter, or a lower-case letter	~ ( ( [ <CAP> ] ) & ( [ <NUM> ] ) & ( [ <LOW> ] ) )
+lines containing either a number, the string <M0> or a lower-case letter	\ b ( [ <NUM> ] ) | ( <M0> ) | ( [ <LOW> ] ) \ b
+Items with words containing any kind of letter.	\ b ( [ <LOW> ] ) | ( [ <CAP> ] ) | ( [ <LET> ] ) \ b
+lines with number, 3 or more times and letter before lower-case letter	( ( [ <NUM> ] ) { 3 , } ) & ( ( [ <LET> ] ) . * ( [ <LOW> ] ) . * )
+lines with words ending with the string <M0> before <M1>	\ b ( ( . * ) ( <M0> ) ) . * ( <M1> ) . * \ b
+lines with lower-case letter before string <M0> at least once	( [ <LOW> ] ) . * ( ( <M0> ) + ) . *
+A capital letter followed by a vowel or a number before a character appears in the lines	( [ <CAP> ] . * [ <VOW> ] . * ) | ( ( [ <NUM> ] ) . * ( . ) . * )
+lines having either a capital letter, a number, or a vowel or a lower-case letter at least once in them	( ( ( [ <CAP> ] ) | ( [ <NUM> ] ) | ( [ <VOW> ] ) ) | ( [ <LOW> ] ) ) +
+lines with words and 3 or more of the string <M0> or a lower case letter	\ b ( ( <M0> ) | ( [ <LOW> ] ) ) { 3 , } \ b
+lines with capital letters before lower-case letters	( ( [ <CAP> ] ) * ) . * ( [ <LOW> ] ) . *
+lines ending with a lower-case letter followed by a number or string 'dog;	( . * ) ( ( [ <LOW> ] . * <M0> . * ) | ( [ <NUM> ] ) )
+lines with the string <M0> or <M1> or a letter before a character	( ( <M0> ) | ( <M1> ) | ( [ <LET> ] ) ) . * ( . ) . *
+lines that have both a vowel and a number occur before the string <M0>	( ( [ <VOW> ] ) & ( [ <NUM> ] ) ) . * ( <M0> ) . *
+lines with words and a capital letter before vowel and character	\ b ( ( [ <CAP> ] ) . * ( [ <VOW> ] ) . * ) & ( . ) \ b
+lines containing a character preceded by a lowercase letter	( [ <LOW> ] ) . * ( . ) . *
+Items without a numeral preceding a letter.	~ ( [ <NUM> ] . * [ <LET> ] . * )
+lines without the string <M0>, a capital letter, or vowel	~ ( ( <M0> ) | ( [ <CAP> ] ) | ( [ <VOW> ] ) )
+lines containing a vowel before number, zero or more times	( . * ( [ <VOW> ] ) . * ( [ <NUM> ] ) . * . * ) *
+lines which contain the string <M0> or end with a vowel, at least one time	( ( <M0> ) | ( ( . * ) ( [ <VOW> ] ) ) ) +
+lines with words that contain string <M0> or lower-case letter	\ b ( . * <M0> . * ) | ( [ <LOW> ] ) \ b
+lines ending in words with string <M0> before vowel	( . * ) ( \ b ( <M0> ) . * ( [ <VOW> ] ) . * \ b )
+lines with words and ending in string <M0>	\ b ( . * ) ( . * <M0> . * ) \ b
+lines containing string <M0>, string <M1>, and a capital, 7 or more times	( . * ( <M0> ) & ( <M1> ) & ( [ <CAP> ] ) . * ) { 7 , }
+lines not ending in a character before string <M0>	~ ( ( ( . * ) ( . ) ) . * ( <M0> ) . * )
+lines without the string <M0> and <M1> before a number	( ~ ( <M0> ) ) & ( ( <M1> ) . * ( [ <NUM> ] ) . * )
+lines starting in a vowel before letter	( ( [ <VOW> ] ) ( . * ) ) . * ( [ <LET> ] ) . *
+lines with no <M0> or <M1>	~ ( ( <M0> ) | ( <M1> ) )
+lines with words that don't have a capital letter	\ b ~ ( ( [ <CAP> ] ) + ) \ b
+Lines having a letter or character or number	. * ( [ <LET> ] ) | ( . ) | ( [ <NUM> ] ) . *
+lines containing words with only the string <M0> 1 time or more	( \ b <M0> \ b ) +
+lines with a capital letter before a number and vowel	\ b ( [ <CAP> ] . * [ <NUM> ] . * ) & ( [ <VOW> ] ) \ b
+Items with small letter preceding <M0>.	[ <LOW> ] . * <M0> . *
+Items with words contating <M0>, truck', and a vowel.	\ b ( <M0> ) & ( <M1> ) & ( [ <VOW> ] ) \ b
+lines containing words, a letter, or character	. * \ b ( [ <LET> ] ) | ( . ) \ b . *
+lines ending with the string <M0> or character	( . * ) ( ( <M0> ) | ( . ) )
+lines with a vowel before character, capital letter, and letter	( [ <VOW> ] ) . * ( ( . ) & ( [ <CAP> ] ) & ( [ <LET> ] ) ) . *
+lines ending with not containing string <M0>	( . * ) ( . * ~ ( <M0> ) . * )
+lines with string <M0> or string <M1> before not a number	( ( <M0> ) | ( <M1> ) ) . * ( ~ ( [ <NUM> ] ) ) . *
+lines that contain the string <M0> followed by a capital letter or a vowel	( <M0> ) . * ( ( [ <CAP> ] ) | ( [ <VOW> ] ) ) . *
+lines with the string <M0> or letter before capital letter	( ( <M0> ) | ( [ <LET> ] ) ) . * ( [ <CAP> ] ) . *
+lines with a capital before vowel or character	( [ <CAP> ] ) . * ( ( [ <VOW> ] ) | ( . ) ) . *
+lines with words and starting in 7 or more of a lower-case letter	\ b ( ( [ <LOW> ] ) { 7 , } ) ( . * ) \ b
+lines with 2 or more characters before a capital letter	( ( . ) { 2 , } ) . * ( [ <CAP> ] ) . *
+lines wherein 5 or more times it contains words with an uppercase letter	\ b ( [ <CAP> ] ) { 5 , } \ b
+lines with either a number, a lower-case letter, or the string <M0> preceding the string <M1>	( ( [ <NUM> ] ) | ( [ <LOW> ] ) | ( <M0> ) ) . * ( <M1> ) . *
+lines with the string <M0> at least 2 times	. * ( <M0> ) { 2 , } . *
+lines with a lower case letter followed by the string <M0> or the string <M1>	( . * [ <LOW> ] . * ) . * ( ( <M0> ) | ( <M1> ) ) . *
+lines containing the string <M0> after a capital letter	\ b ( [ <CAP> ] ) . * ( <M0> ) . * \ b
+lines with the string <M0> or <M1> or lower-case letter before a number	( ( <M0> ) | ( <M1> ) | ( [ <LOW> ] ) ) . * ( [ <NUM> ] ) . *
+Items without an upper case letter, not a letter nor a vowel.	~ ( ( [ <CAP> ] ) & ( [ <VOW> ] ) & ( [ <LET> ] ) )
+Items with <M0> or a numeral or a character preceding an upper case letter.	( ( . ) & ( [ <NUM> ] ) & ( <M0> ) ) . * ( [ <CAP> ] ) . *
+lines with one character before the word "dog"	. * . . * <M0> . * . *
+lines that have a choice of one character, one capital letter, or the word "dog"	. * ( . ) | ( [ <CAP> ] ) | ( <M0> ) . *
+Lines with a letter, or "dog" before "truck"	( ( [ <LET> ] ) | ( [ <VOW> ] ) | ( <M0> ) ) . * ( <M1> ) . *
+lines containing a lower-case letter, a capital letter, and a letter	\ b ( [ <LOW> ] ) & ( [ <CAP> ] ) & ( [ <LET> ] ) \ b
+lines with words with a capital or string <M0> at least once	\ b ( ( [ <CAP> ] ) | ( <M0> ) ) + \ b
+lines containing a character followed by 3 or more lower-case letters	( ( [ <LOW> ] ) { 3 , } ) . * ( . ) . *
+Items with a numeral preceding a vowel preceding a small letter.	( [ <NUM> ] . * [ <VOW> ] . * ) . * ( [ <LOW> ] ) . *
+lines which are starting with words that contain only the string <M0>	( \ b <M0> \ b ) ( . * )
+The lines that end with either the string 'dong' or a lower-case letter	( . * ) ( ( <M0> ) | ( [ <LOW> ] ) )
+lines do not have a character, <M0>, and not a letter'	~ ( ( . ) & ( <M0> ) & ( [ <LET> ] ) )
+Lines starting with words a long with numbers	( \ b ( [ <NUM> ] ) * \ b ) ( . * )
+lines containing the string <M0> or 7 or more of the string <M1>	( \ b ( <M0> ) | ( <M1> ) \ b ) { 7 , }
+lines that contain a lower-case letter or the string <M0>, at least 3 times	( ( [ <LOW> ] ) | ( <M0> ) ) { 3 , }
+Items with <M0> at least six times.	( . * <M0> . * ) { 6 , }
+lines containing a lower-case letter after either the string <M0>, a number, or a letter	( ( <M0> ) | ( [ <NUM> ] ) | ( [ <LET> ] ) ) . * ( [ <LOW> ] ) . *
+lines that end with a lower-case letter followed by a character	( ( . * ) ( [ <LOW> ] ) ) . * ( . ) . *
+lines with at least 6 numbers before <M0>	( ( [ <NUM> ] ) { 6 , } ) . * ( <M0> ) . *
+lines without a vowel and a number	~ ( ( [ <VOW> ] ) & ( [ <NUM> ] ) )
+lines with a character after a capital letter or a vowel	( ( [ <CAP> ] ) | ( [ <VOW> ] ) ) . * ( . ) . *
+lines with a lower-case letter	\ b ( [ <LOW> ] ) | ( [ <LET> ] ) \ b
+the lines that do not have a number repeated 6 or more times	~ ( ( [ <NUM> ] ) { 6 , } )
+lines with a number or a string<M0> with a capital letter first	( [ <CAP> ] ) . * ( ( <M0> ) | ( [ <NUM> ] ) ) . *
+lines that do not contain a lower-case letter followed by the string <M0> or a letter	( ~ ( [ <LOW> ] ) ) . * ( ( <M0> ) | ( [ <LET> ] ) ) . *
+lines starting with words with letter, 2 or more times	( \ b ( [ <LET> ] ) { 2 , } \ b ) ( . * )
+lines beginning with <M0> or lower-case letter	( ( <M0> ) | ( [ <LOW> ] ) ) ( . * )
+lines not having a lower-case letter	~ ( . . * [ <LOW> ] . * )
+lines with at least 6 vowels before a lower-case letter	( [ <VOW> ] ) . * ( ( [ <LOW> ] ) { 6 , } ) . *
+Lines with a number	( ( [ <NUM> ] ) { 3 , } ) . * ( [ <LOW> ] ) . *
+ends with a letter or number	( . * ) ( ( ( [ <LET> ] ) | ( [ <NUM> ] ) ) + )
+lines containing a capital letter, a letter, and a vowel in words	\ b ( [ <CAP> ] ) & ( [ <LET> ] ) & ( [ <VOW> ] ) \ b
+lines with zero or more capital letters or ending with a lower-case letter	( ( [ <CAP> ] ) * ) | ( ( . * ) ( [ <LOW> ] ) )
+lines without at least one string <M0>	~ ( ( <M0> ) + )
+lines without only the string <M0> followed by a character	( ~ ( <M0> ) ) . * ( . ) . *
+lines starting with a character, or a letter zero or more times	( ( ( . ) * ) | ( [ <LET> ] ) ) ( . * )
+lines with lower-case letter before capital letter and string <M0>	( [ <LOW> ] ) . * ( ( [ <CAP> ] ) & ( <M0> ) ) . *
+lines containing words that have a capital letter preceding a letter	\ b [ <CAP> ] . * [ <LET> ] . * \ b
+lines with words and only a vowel	. * \ b [ <VOW> ] \ b . *
+lines that has the string <M0> or a vowel before the string <M1>	( ( [ <VOW> ] ) | ( <M0> ) ) . * ( <M1> ) . *
+lines with words and a vowel, character, and lower-case letter	\ b ( [ <VOW> ] ) & ( . ) & ( [ <LOW> ] ) \ b
+lines with 3 or more of a character and string <M0>	( . * . . * ) & ( ( <M0> ) { 3 , } )
+lines starting with a vowel 2 times	( ( ( [ <VOW> ] ) | ( [ <LET> ] ) ) { 2 , } ) ( . * )
+Items with <M0>, or <M1> at least thrice.	( ( <M0> ) | ( <M1> ) ) { 3 , }
+lines containing string <M0> or letter before string <M1>	. * ( ( <M0> ) | ( [ <LET> ] ) ) . * ( <M1> ) . * . *
+lines with a letter or character or with string <M0>	. * ( ( [ <CAP> ] ) | ( [ <LET> ] ) | ( . ) ) | ( <M0> ) . *
+lines containing the string <M0> before either a number or a <M1> string at least twice	( ( ( <M0> ) . * ( [ <NUM> ] ) . * ) | ( <M1> ) ) { 2 , }
+Items with a small letter preceding an upper case letter or character.	( [ <LOW> ] ) . * ( ( . ) | ( [ <CAP> ] ) ) . *
+lines starting with not a character or a capital	( ( ~ ( . ) ) | ( [ <CAP> ] ) ) ( . * )
+lines with <M0> before <M1>, a number, or a vowel	( ( <M0> ) + ) . * ( ( <M1> ) | ( [ <NUM> ] ) | ( [ <VOW> ] ) ) . *
+A character appears before a capital letter followed by a lower-case letter in the lines	( . ) . * ( [ <CAP> ] . * [ <LOW> ] . * ) . *
+lines having either the string <M0>, a capital letter, or a character before a lower-case letter in them	( ( <M0> ) | ( [ <CAP> ] ) | ( . ) ) . * ( [ <LOW> ] ) . *
+lines with <M0> before a capital letter, <M1>, and <M2>	( <M0> ) . * ( ( [ <CAP> ] ) & ( <M1> ) & ( <M2> ) ) . *
+lines containing words with vowels or <M0>	\ b ( [ <VOW> ] ) | ( <M0> ) \ b
+lines with words and zero or more capital letters with string <M0>	\ b ( ( [ <CAP> ] ) * ) & ( <M0> ) \ b
+Items begining with an upper case letter or a character.	( ( . ) | ( [ <CAP> ] ) ) ( . * )
+lines containing no letters or more than one letter	( [ <LET> ] ) *
+lines without a vowel, character, or capital letter	~ ( ( [ <VOW> ] ) | ( . ) | ( [ <CAP> ] ) )
+lines with the string <M0> after a letter at least once	( ( [ <LET> ] ) + ) . * ( <M0> ) . *
+lines containing 0 or more of the string <M0>, before a number or the string <M1>	( ( <M0> ) * ) . * ( ( [ <NUM> ] ) | ( <M1> ) ) . *
+lines with the string <M0> or number before a capital letter	( ( <M0> ) | ( [ <NUM> ] ) ) . * ( [ <CAP> ] ) . *
+Items with words containing a letter, a small letter, or a character.	\ b ( . ) | ( [ <LOW> ] ) | ( [ <LET> ] ) \ b
+Lines with a character, the string <M0>, or the string <M1> with a number beforehand.	( ( . ) | ( <M0> ) | ( [ <NUM> ] ) ) . * ( <M1> ) . *
+lines ending with a character before the string <M0>	( ( . * ) ( . . * <M0> . * ) ) +
+Items with a character preceding a numeral at least four times.	( . . * [ <NUM> ] . * ) { 4 , }
+lines with the string <M0> before a number and the string <M1>, character, or capital letter	( ( <M0> ) . * ( [ <NUM> ] ) . * ) & ( ( <M1> ) | ( . ) | ( [ <CAP> ] ) )
+lines with 7 or more of the string <M0> before a lower case letter	( <M0> ) . * ( ( [ <LOW> ] ) { 7 , } ) . *
+lines that must not have a character or a letter	~ ( ( . ) & ( [ <LET> ] ) )
+lines not having a vowel and string <M0> followed by string <M1>	( ~ ( [ <VOW> ] ) ) & ( <M0> . * <M1> . * )
+lines that do not contain a vowel, a capital letter, or a number	~ ( ( [ <VOW> ] ) | ( [ <CAP> ] ) | ( [ <NUM> ] ) )
+lines that contain a vowel before a letter	( . * [ <LET> ] . * ) . * ( [ <VOW> ] ) . *
+lines with a lower-case or capital letter before a vowel	( . * [ <LOW> ] . * ) | ( ( [ <CAP> ] ) . * ( [ <VOW> ] ) . * )
+lines with 4 vowels or more followed by a lower-case letter	( ( [ <VOW> ] ) { 4 , } ) . * ( [ <LOW> ] ) . *
+lines with a vowel before words with string <M0>	( [ <VOW> ] ) . * ( \ b ( <M0> ) + \ b ) . *
+lines containing neither a number nor a vowel.	~ ( ( . * [ <NUM> ] . * ) & ( [ <VOW> ] ) )
+Lines without a character and a vowel	~ ( ( ( . ) + ) & ( [ <VOW> ] ) )
+lines without a number, a vowel or the string <M0>	( ~ ( [ <NUM> ] ) ) & ( ( [ <VOW> ] ) | ( <M0> ) )
+lines containing words including a lower-case letter and the string <M0>, 7 or more times	( \ b ( [ <LOW> ] ) & ( <M0> ) \ b ) { 7 , }
+lines with a lower-case letter and string <M0> before number	( ( [ <LET> ] ) & ( [ <LOW> ] ) & ( <M0> ) ) . * ( [ <NUM> ] ) . *
+lines with a letter or vowel at least 6 times	( ( [ <LET> ] ) | ( [ <VOW> ] ) ) { 6 , }
+lines with the string <M1>, the string <M2>, and a number after the string <M0>	( <M0> ) . * ( ( <M1> ) & ( <M2> ) & ( [ <NUM> ] ) ) . *
+lines starting in words with a capital letter before string <M0>	( \ b [ <CAP> ] . * <M0> . * \ b ) ( . * )
+lines with words with no lower-case letter or vowel	\ b ~ ( ( [ <LOW> ] ) & ( [ <VOW> ] ) ) \ b
+Lines containing words ending with a lower-case letter	. * \ b ( . * ) ( [ <LOW> ] ) \ b . *
+lines with a number before <M0>, a vowel <M1>	( [ <NUM> ] ) . * ( ( <M0> ) & ( [ <VOW> ] ) & ( <M1> ) ) . *
+lines ending with at least one character or <M0>	( . * ) ( ( ( . ) + ) | ( <M0> ) )
+lines that have a 4 or more combinations of a vowel followed by a lower-case letter	( [ <VOW> ] . * [ <LOW> ] . * ) { 4 , }
+lines with number before either string <M0>, a vowel, or string <M1>	( [ <NUM> ] ) . * ( ( <M0> ) | ( [ <VOW> ] ) | ( <M1> ) ) . *
+lines ending with <M0> before a letter	( ( . * ) ( <M0> ) ) . * ( [ <LET> ] ) . *
+lines with the string <M0> before letter and capital letter	( <M0> ) . * ( ( [ <LET> ] ) & ( [ <CAP> ] ) ) . *
+lines which have the string <M0> before words with starting with the string <M1>	( <M0> ) . * ( \ b ( <M1> ) ( . * ) \ b ) . *
+lines with a number or a character after a letter	( [ <LET> ] ) . * ( ( [ <NUM> ] ) | ( . ) ) . *
+lines that contain a letter followed by a vowel or contain a number at least 3 times	( ( [ <NUM> ] ) { 3 , } ) & ( [ <LET> ] . * [ <VOW> ] . * )
+lines having the the string <M0>, lover-case letter, or a vowel before a character	( ( <M0> ) | ( [ <LOW> ] ) | ( [ <VOW> ] ) ) . * ( . ) . *
+lines with string <M0> followed by string <M1> before character, zero or more times	( <M0> . * <M1> . * ) . * ( ( . ) * ) . *
+Items with <M0> preceding a small letter and a character.	( <M0> ) . * ( ( [ <LOW> ] ) & ( . ) ) . *
+lines with words and either a letter, the string <M0>, or a character	\ b ( [ <LET> ] ) | ( <M0> ) | ( . ) \ b
+lines with a number or string <M0> or <M1> before a character	( ( [ <NUM> ] ) | ( <M0> ) | ( <M1> ) ) . * ( . ) . *
+lines ending in 7 or more vowels	( . * ) ( . * ( [ <VOW> ] ) { 7 , } . * )
+Items with either a letter, a vowel, or <M0> preceding <M1>.	( ( <M0> ) | ( [ <LET> ] ) | ( [ <VOW> ] ) ) . * ( <M1> ) . *
+lines with a letter before a character and string <M0>	( [ <LET> ] ) . * ( ( . ) & ( <M0> ) ) . *
+lines which are starting with a lower-case letter before the string <M0> or a letter	( ( ( [ <LOW> ] ) . * ( <M0> ) . * ) | ( [ <LET> ] ) ) ( . * )
+The lines that have words containing a lower-case letter and then a number	\ b [ <LOW> ] . * [ <NUM> ] . * \ b
+line with a words followed by the string "dog"	\ b . . * <M0> . * \ b
+lines ending in 4 or more of the string <M0> or vowel	( . * ) ( ( <M0> ) | ( ( [ <VOW> ] ) { 4 , } ) )
+lines with words with 7 or more numbers	\ b ( [ <NUM> ] ) { 7 , } \ b
+Words with only lower-case letter appears 3 or more times in the lines\	\ b ( [ <LOW> ] ) { 3 , } \ b
+lines without a vowel, string <M0>, or character	~ ( ( [ <VOW> ] ) & ( <M0> ) & ( . ) )
+lines with a number, letter, and string <M0> before a vowel	( ( [ <NUM> ] ) & ( [ <LET> ] ) & ( <M0> ) ) . * ( [ <VOW> ] ) . *
+The lines that have a capital letter, followed by a vowel, and then followed by the string <M0>	( [ <CAP> ] ) . * ( [ <VOW> ] . * <M0> . * ) . *
+lines containing a number or with at least one capital letter	( ( [ <CAP> ] ) + ) | ( . * [ <NUM> ] . * )
+lines containing only a character, 2 or more times	( . * . . * ) { 2 , }
+lines with words and only a capital letter before the string <M0>	\ b ( [ <CAP> ] ) . * ( <M0> ) . * \ b
+lines with string <M0> before string <M1> with number following	( <M0> ) . * ( <M1> . * [ <NUM> ] . * ) . *
+lines not having vowel, letter, or a character	~ ( ( [ <VOW> ] ) | ( [ <LET> ] ) | ( . ) )
+lines with <M0> before a letter, zero or more times	( <M0> . * [ <LET> ] . * ) *
+lines where the string <M0> is not followed by a number	~ ( <M0> . * [ <NUM> ] . * )
+lines starting with a character before lower-case letter	( ( . ) ( . * ) ) . * ( [ <LOW> ] ) . *
+lines that have at least 6 characters	( . ) { 6 , }
+lines with a lower-case letter or a capital letter, 3 or more times in them	( ( [ <LOW> ] ) | ( [ <CAP> ] ) ) { 3 , }
+Items with a vowel preceding an upper case letter or <M0>.	( [ <VOW> ] ) . * ( ( [ <CAP> ] ) | ( <M0> ) ) . *
+lines ending in zero or more of a number before capital letter	( ( . * ) ( [ <NUM> ] . * [ <CAP> ] . * ) ) *
+Items with a character or a letter preceding a numeral.	( ( [ <LET> ] ) | ( . ) ) . * ( [ <NUM> ] ) . *
+lines with a capital followed by string <M0>, zero or more times	( [ <CAP> ] . * <M0> . * ) *
+lines having character, string <M0>, and letter before number	( ( . ) & ( <M0> ) & ( [ <LET> ] ) ) . * ( [ <NUM> ] ) . *
+lines with the strings <M0> before <M1>	( <M0> ) . * ( ( <M1> ) * ) . *
+lines with 5 or more of a vowel or lower-case letter	( ( [ <VOW> ] ) | ( [ <LOW> ] ) ) { 5 , }
+lines with the string <M0> ending in number	. * ( <M0> ) & ( ( . * ) ( [ <NUM> ] ) ) . *
+Items with a letter, a smal letter, or <M0> in front of a vowel.	( ( <M0> ) | ( [ <LET> ] ) | ( [ <LOW> ] ) ) . * ( [ <VOW> ] ) . *
+lines which are containing words with not a number	. * \ b ~ ( [ <NUM> ] ) \ b . *
+lines with letter or string <M0>, zero or more times	( ( [ <LET> ] ) | ( <M0> ) ) *
+lines containing the string <M0> followed by at least 1 vowel	( . * <M0> . * [ <VOW> ] . * . * ) +
+lines containing a lower-case letter at least once	. * ( [ <LOW> ] . * [ <CAP> ] . * ) + . *
+lines ending with a capital letter preceding a vowel	( . * ) ( \ b ( [ <CAP> ] ) . * ( [ <VOW> ] ) . * \ b )
+lines with a character at least once and starting with string <M0>	( ( . ) + ) & ( ( <M0> ) ( . * ) )
+lines with the string <M0> before 1 or more of the string <M1>	( <M0> ) . * ( ( <M1> ) + ) . *
+lines with a capital letter then a number and no <M0>	( [ <CAP> ] . * [ <NUM> ] . * ) & ( ~ ( <M0> ) )
+lines having either a letter, number, or string <M0> before string <M1>	( ( [ <LET> ] ) | ( [ <NUM> ] ) | ( <M0> ) ) . * ( <M1> ) . *
+lines containing zero or more times, a number	. * ( [ <NUM> ] ) * . *
+Lines that do not have a character following a letter	~ ( ( [ <LET> ] ) . * ( . ) . * )
+lines without a vowel before a letter	~ ( [ <VOW> ] . * [ <LET> ] . * )
+lines with lower case letters and a vowel before a letter	( ( [ <LOW> ] ) & ( [ <VOW> ] ) ) . * ( [ <LET> ] ) . *
+lines without a lower-case letter following a letter	~ ( ( [ <LET> ] ) . * ( [ <LOW> ] ) . * )
+lines with a number ending in only a capital letter	( [ <NUM> ] ) . * ( ( . * ) ( [ <CAP> ] ) ) . *
+lines containing either letter, lower-case letter, or string <M0>	. * ( [ <LET> ] ) | ( [ <LOW> ] ) | ( <M0> ) . *
+lines without the string <M0> or number	( ~ ( <M0> ) ) | ( ( [ <NUM> ] ) + )
+lines with a number before <M0> <M1> or <M2>	( [ <NUM> ] ) . * ( ( <M0> ) | ( <M1> ) | ( <M2> ) ) . *
+lines ending with only a lower-case letter, 7 or more times	( . * ) ( ( [ <LOW> ] ) { 7 , } )
+all lines	( ( . * ) ( ( <M0> ) | ( <M1> ) ) ) *
+lines with words which are ending with a letter, 5 or more times	\ b ( . * ) ( ( [ <LET> ] ) { 5 , } ) \ b
+lines starting with 7 or more of the string <M0> or vowel	( ( ( <M0> ) | ( [ <VOW> ] ) ) { 7 , } ) ( . * )
+lines containing a number after the string <M0>, the string <M1>, and a character	( ( <M0> ) & ( <M1> ) & ( . ) ) . * ( [ <NUM> ] ) . *
+Lines that don't have a number, character, or lower case letters.	~ ( ( [ <LOW> ] ) | ( [ <NUM> ] ) | ( . ) )
+lines ending with words, not a letter	( . * ) ( \ b ~ ( [ <LET> ] ) \ b )
+lines containing words including a character, the string <M0>, and a capital letter	\ b . * ( . ) & ( <M0> ) & ( [ <CAP> ] ) . * \ b
+lines with a number followed by a lower-case letter then a character	( [ <NUM> ] . * [ <LOW> ] . * ) . * ( . ) . *
+lines not ending with a lower-case letter	~ ( ( . * ) ( . * [ <LOW> ] . * ) )
+lines that have words that contain a small letter one time or greater	\ b ( [ <LOW> ] ) + \ b
+lines with string <M0> zero before <M1>	( ( <M0> ) * ) . * ( <M1> ) . *
+Items with a numeral preceding a letter.	( ( [ <NUM> ] ) * ) . * ( [ <LET> ] ) . *
+lines ending with a character followed by a letter	( ( . * ) ( . * . . * ) ) . * ( [ <LET> ] ) . *
+lines starting with a capital or lower-case letter	( ( [ <CAP> ] ) | ( [ <LOW> ] ) ) ( . * )
+Items with a numeral preceding an upper case letter at least six times.	( [ <NUM> ] . * [ <CAP> ] . * ) { 6 , }
+Lines that have a character or capital letter before the word "dog"	( <M0> ) . * ( ( [ <CAP> ] ) | ( . ) ) . *
+lines with words with string <M0> or starting in string <M1>	\ b ( <M0> ) | ( ( <M1> ) ( . * ) ) \ b
+lines which are having either a capital letter, a letter, or the string <M0> before the string <M1>	( ( [ <CAP> ] ) | ( [ <LET> ] ) | ( <M0> ) ) . * ( <M1> ) . *
+lines with string <M0> before character or vowel	( <M0> ) . * ( ( . ) | ( [ <VOW> ] ) ) . *
+lines containing a number first, followed by a character	( [ <NUM> ] . * . . * ) ( . * )
+lines ending in a capital letter before the string <M0>	( ( . * ) ( [ <CAP> ] ) ) . * ( ~ ( <M0> ) ) . *
+lines ending in 6 or more of a lower-case letter or number	( ( . * ) ( ( [ <LOW> ] ) | ( [ <NUM> ] ) ) ) { 6 , }
+The lines that do not have a capital letter, lower case letter, or the string <M0>	~ ( ( [ <CAP> ] ) & ( [ <LET> ] ) & ( <M0> ) )
+lines with words ending with number followed by string <M0>	\ b ( . * ) ( [ <NUM> ] . * <M0> . * ) \ b
+lines not starting in a vowel before string <M0>	( ~ ( ( [ <VOW> ] ) ( . * ) ) ) . * ( <M0> ) . *
+Items with a vowel at least seven time preceding a letter.	( ( [ <VOW> ] ) { 7 , } ) . * ( [ <LET> ] ) . *
+lines having 'god' 7 or more times	( ( <M0> ) { 7 , } ) . * ( . ) . *
+lines having <M0>, a character, and number before <M1>	( ( <M0> ) & ( . ) & ( [ <NUM> ] ) ) . * ( <M1> ) . *
+lines without a capital letter or character	~ ( ( [ <CAP> ] ) & ( . ) )
+lines without a number, the string <M0>, or a lower-case letter	~ ( ( [ <NUM> ] ) | ( <M0> ) | ( [ <LOW> ] ) )
+Items with words beginning with a vowel at least one time.	( \ b ( [ <VOW> ] ) ( . * ) \ b ) +
+lines that have the string <M0> and then a character, zero or more times	( <M0> . * . . * ) *
+lines which are not containing the string <M0> or the string <M1>	~ ( . * ( <M0> ) | ( <M1> ) . * )
+lines with words either the string <M0>, a number, and a vowel	\ b ( <M0> ) | ( [ <NUM> ] ) | ( [ <VOW> ] ) \ b
+Items without an upper case letter, a numeral, or <M0>.	~ ( ( [ <NUM> ] ) & ( [ <CAP> ] ) & ( <M0> ) )
+lines with words with string <M0> or non vowel	\ b ( <M0> ) | ( ~ ( [ <VOW> ] ) ) \ b
+lines not ending with a character followed by string <M0>	~ ( ( . * ) ( . . * <M0> . * ) )
+lines without the string <M0>, letter, or a number	~ ( ( <M0> ) & ( [ <LET> ] ) & ( [ <NUM> ] ) )
+lines with 7 or more of a string <M0> ending in vowel	( ( <M0> ) { 7 , } ) & ( ( . * ) ( [ <VOW> ] ) )
+lines culminating without a lower-case letter or the string <M0>	( . * ) ( ( ~ ( [ <LOW> ] ) ) | ( <M0> ) )
+lines without words and with a capital letter	~ ( \ b . * [ <CAP> ] . * \ b )
+lines with the string <M0> followed by a letter occurring  4 or more times	( <M0> . * [ <LET> ] . * ) { 4 , }
+lines that has words with a lower-case letter or a capital letter at least once.	\ b ( ( [ <CAP> ] ) + ) | ( [ <LOW> ] ) \ b
+lines with words that don't have character before number	\ b ~ ( ( . ) . * ( [ <NUM> ] ) . * ) \ b
+lines with a letter before a lower-case letter and character	( [ <LET> ] ) . * ( ( [ <LOW> ] ) & ( . ) ) . *
+lines containing a letter, the string <M0>, and 0 or more characters	( [ <LET> ] . * <M0> . * ) . * ( ( . ) * ) . *
+lines whose words must have the string <M0> or a number	. * \ b ( [ <NUM> ] ) | ( <M0> ) \ b . *
+lines ending with string <M0> or containing only string <M1>	( . * ) ( ( <M0> ) | ( <M1> ) )
+lines that have words with either a capital letter , the string <M0> or a letter	\ b ( [ <CAP> ] ) | ( <M0> ) | ( [ <LET> ] ) \ b
+lines with 2 or more vowels before a letter	( ( [ <VOW> ] ) { 2 , } ) . * ( [ <LET> ] ) . *
+lines with words and letter or string <M0>	\ b ( [ <CAP> ] ) & ( <M0> ) & ( [ <LET> ] ) \ b
+Lines that end with a lowercase letter at least 3 times.	. * ( ( . * ) ( [ <LOW> ] ) ) { 3 , } . *
+lines with a letter, character, and number	. * ( [ <LET> ] ) & ( . ) & ( [ <NUM> ] ) . *
+lines with 3 or more of a capital letter or vowel	( ( [ <CAP> ] ) | ( [ <VOW> ] ) ) { 3 , }
+lines with <M0> before a character 5 times	( <M0> ) . * ( ( . ) { 5 , } ) . *
+lines with <M0> before <M1> and a vowel at least 3 times	( ( <M0> ) . * ( <M1> ) . * ) & ( ( [ <VOW> ] ) { 3 , } )
+lines ending with <M0> before a lower-case letter <M1>	( ( . * ) ( <M0> ) ) . * ( [ <LOW> ] . * <M1> . * ) . *
+Items with an upper case letter or <M0> .	( ( <M0> ) | ( [ <CAP> ] ) ) *
+lines with a lower-case letter before a number and a character in them	( [ <LOW> ] ) . * ( ( [ <NUM> ] ) & ( . ) ) . *
+lines not having string <M0> before string <M1>, a capital, or string <M2>	~ ( ( <M0> ) . * ( ( <M1> ) | ( [ <CAP> ] ) | ( <M2> ) ) . * )
+lines containing the string <M0> followed by a character and a vowel	( <M0> ) . * ( ( . ) & ( [ <VOW> ] ) ) . *
+lines with a letter before vowel	( [ <LET> ] ) . * ( ( [ <VOW> ] ) + ) . *
+Items with words containing an upper case letter and a character.	\ b ( . ) & ( [ <CAP> ] ) \ b
+lines which are containing a character followed by a lower-case letter, zero or more times	. * ( . . * [ <LOW> ] . * ) * . *
+lines containing the string "dog" preceded by a lower-case letter and a capital letter	( ( [ <LOW> ] ) & ( [ <CAP> ] ) ) . * ( <M0> ) . *
+lines not containing 3 or more letters	. * ~ ( ( [ <LET> ] ) { 3 , } ) . *
+lines with zero or more of the string <M0> and number or string <M1>	( ( ( <M0> ) & ( [ <NUM> ] ) ) | ( <M1> ) ) *
+lines with words that end with 'dog	\ b . * ( . * ) ( <M0> ) . * \ b
+lines without a vowel, the string <M0>, or a number	~ ( ( [ <VOW> ] ) | ( <M0> ) | ( [ <NUM> ] ) )
+lines containing letter or string <M0>, zero or more times	. * ( ( [ <LET> ] ) | ( <M0> ) ) * . *
+lines starting in words with a lower-case letter, string <M0>, or number	( \ b ( [ <LOW> ] ) | ( <M0> ) | ( [ <NUM> ] ) \ b ) ( . * )
+lines with 5 or more of the string <M0> ending in a letter	( ( <M0> ) { 5 , } ) & ( ( . * ) ( [ <LET> ] ) )
+lines having a vowel and the string <M0>	. * ( [ <VOW> ] ) & ( <M0> ) . *
+lines without the string <M0> before string <M1> and <M2> and a number	( ~ ( <M0> ) ) . * ( ( <M1> ) & ( [ <NUM> ] ) & ( <M2> ) ) . *
+lines with character or letter before lower-case letter	( ( . ) | ( [ <LET> ] ) ) . * ( [ <LOW> ] ) . *
+lines with a capital before lower-case letter then string <M0>	( [ <CAP> ] ) . * ( [ <LOW> ] . * <M0> . * ) . *
+lines that contain the string <M1> or the string <M0>, at least three times	\ b ( ( <M0> ) { 3 , } ) | ( <M1> ) \ b
+lines with a lower-case letter and string <M0>	. * ( [ <LOW> ] ) & ( [ <LET> ] ) & ( <M0> ) . *
+lines which are ending with a number before a letter	( . * ( . * ) ( [ <NUM> ] ) . * ) . * ( [ <LET> ] ) . *
+lines starting with number followed by vowel, 3 or more times	( ( [ <NUM> ] . * [ <VOW> ] . * ) ( . * ) ) { 3 , }
+lines with words with zero or more capital letters before the string <M0>	\ b ( ( [ <CAP> ] ) * ) . * ( <M0> ) . * \ b
+lines with a lower-case letter before <M0>	( [ <LOW> ] ) . * ( . * <M0> . * ) . *
+Items with words containing <M0> and a vowel preceding a numeral.	\ b ( <M0> ) & ( [ <VOW> ] . * [ <NUM> ] . * ) \ b
+lines with a character and vowel before string <M0> then lower-case letter	( ( . ) & ( [ <VOW> ] ) ) . * ( <M0> . * [ <LOW> ] . * ) . *
+lines having a letter before the string <M0>, at least five times	( [ <LET> ] . * <M0> . * ) { 5 , }
+Lines without a vowel before the string <M0>	~ ( ( [ <VOW> ] ) . * ( <M0> ) . * )
+Items with a vowel or numeral at least seven times.	( ( [ <NUM> ] ) | ( [ <VOW> ] ) ) { 7 , }
+lines starting in words with string <M0> before a capital letter	( \ b <M0> . * [ <CAP> ] . * \ b ) ( . * )
+lines with only string <M0> or letter	( ( <M0> ) | ( [ <LET> ] ) ) +
+lines with words with the string <M0>, 7 or more times or a vowel in them	\ b ( ( <M0> ) { 7 , } ) | ( [ <VOW> ] ) \ b
+lines that have the word <M0> before the word <M1>, which is in turn followed by the word <M2>	( <M0> . * <M1> . * ) . * ( ( . ) & ( <M2> ) ) . *
+lines with zero or more of the string <M0> or starting in string <M1>	( ( <M0> ) | ( ( <M1> ) ( . * ) ) ) *
+At least one line ending in the string <M0> or <M1>	( ( . * ) ( <M0> ) ) | ( ( <M1> ) + )
+START LINES WITH A LETTER THAN THE STRING' DOG '	\ b [ <LET> ] . * <M0> . * \ b
+lines containing a lower-case letter or the string <M0> 1 or more times	( \ b ( [ <LOW> ] ) | ( <M0> ) \ b ) +
+lines with a vowel before the string <M0> and ending in a lower-case letter	( ( [ <VOW> ] ) . * ( <M0> ) . * ) & ( ( . * ) ( [ <LOW> ] ) )
+lines which are ending with the string <M0>, a lower-case letter, and the string <M1> or the string <M2>	( . * ) ( ( ( <M0> ) & ( [ <LOW> ] ) & ( <M1> ) ) | ( <M2> ) )
+lines that end with a number followed by a capital letter	( ( . * ) ( [ <NUM> ] ) ) . * ( [ <CAP> ] ) . *
+lines with lower-case letters before a number or character	( ( [ <LOW> ] ) + ) . * ( ( [ <NUM> ] ) | ( . ) ) . *
+lines with words and only the string <M0> and a character	\ b ( <M0> ) & ( . ) \ b
+lines with 6 or more capital letters	\ b . * ( [ <CAP> ] ) { 6 , } . * \ b
+lines with words with zero or more of a string <M0> and <M1> and a number	( \ b ( <M0> ) & ( [ <NUM> ] ) & ( <M1> ) \ b ) *
+lines having a  letter, or the string <M0> before a vowel	( ( [ <CAP> ] ) | ( [ <LOW> ] ) | ( <M0> ) ) . * ( [ <VOW> ] ) . *
+lines with 4 or more of a number before a character	( [ <NUM> ] . * . . * ) { 4 , }
+lines with 5 or more characters or lower-case letters	( ( . ) | ( [ <LOW> ] ) ) { 5 , }
+lines with a number before a capital letter	( [ <NUM> ] ) . * ( ~ ( [ <LOW> ] ) ) . *
+Items with <M0>, a character, or a numeral.	. * ( <M0> ) | ( [ <NUM> ] ) | ( . ) . *
+lines without a number, a letter, and a lower-case letter	~ ( ( [ <NUM> ] ) & ( [ <LET> ] ) & ( [ <LOW> ] ) )
+lines that do not have the string <M0> nor the string <M1>	~ ( ( <M0> ) & ( <M1> ) )
+lines leading off with the <M0> string and then a small letter	( <M0> . * [ <LOW> ] . * ) ( . * )
+lines with vowel before lower-case letter, zero times or more	( [ <VOW> ] ) . * ( ( [ <LOW> ] ) * ) . *
+Items without a terminating vowel.	~ ( ( . * ) ( [ <VOW> ] ) )
+lines with a letter at least 4 times before a capital letter or <M0>	( ( [ <LET> ] ) { 4 , } ) . * ( ( [ <CAP> ] ) | ( <M0> ) ) . *
+lines with the string <M0> before a letter, character, and string <M1>	( <M0> ) . * ( ( [ <LOW> ] ) & ( . ) & ( <M1> ) ) . *
+lines with words with lower-case letter, number, and a capital letter	\ b ( [ <LOW> ] ) & ( [ <NUM> ] ) & ( [ <CAP> ] ) \ b
+lines containing words with the string <M0> before a lower-case letter in them	. * \ b ( <M0> ) . * ( [ <LOW> ] ) . * \ b . *
+Items with <M0>, a numeral, and an upper case letter.	. * ( [ <CAP> ] ) & ( <M0> ) & ( [ <NUM> ] ) . *
+lines containing a vowel, a capital, and number	. * ( [ <VOW> ] ) & ( [ <CAP> ] ) & ( [ <NUM> ] ) . *
+lines with zero or more of the string <M0> ending with a letter	( ( <M0> ) * ) . * ( ( . * ) ( [ <LET> ] ) ) . *
+lines with words with a lower-case letter followed by a vowel, 3 or more times in them	\ b ( [ <LOW> ] . * [ <VOW> ] . * ) { 3 , } \ b
+lines that must have a number and a capital letter or the word <M0>	( ( [ <NUM> ] ) + ) & ( ( [ <CAP> ] ) | ( <M0> ) )
+lines not having string <M0>, zero or more times before string <M1>	~ ( ( ( <M0> ) * ) . * ( <M1> ) . * )
+lines starting in zero or more of the string <M0> before  a vowel	( ( ( <M0> ) ( . * ) ) * ) . * ( [ <VOW> ] ) . *
+lines with a vowel, number, or string <M0> before the string <M1>	( ( [ <VOW> ] ) | ( [ <NUM> ] ) | ( <M0> ) ) . * ( <M1> ) . *
+lines containing number and lower-case letter at least once	( . * ( [ <NUM> ] ) & ( [ <LOW> ] ) . * ) +
+lines with the string <M0> before <M1> and string <M2> before a character	( ( <M0> ) . * ( <M1> ) . * ) & ( <M2> . * . . * )
+Items with <M0>, a character, and <M1>.	. * ( . ) & ( <M0> ) & ( <M1> ) . *
+lines without a character or vowel	~ ( ( . ) & ( [ <VOW> ] ) )
+lines with string <M0> or number before vowel	( ( <M0> ) | ( [ <NUM> ] ) ) . * ( [ <VOW> ] ) . *
+lines with words with a lower-case letter before a character or the string <M0> in them	\ b ( [ <LOW> ] ) . * ( ( . ) | ( <M0> ) ) . * \ b
+Lines with a vowel or string <M0> before a character	. * ( ( [ <VOW> ] ) | ( <M0> ) ) . * ( . ) . * . *
+lines which are ending with containing a number and the string <M0>	( . * ) ( . * ( [ <NUM> ] ) & ( <M0> ) . * )
+lines having the following -a lower-case letter, the string <M0>, and a capital letter before the string <M1>	( ( [ <LOW> ] ) & ( <M0> ) & ( [ <CAP> ] ) ) . * ( <M1> ) . *
+letter ending with a vowel after a number	( ( . * ) ( [ <NUM> ] ) ) . * ( [ <VOW> ] ) . *
+lines without starting in a letter before string <M0>	~ ( ( [ <LET> ] . * <M0> . * ) ( . * ) )
+lines with vowel, zero or more times before containing string <M0>	( ( [ <VOW> ] ) * ) . * ( . * <M0> . * ) . *
+Items with a upper case letter preceding a small letter at least one time.	( [ <CAP> ] ) . * ( ( [ <LOW> ] ) + ) . *
+lines with the strings <M0> and <M1> before a character	( ( <M0> ) & ( <M1> ) ) . * ( . ) . *
+Lines ending in numbers.	( ( . * ) ( [ <LET> ] ) ) . * ( [ <NUM> ] ) . *
+lines containing either a capital letter or the string <M0>	. * ( [ <CAP> ] ) | ( <M0> ) . *
+lines with words that contain 5 or more of the string <M0>	( \ b . * <M0> . * \ b ) { 5 , }
+lines with 6 or more of a capital letter before string <M0>	( [ <CAP> ] . * <M0> . * ) { 6 , }
+Lines with a vowel before a number followed by a lower-case letter	( [ <NUM> ] . * [ <LOW> ] . * ) . * ( [ <VOW> ] ) . *
+lines not having a letter before string <M0> or vowel	( ~ ( [ <LET> ] ) ) . * ( ( <M0> ) | ( [ <VOW> ] ) ) . *
+lines containing <M0> or a vowel zero times	( . * ( <M0> ) | ( [ <VOW> ] ) . * ) *
+lines having either a capital, string <M0>, or string <M1> before string <M2>	( ( [ <CAP> ] ) | ( <M0> ) | ( <M1> ) ) . * ( <M2> ) . *
+lines with lower-case letter at least once and not a letter	~ ( \ b ( <M0> ) { 4 , } \ b )
+lines that have the 'string' dog followed by a lower-case letter	( <M0> . * [ <LOW> ] . * ) *
+lineswith words with a lower-case letter or a character	. * \ b ( [ <LOW> ] ) | ( . ) \ b . *
+lines with words without a letter	( \ b ~ ( [ <LET> ] ) \ b ) +
+lines with either the string <M0>, a lower-case letter, or the string <M1> followed by a letter	( ( <M0> ) | ( [ <LOW> ] ) | ( <M1> ) ) . * ( [ <LET> ] ) . *
+lines that does not the string <M0> or a character	. * ~ ( ( <M0> ) & ( . ) ) . *
+lines with a capital letter before a letter	( ( [ <CAP> ] ) + ) . * ( [ <LET> ] ) . *
+lines containing string <M0>, lower-case letter, and character	. * ( <M0> ) & ( [ <LOW> ] ) & ( . ) . *
+lines with <M0> and number preceded by vowel	( ( <M0> ) & ( [ <VOW> ] ) ) . * ( [ <NUM> ] ) . *
+lines with 3 or more of a lower-case letter before character	( [ <LOW> ] ) . * ( ( . ) { 3 , } ) . *
+lines starting with a letter with a number	( ( [ <LET> ] ) ( . * ) ) . * ( [ <NUM> ] ) . *
+lines with a lower-case letter before the string <M0> or <M1> or character	( [ <LOW> ] ) . * ( ( <M0> ) | ( . ) | ( <M1> ) ) . *
+lines with a character or lower-case letter before string <M0>	. * ( ( . ) | ( [ <LOW> ] ) ) . * ( <M0> ) . * . *
+line with the strings <M0>, and <M1> or any numbers have a letter before them	( ( [ <LET> ] ) ( . * ) ) . * ( ( <M0> ) & ( [ <NUM> ] ) & ( <M1> ) ) . *
+lines with either the string <M0>, the string <M1>, or a number followed by a letter	( ( <M0> ) | ( <M1> ) | ( [ <NUM> ] ) ) . * ( [ <LET> ] ) . *
+lines with a character, letter, and string <M0>	. * ( . ) & ( [ <LET> ] ) & ( <M0> ) . *
+lines with words and ending in a number or lower-case letter	\ b ( ( . * ) ( [ <NUM> ] ) ) | ( [ <LOW> ] ) \ b
+lines with words ending in zero or more characters	( \ b ( . * ) ( . ) \ b ) *
+lines containing capital letter	. * ( [ <CAP> ] ) | ( [ <LET> ] ) . *
+lines ending with words with the string <M0> and the string <M1>, the string <M2>, or the string <M3>	( ( . * ) ( <M0> ) ) & ( ( <M1> ) | ( <M2> ) | ( <M3> ) )
+The lines that begin with either a capital letter or lower-case letter	( ( [ <CAP> ] ) | ( [ <LET> ] ) ) ( . * )
+lines having words with a vowel before a character	\ b . * [ <VOW> ] . * . . * . * \ b
+Items with a small letter preceding a numeral at least five times.	( [ <LOW> ] . * [ <NUM> ] . * ) { 5 , }
+lines containing 7 or more of the string <M0> or a character before the string <M1>	( ( <M0> ) { 7 , } ) | ( ( . ) . * ( <M1> ) . * )
+lines with lower-case letter before either character, vowel, or string <M0>	( [ <LOW> ] ) . * ( ( . ) | ( [ <VOW> ] ) | ( <M0> ) ) . *
+lines in which there are words containing one of the following: an upper-case letter, the <M0> string or a letter	\ b ( [ <LET> ] ) | ( <M0> ) | ( [ <CAP> ] ) \ b
+lines with words with lower-case letter, string <M0>, and string <M1>	\ b ( [ <LOW> ] ) & ( <M0> ) & ( <M1> ) \ b
+lines with words with a vowel before a character or a number in them	\ b ( ( [ <VOW> ] ) . * ( . ) . * ) | ( [ <NUM> ] ) \ b
+Items without a letter or <M0>.	~ ( ( [ <LET> ] ) | ( <M0> ) | ( [ <VOW> ] ) )
+lines with words with the string <M0>, the string <M1>, and a lower-case letter in them	\ b ( <M0> ) & ( <M1> ) & ( [ <LOW> ] ) \ b
+lines with words with either a letter, a capital letter, or a number in them	\ b ( [ <LET> ] ) | ( [ <CAP> ] ) | ( [ <NUM> ] ) \ b
+lines containing the string "dog" or a number followed by a vowel	( ( <M0> ) | ( [ <VOW> ] ) ) . * ( [ <NUM> ] ) . *
+Items with a numeral preceeding a character at least seven times.	( [ <NUM> ] . * . . * ) { 7 , }
+lines starting with string <M0> or either a number, character, or letter	( ( <M0> ) | ( ( [ <NUM> ] ) | ( . ) | ( [ <LET> ] ) ) ) ( . * )
+lines starting with a lower-case letter followed by a letter in them	( [ <LOW> ] . * [ <LET> ] . * ) ( . * )
+lines with zero or more letters, not before a number	( ( [ <LET> ] ) * ) . * ( ~ ( [ <NUM> ] ) ) . *
+lines with the string <M0>, letter, and character before string <M1>	( ( <M0> ) & ( [ <LET> ] ) & ( . ) ) . * ( <M1> ) . *
+lines with the string <M0>, number, and capital letter before a lower-case letter	( ( <M0> ) & ( [ <NUM> ] ) & ( [ <CAP> ] ) ) . * ( [ <LOW> ] ) . *
+Items terminating with <M0> at least four times.	( . * ) ( ( . * <M0> . * ) { 4 , } )
+lines with a letter or a lower-case letter before a vowel in it	( ( [ <LET> ] ) | ( [ <LOW> ] ) ) . * ( [ <VOW> ] ) . *
+lines containing a vowel or a number at least 2 times	( ( [ <VOW> ] ) | ( [ <NUM> ] ) ) { 2 , }
+lines which are ending with a letter or the string <M0>, zero or more times	( ( . * ) ( ( [ <LET> ] ) | ( <M0> ) ) ) *
+lines with a capital letter or a character occuring before a number	( ( [ <CAP> ] ) | ( . ) ) . * ( [ <NUM> ] ) . *
+lines with a letter or number before lower-case letter	( ( [ <LET> ] ) | ( [ <NUM> ] ) ) . * ( [ <LOW> ] ) . *
+lines with the string <M0> before a character	( . * <M0> . * . . * . * ) +
+lines ending with a number and the string <M0>	. * ( ( . * ) ( [ <NUM> ] ) ) & ( <M0> ) . *
+lines not having letter, 7 or more times before character	~ ( ( ( [ <LET> ] ) { 7 , } ) . * ( . ) . * )
+lines with string <M0> at least once before containing letter	( ( <M0> ) + ) . * ( . * [ <LET> ] . * ) . *
+lines with a lower-case letter, capital letter, and character before a number	( ( [ <LOW> ] ) & ( [ <CAP> ] ) & ( . ) ) . * ( [ <NUM> ] ) . *
+lines not containing a character, a capital letter, or a lower-case letter	~ ( ( . ) & ( [ <CAP> ] ) & ( [ <LOW> ] ) )
+lines with a character before a capital letter or ending in lower-case letter	( . . * [ <CAP> ] . * ) | ( ( . * ) ( [ <LOW> ] ) )
+lines containg words that begin with a character or letter	\ b ( ( . ) | ( [ <LET> ] ) ) ( . * ) \ b
+lines with lower-case letter followed by a capital, 5 or more times	( [ <LOW> ] . * [ <CAP> ] . * ) { 5 , }
+lines ending with 4 or more of a character before string <M0>	( ( . * ) ( . . * <M0> . * ) ) { 4 , }
+lines with a capital letter before ending with <M0>	( [ <CAP> ] ) . * ( ( . * ) ( . * <M0> . * ) ) . *
+lines with either <M0>, <M1> or <M2>, and a letter	\ b ( ( <M0> ) | ( <M1> ) | ( <M2> ) ) & ( [ <LET> ] ) \ b
+lines with words and either the string <M0>, a character, or number	\ b ( <M0> ) | ( . ) | ( [ <NUM> ] ) \ b
+Items with words containg any letter.	\ b ( [ <VOW> ] ) | ( [ <LET> ] ) | ( [ <CAP> ] ) \ b
+lines with a vowel followed by a letter and a capital letter	( [ <VOW> ] ) . * ( ( [ <LET> ] ) & ( [ <CAP> ] ) ) . *
+lines containing dog or any numbers	( ( <M0> ) | ( [ <NUM> ] ) ) +
+lines containing in them either a vowel, the string <M0>, or the string <M1>	. * ( [ <VOW> ] ) | ( <M0> ) | ( <M1> ) . *
+Items with a character, <M0>, and an upper case letter preceding <M1>.	( ( [ <CAP> ] ) & ( <M0> ) & ( . ) ) . * ( <M1> ) . *
+lines with over 2 of the string dog before vowel	( <M0> ) . * ( ~ ( ( [ <VOW> ] ) { 2 , } ) ) . *
+lines which are having a capital letter, a vowel, and a character before a lower-case letter	( ( [ <CAP> ] ) & ( [ <VOW> ] ) & ( . ) ) . * ( [ <LOW> ] ) . *
+lines ending with string <M0> at least once or lower-case letter	( . * ) ( ( ( <M0> ) + ) | ( [ <LOW> ] ) )
+lines with words and the string <M0> and <M1>	( \ b ( <M0> ) & ( <M1> ) \ b ) +
+lines with either a character, number, or string <M0>	. * ( . ) | ( [ <NUM> ] ) | ( <M0> ) . *
+lines with a character at least once or a small letter	( ( . ) + ) | ( ~ ( [ <CAP> ] ) )
+lines containing at least one instance fo the string <M0>, or the string <M1> preceding the string <M2>	( ( <M0> ) + ) | ( <M1> . * <M2> . * )
+Lines where a small-case alphabet character comes after a word string containing a, e, i, o or u	\ b [ <VOW> ] . * [ <LOW> ] . * \ b
+lines that do not contain a number, a capital letter, or a letter	~ ( ( [ <NUM> ] ) & ( [ <CAP> ] ) & ( [ <LET> ] ) )
+lines without the string <M0> or vowel	~ ( \ b ( <M0> ) | ( [ <VOW> ] ) \ b )
+lines with words with the string <M0>, a lower-case letter, and the string <M1> in them	\ b ( <M0> ) & ( [ <LOW> ] ) & ( <M1> ) \ b
+lines with words of only a number	. * \ b [ <NUM> ] \ b . *
+lines that contain a character, the string "dog", and a vowel	. * ( . ) & ( <M0> ) & ( [ <VOW> ] ) . *
+lines with words and a number, string <M0> or 'truck, or vowel	\ b ( ( [ <NUM> ] ) | ( <M0> ) | ( [ <VOW> ] ) ) | ( <M1> ) \ b
+Items with  works containing <M0>, an upper case letter, and <M1>.	\ b ( <M0> ) & ( <M1> ) & ( [ <CAP> ] ) \ b
+lines with the string <M0> followed by a lower-case letter being before a number	( <M0> . * [ <LOW> ] . * ) . * ( [ <NUM> ] ) . *
+Items with a numeral, a vowel, and an upper case letter preceding a letter.	( ( [ <LOW> ] ) & ( [ <VOW> ] ) & ( [ <NUM> ] ) ) . * ( [ <LET> ] ) . *
+lines that have a vowel and a character	. * ( [ <VOW> ] ) & ( . ) . *
+Items terminating with a small letter, at least six times.	( . * ) ( ( [ <LOW> ] ) { 6 , } )
+lines with words and the string <M0>, lower-case letter, and character	\ b ( <M0> ) & ( [ <LOW> ] ) & ( . ) \ b
+lines with a capital letter followed by a character before a letter in them	( [ <CAP> ] . * . . * ) . * ( [ <LET> ] ) . *
+lines with lower-case letter or vowel, 5 or more times	( ( [ <LOW> ] ) | ( [ <VOW> ] ) ) { 5 , }
+lines with words with only a capital letter before a number	\ b ( [ <CAP> ] ) . * ( [ <NUM> ] ) . * \ b
+lines with 3 or more of a vowel or character	( ( [ <VOW> ] ) | ( . ) ) { 3 , }
+lines have to have at least one string <M0> with a lower case letter	( [ <LOW> ] . * <M0> . * ) +
+lines ending in a vowel before a capital letter	( . * ) ( [ <CAP> ] . * [ <VOW> ] . * )
+lines with a number or the string <M0> preceded by a letter	( [ <LET> ] ) . * ( ( [ <NUM> ] ) | ( <M0> ) ) . *
+lines containing words with the string <M0> and vowel following it	\ b ( <M0> ) . * ( [ <VOW> ] ) . * \ b
+lines having either string <M0>, capital letter, or letter before string <M1>	( ( <M0> ) | ( [ <CAP> ] ) | ( [ <LET> ] ) ) . * ( <M1> ) . *
+Items without a numeral, or letter, or vowel.	~ ( ( [ <NUM> ] ) & ( [ <LET> ] ) & ( [ <VOW> ] ) )
+lines with words and capital letter or character	\ b ( [ <CAP> ] ) | ( [ <LET> ] ) | ( . ) \ b
+lines that contain words ending with a letter followed by a lower-case letter	\ b ( ( . * ) ( [ <LET> ] ) ) . * ( [ <LOW> ] ) . * \ b
+lines containing a capital letter followed by a number or a character	( [ <CAP> ] ) . * ( ( [ <NUM> ] ) | ( . ) ) . *
+lines starting with a number, zero times or more	( ( [ <NUM> ] ) ( . * ) ) *
+lines with the string <M0> before a number, string <M1>, and capital letter	( <M0> ) . * ( ( [ <NUM> ] ) & ( <M1> ) & ( [ <CAP> ] ) ) . *
+Items with a vowel at least three times preceding a numeral.	( ( [ <VOW> ] ) { 3 , } ) . * ( [ <NUM> ] ) . *
+lines with words with string <M0> or letter	\ b ( . * <M0> . * ) | ( [ <LET> ] ) \ b
+lines containing the string <M0> followed by a lower-case letter before the string <M1> in them	( . * <M0> . * [ <LOW> ] . * . * ) . * ( <M1> ) . *
+lines with words and zero or more of a vowel and string <M0>	( \ b ( [ <VOW> ] ) & ( <M0> ) \ b ) *
+lines with the string <M0> and <M1> before ending with a lower case letter	( ( <M0> ) & ( <M1> ) ) . * ( ( . * ) ( [ <LOW> ] ) ) . *
+lines with a capital letter following a letter at least 4 times	( [ <LET> ] . * [ <CAP> ] . * ) { 4 , }
+lines with the string <M0> and not a lower-case letter	~ ( ( . * <M0> . * ) & ( [ <LOW> ] ) )
+lines with a capital letter after the string dog at least zero times	( <M0> ) . * ( ( [ <CAP> ] ) * ) . *
+lines that contain a capital letter followed by a vowel, at least twice	( [ <CAP> ] . * [ <VOW> ] . * ) { 2 , }
+lines without a number or string <M0> or <M1>	~ ( ( [ <NUM> ] ) & ( <M0> ) & ( <M1> ) )
+Items with a letter preceding an upper case letter preceding a character.	( [ <LET> ] ) . * ( [ <CAP> ] . * . . * ) . *
+lines starting in 6 or more of the string <M0> and capital letters	( ( <M0> ) ( . * ) ) & ( ( [ <CAP> ] ) { 6 , } )
+lines with the 4 or more of the string <M0> before a lower-case letter	( <M0> ) . * ( ( [ <LOW> ] ) { 4 , } ) . *
+lines containing a lower-case letter or a capital letter	\ b ( [ <LOW> ] ) | ( [ <CAP> ] ) \ b
+lines with words, a character, and a capital or lower case letter	\ b ( . ) | ( [ <CAP> ] ) | ( [ <LOW> ] ) \ b
+The lines that have the string <M0> and a capital letter, but not the string <M1>	~ ( ( <M0> ) & ( <M1> ) & ( [ <CAP> ] ) )
+lines having either a character, string <M0>, or number before letter	( ( . ) | ( <M0> ) | ( [ <NUM> ] ) ) . * ( [ <LET> ] ) . *
+lines with words before a character then capital letter	\ b ( [ <VOW> ] . * . . * ) . * ( [ <CAP> ] ) . * \ b
+lines starting with 4 ore more of the strings <M0> or <M1>	( ( ( <M0> ) { 4 , } ) | ( <M1> ) ) ( . * )
+lines with words zero or more times with a character	\ b ( . ) . * ( ( [ <LET> ] ) * ) . * \ b
+lines with words either a letter, string <M0>  or a lower-case letter	\ b ( [ <LET> ] ) | ( <M0> ) | ( [ <LOW> ] ) \ b
+lines that have a number before a lower-case letter and the string <M0>	( [ <NUM> ] . * [ <LOW> ] . * ) . * ( <M0> ) . *
+Items with an upper case letter, <M0> or <M1> at least three times.	( ( ( [ <CAP> ] ) & ( <M0> ) ) | ( <M1> ) ) { 3 , }
+lines containing a vowel before the string <M0>, 5 or more times	( [ <VOW> ] . * <M0> . * ) { 5 , }
+lines with the string <M0> before a letter and string <M0>	( <M0> . * [ <LET> ] . * ) & ( ( <M1> ) + )
+lines with words, a vowel, and a capital letter	\ b ( [ <VOW> ] ) & ( [ <CAP> ] ) \ b
+lines with a number, letter, and <M0>	. * ( [ <NUM> ] ) & ( [ <LET> ] ) & ( <M0> ) . *
+lines with a capital letter, lower-case letter, and letter before a character	( ( [ <CAP> ] ) & ( [ <LOW> ] ) & ( [ <LET> ] ) ) . * ( . ) . *
+lines with a letter or string <M0>	( . * ( [ <LET> ] ) | ( <M0> ) . * ) +
+lines ending with a capital word and a vowel	( . * ) ( \ b ( [ <CAP> ] ) & ( [ <VOW> ] ) \ b )
+lines with character followed by vowel at least once	( . . * [ <VOW> ] . * ) +
+Lines with either 2 vowels or letters	( ( [ <VOW> ] ) | ( [ <LET> ] ) ) { 2 , }
+lines that end with a lower-case letter or a vowel	( . * ) ( ( [ <VOW> ] ) | ( [ <LOW> ] ) )
+lines with 6 or more capital letters before a letter	( ( [ <CAP> ] ) { 6 , } ) . * ( [ <LET> ] ) . *
+Items without any letter.	~ ( ( [ <LET> ] ) & ( [ <VOW> ] ) )
+lines with a vowel before a number	. * [ <VOW> ] . * [ <NUM> ] . * . *
+lines without <M0> or a letter	~ ( ( ( <M0> ) | ( [ <LET> ] ) ) + )
+lines not having string <M0> and not the string <M1> or string <M2>	~ ( ( ( <M0> ) & ( <M1> ) ) | ( <M2> ) )
+lines containing the string <M0>, a capital letter, the string <M1>, and the string <M2>	( ( <M0> ) & ( [ <CAP> ] ) & ( <M1> ) ) . * ( <M2> ) . *
+Items with a vowel at least twice prior to an upper case letter.	( ( [ <VOW> ] ) { 2 , } ) . * ( [ <CAP> ] ) . *
+lines with the string <M0> or ending with zero or more of a  letter	( ( <M0> ) | ( ( . * ) ( [ <LET> ] ) ) ) *
+lines with the string <M0> before a number with a character after	( <M0> ) . * ( [ <NUM> ] . * . . * ) . *
+Items with words containing a small letter or numeral.	\ b ( [ <NUM> ] ) | ( [ <LOW> ] ) \ b
+lines with number, 2 or more times and ending with string <M0>	( ( [ <NUM> ] ) { 2 , } ) & ( ( . * ) ( <M0> ) )
+lines with words with the string <M0> at least 5 times a long with a letter	\ b ( ( <M0> ) { 5 , } ) & ( [ <LET> ] ) \ b
+lines with a capital letter and a vowel before a lower-case letter in them	( ( [ <CAP> ] ) & ( [ <VOW> ] ) ) . * ( [ <LOW> ] ) . *
+Items beginning with a vowel or <M0>.	( ( ( <M0> ) | ( [ <VOW> ] ) ) ( . * ) ) *
+lines containing a vowel, and a number	. * ( . ) & ( [ <VOW> ] ) & ( [ <NUM> ] ) . *
+lines with words and 6 or more characters or a capital letter	\ b ( ( . ) { 6 , } ) | ( [ <CAP> ] ) \ b
+lines containing the string <M0> and 5 or more letters	( \ b ( <M0> ) & ( [ <LET> ] ) \ b ) { 5 , }
+lines do not contain a lower-case letter nor a character	~ ( ( [ <LOW> ] ) | ( . ) )
+lines without a character or letter	~ ( ( . ) | ( [ <CAP> ] ) | ( [ <LET> ] ) )
+lines with a number and a letter.	. * ( [ <NUM> ] ) & ( [ <LOW> ] ) . *
+lines with words ending with a lower-case letter and character	\ b ( ( . * ) ( [ <LOW> ] ) ) & ( . ) \ b
+lines with words starting with string <M0>, 7 or more times	( \ b ( <M0> ) ( . * ) \ b ) { 7 , }
+lines not containing a letter, not the string <M0> and <M1>	~ ( . * ( [ <LET> ] ) & ( <M0> ) & ( <M1> ) . * )
+lines with a character before capital letter and string <M0>	( . ) . * ( ( [ <CAP> ] ) & ( [ <LET> ] ) & ( <M0> ) ) . *
+lines with words with either a letter, lower-case letter, or string <M0>	\ b ( [ <LET> ] ) | ( [ <LOW> ] ) | ( <M0> ) \ b
+lines containing a letter before a number	\ b ( . * [ <LET> ] . * ) . * ( [ <NUM> ] ) . * \ b
+lines containing a lower-case letter followed by a capital letter	( [ <LOW> ] ) . * ( [ <CAP> ] ) . *
+lines with words and the string <M0> followed by a vowel at least 6 times	( \ b <M0> . * [ <VOW> ] . * \ b ) { 6 , }
+lines containing words that have capital letter, character or number	\ b ( . ) | ( [ <CAP> ] ) | ( [ <NUM> ] ) \ b
+lines which are not having a character before a vowel	( ~ ( . ) ) . * ( [ <VOW> ] ) . *
+lines with <M0> or a capital over 3 times	( ( <M0> ) | ( [ <CAP> ] ) ) { 3 , }
+lines with a character, a capital letter, the string "dog," and a letter, in order	( ( . ) . * ( [ <CAP> ] ) . * ) & ( <M0> . * [ <LET> ] . * )
+lines having a lower-case letter, the string <M0>, or the string <M1> preceding a character	( ( [ <LOW> ] ) | ( <M0> ) | ( <M1> ) ) . * ( . ) . *
+lines that end with either a number or a lower-case letter	( ( . * ) ( ( [ <NUM> ] ) | ( [ <LOW> ] ) ) ) +
+lines with string <M0> followed by string <M1> or ending with string <M2>	( <M0> . * <M1> . * ) | ( ( . * ) ( <M2> ) )
+lines with a letter or the string <M0>, capital letter, and string <M1>	. * ( [ <LET> ] ) | ( ( <M0> ) & ( [ <CAP> ] ) & ( <M1> ) ) . *
+lines which are starting with the string <M0> or a letter, zero or more times	( ( ( <M0> ) | ( [ <LET> ] ) ) * ) ( . * )
+lines that either end with a number or start with the string <M0>	( ( <M0> ) ( . * ) ) | ( ( . * ) ( [ <NUM> ] ) )
+lines containing a capital letter, a number, and a lower-case letter	\ b ( [ <CAP> ] ) & ( [ <NUM> ] ) & ( [ <LOW> ] ) \ b
+lines that contain a capital letter repeated 7 times	( ( . * ) ( [ <CAP> ] ) ) { 7 , }
+lines containing letter 3 times and a number	. * ( ( [ <CAP> ] ) { 3 , } ) & ( [ <NUM> ] ) . *
+lines in which a capital letter is preceded by the string <M0>	( [ <CAP> ] ) . * ( <M0> ) . *
+lines starting with <M0> followed by a capital	( ( <M0> . * [ <LET> ] . * ) ( . * ) ) . * ( [ <CAP> ] ) . *
+lines with words that contain only <M0> or a lower-case letter	\ b ( <M0> ) | ( [ <LOW> ] ) \ b
+lines that contain words which have a small letter or a number or a vowel	\ b ( [ <LOW> ] ) | ( [ <VOW> ] ) | ( [ <NUM> ] ) \ b
+lines that contain the word <M0> at least once, plus the word <M1> or a character	( ( <M0> ) + ) & ( ( . ) | ( <M1> ) )
+lines that do not have the string <M0> followed by a lower-case letter and a non-capital letter	~ ( ( ( <M0> ) . * ( [ <LOW> ] ) . * ) & ( [ <CAP> ] ) )
+lines with a number and letter and character	. * ( [ <LET> ] ) & ( [ <NUM> ] ) & ( . ) . *
+lines that do not have a number followed by a capital letter at least zero times	~ ( ( [ <NUM> ] . * [ <CAP> ] . * ) * )
+lines with a vowel, number, and character before a lower-case letter	( ( [ <VOW> ] ) & ( [ <NUM> ] ) & ( . ) ) . * ( [ <LOW> ] ) . *
+lines without a letter before a number then string <M0>	( ~ ( [ <LET> ] ) ) . * ( [ <NUM> ] . * <M0> . * ) . *
+lines with letter, zero or more times and ending with number	( ( [ <LET> ] ) * ) & ( ( . * ) ( [ <NUM> ] ) )
+lines containing a capital letter which is followed by a number	. * [ <CAP> ] . * [ <NUM> ] . * . *
+lines that have a lower-case letter at the beginning 2 or more times	( ( [ <LOW> ] ) ( . * ) ) { 2 , }
+lines containing the string <M0> but not a vowel	. * ( <M0> ) | ( ~ ( [ <VOW> ] ) ) . *
+Items with an uppercase letter preceding <M0> preceding a letter.	( [ <CAP> ] . * <M0> . * ) . * ( [ <LET> ] ) . *
+lines not having lower-case letter, not a vowel, and not a number	~ ( ( [ <LOW> ] ) & ( [ <VOW> ] ) & ( [ <NUM> ] ) )
+Items with <M0> preceding <M1>, <M2>, and a vowel.	( <M0> ) . * ( ( <M1> ) & ( <M2> ) & ( [ <VOW> ] ) ) . *
+lines with words ending with number before lower-case letter	( \ b ( . * ) ( [ <NUM> ] ) \ b ) . * ( [ <LOW> ] ) . *
+lines with a letter and character before vowel	( ( [ <LET> ] ) & ( . ) ) . * ( [ <VOW> ] ) . *
+lines with vowel, 3 or more times and containing a capital	( ( [ <VOW> ] ) { 3 , } ) & ( . * [ <CAP> ] . * )
+lines ending with character or letter followed by a capital	( ( . * ) ( . ) ) | ( [ <LET> ] . * [ <CAP> ] . * )
+lines ending with a letter followed by a lower-case letter at least 4 times	( ( . * ) ( [ <LET> ] . * [ <LOW> ] . * ) ) { 4 , }
+lines not ending in string <M0> before <M1>	~ ( ( ( . * ) ( <M0> ) ) . * ( <M1> ) . * )
+lines that end with <M0>	~ ( \ b ( . * ) ( <M0> ) \ b )
+lines starting in vowel or the string <M0> and character	( ( [ <VOW> ] ) | ( ( <M0> ) & ( . ) ) ) ( . * )
+lines ending with the string <M0> and zero or more lower case-letters	( ( . * ) ( <M0> ) ) & ( ( [ <LOW> ] ) * )
+lines not having <M0> with a lower-case letter	( ~ ( <M0> ) ) . * ( ( . * ) ( [ <LOW> ] ) ) . *
+lines that have words that are only a capital letter	. * \ b [ <CAP> ] \ b . *
+lines starting with character followed by string <M0>, 5 or more times	( ( . . * <M0> . * ) { 5 , } ) ( . * )
+lines starting with the string <M0> or the string <M1> at least once in them	( ( ( <M0> ) | ( <M1> ) ) ( . * ) ) +
+lines with the string <M0> before non lower-case letter	( ( <M0> ) + ) . * ( ~ ( [ <LOW> ] ) ) . *
+lines without a letter	. * ~ ( [ <LET> ] ) . *
+lines containing a letter, a character, and a vowel	\ b ( [ <LET> ] ) & ( . ) & ( [ <VOW> ] ) \ b
+lines that have a number, and then the string <M0>, the string <M2>, or the string <M1>	( ( <M0> ) | ( <M1> ) | ( <M2> ) ) . * ( [ <NUM> ] ) . *
+lines not ending with lower-case letter at least once	~ ( ( ( . * ) ( [ <LOW> ] ) ) + )
+Lines with a capital letter before a vowel.	\ b ( [ <CAP> ] ) . * ( [ <VOW> ] ) . * \ b
+lines ending with a character followed by no numbers or 1 or more	( . * ) ( ( . . * [ <NUM> ] . * ) * )
+lines ending with containing only a lower-case letter, at least 5 times	( . * ) ( ( [ <LOW> ] ) { 5 , } )
+lines with vowel before character, 6 or more times	( [ <VOW> ] ) . * ( ( . ) { 6 , } ) . *
+lines having the string <M1> after a letter, the string <M0>, or a capital letter	( ( [ <LET> ] ) | ( <M0> ) | ( [ <CAP> ] ) ) . * ( <M1> ) . *
+lines with a character, letter, and vowel before string <M0>	( ( . ) & ( [ <LET> ] ) & ( [ <VOW> ] ) ) . * ( <M0> ) . *
+lines with a character and string <M0> before <M1>	( ( . ) & ( <M0> ) ) . * ( <M1> ) . *
+lines with words containing a lower-case letter, a capital letter, and a number	\ b ( [ <LOW> ] ) & ( [ <CAP> ] ) & ( [ <NUM> ] ) \ b
+lines with a lower-case letter before character	( ( [ <LET> ] ) & ( [ <LOW> ] ) ) . * ( . ) . *
+lines with words that have a capital letter, the string <M1>, and the string <M0>	\ b ( [ <CAP> ] ) & ( <M0> ) & ( <M1> ) \ b
+lines with a number and string <M0> before a character	( . * [ <NUM> ] . * ) & ( ( <M0> ) . * ( . ) . * )
+lines with number before lower-case letter, character, and string <M0>	( [ <NUM> ] ) . * ( ( [ <LOW> ] ) & ( . ) & ( <M0> ) ) . *
+lines with words and a number, capital letter, and the string <M0>	\ b ( [ <NUM> ] ) & ( [ <CAP> ] ) & ( <M0> ) \ b
+lines not containing string <M0> at least once	. * ~ ( ( <M0> ) + ) . *
+lines ending with a number then <M0>	( ( . * ) ( [ <NUM> ] . * <M0> . * ) ) *
+lines beginning with a lower case letter with  the string <M0> following	( [ <LOW> ] . * <M0> . * ) ( . * )
+lines with words having a character	\ b . * . . * \ b
+lines with a capital letter occuring before a number followed by a lower case letter	( [ <CAP> ] ) . * ( [ <NUM> ] . * [ <LOW> ] . * ) . *
+lines containing the string <M0> or the string <M1>	( . * ) ( ( ( <M0> ) | ( <M1> ) ) { 3 , } )
+lines with a character, zero or more times and which are containing a lower-case letter	( ( . ) * ) & ( . * [ <LOW> ] . * )
+lines stating with a letter before a lower-case letter	( [ <LET> ] . * [ <LOW> ] . * ) ( . * )
+lines with 6 or more words that contain only a capital letter	\ b ( [ <CAP> ] ) { 6 , } \ b
+Lines containing zero or more times a character or a lower case letter and  <M0>	( ( . ) * ) & ( ( <M0> ) | ( [ <LOW> ] ) )
+lines with 3 or more of a  lower-case letter or character	( ( [ <LOW> ] ) | ( . ) ) { 3 , }
+lines ending with lower-case letter followed by letter	. * ( . * ) ( [ <LOW> ] . * [ <LET> ] . * ) . *
+lines that have a letter and the word <M0> followed by the word <M1>	( ( [ <LET> ] ) & ( <M0> ) ) . * ( <M1> ) . *
+lines where 3 or more times an uppercase letter is contained	( [ <CAP> ] ) { 3 , }
+lines with a capital letter does or doesn't follow a character	( ( . ) * ) . * ( [ <CAP> ] ) . *
+lines containing a vowel preceding the string <M0>, the string <M1>, and a capital letter	( [ <VOW> ] ) . * ( ( <M0> ) & ( <M1> ) & ( [ <CAP> ] ) ) . *
+Items terminating with a numeral at least six times.	( . * ) ( ( [ <NUM> ] ) { 6 , } )
+lines with the string <M0>, <M1> and <M2> before a capital letter	( ( <M0> ) & ( <M1> ) ) . * ( ( [ <CAP> ] ) | ( <M2> ) ) . *
+lines with a capital letter before <M0>, and a vowel	( [ <CAP> ] ) . * ( ( <M0> ) & ( [ <VOW> ] ) ) . *
+lines with words with string <M0>, zero or more times or lower-case letter	\ b ( ( <M0> ) * ) | ( [ <LOW> ] ) \ b
+lines with a capital letter before a vowel then string <M0>	. * ( [ <CAP> ] . * [ <VOW> ] . * ) . * ( <M0> ) . * . *
+lines contaiing a lower-case letter or the string <M0> at least zero times	( ( [ <LOW> ] ) | ( <M0> ) ) *
+lines starting with a number and capital letter the string <M0>	( ( ( [ <NUM> ] ) & ( <M0> ) ) | ( [ <CAP> ] ) ) ( . * )
+lines ending with a letter at least 3 times	( . * ) ( ( [ <LET> ] ) | ( ( [ <CAP> ] ) { 3 , } ) )
+lines with a number or character before vowel	( ( [ <NUM> ] ) | ( . ) ) . * ( [ <VOW> ] ) . *
+lines containing words but not the string <M0> or lower-case letter	\ b ( ~ ( <M0> ) ) | ( [ <LOW> ] ) \ b
+lines with the string <M0> after a letter	( [ <LET> ] ) . * ( <M0> ) . *
+lines containing lower-case letter or capital letter with string <M0> and <M1>	. * ( ( [ <LOW> ] ) | ( [ <CAP> ] ) | ( <M0> ) ) | ( <M1> ) . *
+Determine lines that contain at least one vowel before a character	( ( [ <VOW> ] ) * ) . * ( . ) . *
+lines with 3 or more of a vowel or lower-case letter	( ( [ <VOW> ] ) | ( [ <LOW> ] ) ) { 3 , }
+The lines beginning with a vowel	~ ( ( [ <VOW> ] ) ( . * ) )
+lines where 5 or more times a character is preceded by the string <M0>	( <M0> . * . . * ) { 5 , }
+lines without the string <M0> or <M1>	~ ( ( ( <M0> ) + ) & ( <M1> ) )
+lines containing words but without the string <M0> or lower-case letters	( \ b ( <M0> ) & ( [ <LOW> ] ) \ b ) *
+lines starting in words ending in a lower-case letter	( \ b ( . * ) ( [ <LOW> ] ) \ b ) ( . * )
+A capital letter and a number in a line	\ b ( [ <CAP> ] ) & ( [ <NUM> ] ) \ b
+Items with a numeral at least five times preceding a capital letter.	( ( [ <NUM> ] ) { 5 , } ) . * ( [ <CAP> ] ) . *
+lines containing a letter and a vowel preceding the string <M0>	( ( [ <LET> ] ) & ( [ <VOW> ] ) ) . * ( <M0> ) . *
+lines that have a vowel and lowercase letter preceding the string <M0>	( ( [ <VOW> ] ) & ( [ <LOW> ] ) ) . * ( <M0> ) . *
+lines cannot include a character or lower-case letter or number	~ ( ( . ) & ( [ <LOW> ] ) & ( [ <NUM> ] ) )
+lines with a number or the string <M0> and a character, 4 or more times in them	( ( [ <NUM> ] ) | ( ( <M0> ) & ( . ) ) ) { 4 , }
+lines with a capital letter preceded by another letter	( [ <LET> ] . * [ <CAP> ] . * ) ( . * )
+lines with strings containing a number before a capital letter, before <M0>	\ b ( [ <NUM> ] . * [ <CAP> ] . * ) . * ( <M0> ) . * \ b
+lines which are containing a number, a capital letter, and the string <M0>	. * ( [ <NUM> ] ) & ( [ <CAP> ] ) & ( <M0> ) . *
+lines with the string <M0> before <M1> without a lower-case letter	( ( <M0> ) . * ( <M1> ) . * ) & ( ~ ( [ <LOW> ] ) )
+lines with words and a character before string <M0>	. * \ b . . * <M0> . * \ b . *
+lines which are ending with a lower-case letter or containing a letter	( ( . * ) ( [ <LOW> ] ) ) | ( . * [ <LET> ] . * )
+lines with words with a lower-case letter, letter, and string <M0>	\ b ( [ <LOW> ] ) & ( <M0> ) & ( [ <LET> ] ) \ b
+lines ending with a character	. * ( . * ) ( . ) . *
+lines without 4 capital letters before numbers	~ ( ( ( [ <CAP> ] ) { 4 , } ) . * ( [ <NUM> ] ) . * )
+Items with a numeral preceding an upper case letter.	( [ <NUM> ] ) . * ( ( [ <CAP> ] ) * ) . *
+lines containing either <M0>, <M1> or a character	. * ( <M0> ) | ( . ) | ( <M1> ) . *
+lines containing the string <M0> or the string <M1> at least 5 times	( ( <M0> ) | ( <M1> ) ) { 5 , }
+lines with a vowel before string <M0> or character	( [ <VOW> ] ) . * ( ( <M0> ) | ( . ) ) . *
+lines with words and 2 or more vowels	\ b . * ( [ <VOW> ] ) { 2 , } . * \ b
+lines without the string <M0> or <M1> or a number	~ ( ( ( <M0> ) & ( <M1> ) ) | ( [ <NUM> ] ) )
+lines that have at least three combinations of a letter before a lower-case letter	( ( [ <LET> ] ) { 3 , } ) . * ( [ <LOW> ] ) . *
+lines that contain the string <M0> or contain a vowel followed by a capital letter	( ( <M0> ) | ( [ <VOW> ] ) ) . * ( [ <CAP> ] ) . *
+lines with a vowel 5 times before a number	( ( [ <VOW> ] ) { 5 , } ) . * ( . * [ <NUM> ] . * ) . *
+lines with the string <M0>	. * ( ( <M0> ) + ) . * ( . ) . * . *
+lines with words having the string <M0> at least 6 times with the string <M1>	\ b ( ( <M0> ) { 6 , } ) & ( <M1> ) \ b
+lines with either the string <M0> or a capital letter before a vowel	( . * ( <M0> ) | ( [ <CAP> ] ) . * ) . * ( [ <VOW> ] ) . *
+lines with a character, a string <M0>, then a vowel	( . ) . * ( <M0> . * [ <VOW> ] . * ) . *
+lines with words with a vowel, the string <M0>, and a letter in them	\ b ( [ <VOW> ] ) & ( <M0> ) & ( [ <LET> ] ) \ b
+lines with words containing the string <M0>, a character, or a letter	\ b ( <M0> ) | ( . ) | ( [ <LET> ] ) \ b
+lines containing a letter and <M0>	. * ( <M0> ) & ( [ <LET> ] ) . *
+lines with a character before a letter	( . ) . * ( ( [ <LET> ] ) + ) . *
+lines with 3 or more of a vowel before capital letter	( [ <VOW> ] . * [ <CAP> ] . * ) { 3 , }
+lines with the string <M0> or a number at least once in them	( ( <M0> ) | ( [ <NUM> ] ) ) +
+lines with a number before the string <M0> at least 4 times	( ( [ <NUM> ] ) { 4 , } ) . * ( <M0> ) . *
+lines with words with a letter before string <M0> of <M1>	\ b ( [ <LET> ] ) . * ( ( <M0> ) | ( <M1> ) ) . * \ b
+lines ending with words with a character	( . * ) ( \ b ( . ) * \ b )
+lines with words with a capital letter, string <M0>, and vowel	\ b ( [ <CAP> ] ) & ( <M0> ) & ( [ <VOW> ] ) \ b
+lines with words with a lower-case letter, letter, or character	\ b . * ( [ <LOW> ] ) | ( [ <LET> ] ) | ( . ) . * \ b
+Lines with capital letter have at least zero time.	( [ <CAP> ] ) *
+lines with a capital letter or character.	. * ( [ <CAP> ] ) | ( . ) . *
+lines contain the string <M0>, at least 6 times prior to a capital letter	( ( <M0> ) { 6 , } ) . * ( [ <CAP> ] ) . *
+lines with a lower-case letter before vowel or string <M0>	( [ <LOW> ] ) . * ( ( [ <VOW> ] ) | ( <M0> ) ) . *
+lines containing a number	( [ <NUM> ] ) +
+lines with only a vowel before the string <M0>	( ( [ <VOW> ] ) + ) . * ( <M0> ) . *
+lines that contain neither a capital letter, number, nor a character.	~ ( ( [ <CAP> ] ) & ( [ <NUM> ] ) & ( . ) )
+lines with no letter either zero times or greater than zero times	~ ( ( [ <LET> ] ) * )
+lines with a capital letter before string <M0> then a vowel	( [ <CAP> ] . * <M0> . * ) . * ( [ <VOW> ] ) . *
+lines with words with either string <M0>, a letter, or a capital	\ b ( <M0> ) | ( [ <LET> ] ) | ( [ <CAP> ] ) \ b
+Items with an upper case letter preceding a numeral at least seven times.	. * ( [ <CAP> ] ) . * ( ( [ <NUM> ] ) { 7 , } ) . * . *
+lines with 7 or more of a capital letter before number	( [ <CAP> ] . * [ <NUM> ] . * ) { 7 , }
+lines starting in less than 7 characters	~ ( ( ( . ) { 7 , } ) ( . * ) )
+lines ending in 3 or more characters	( . * ) ( ( . ) { 3 , } )
+lines with a letter before a vowel or the string <M0>, 3 or more times in them	( ( [ <LET> ] ) . * ( [ <VOW> ] ) . * ) | ( ( <M0> ) { 3 , } )
+lines not containing only string <M0> and not a number	~ ( ( <M0> ) & ( [ <NUM> ] ) )
+lines with a lower-case, at least 6 times and having a character	( ( [ <LOW> ] ) { 6 , } ) & ( . * . . * )
+lines with 3 or more words that start in a capital letter	( \ b ( [ <CAP> ] ) ( . * ) \ b ) { 3 , }
+lines containing the string <M0> with a letter before it	( [ <LET> ] ) . * ( . * <M0> . * ) . *
+Items with a vowel preceding a letter at least thrice.	( [ <VOW> ] . * [ <LET> ] . * ) { 3 , }
+lines with lower-case letter, string <M0>, and capital letter before a number	( ( [ <LOW> ] ) & ( <M0> ) & ( [ <CAP> ] ) ) . * ( [ <NUM> ] ) . *
+lines not having a number followed by the string <M0> or <M1>	~ ( ( [ <NUM> ] . * <M0> . * ) | ( <M1> ) )
+lines ending in lower-case letter before character or number	( . * ) ( ( ( [ <LOW> ] ) . * ( . ) . * ) | ( [ <NUM> ] ) )
+lines containging a capital letter and a letter	( . * ) ( [ <CAP> ] . * [ <LET> ] . * )
+Items with a letter at least four times preceding a small letter.	( ( [ <LET> ] ) { 4 , } ) . * ( [ <LOW> ] ) . *
+lines with either a letter, a character, or the string <M0> followed by the string <M1>	( ( [ <LET> ] ) | ( . ) | ( <M0> ) ) . * ( <M1> ) . *
+lines that end with a letter followed by a vowel, zero or more times	( . * ) ( ( ( [ <LET> ] ) * ) | ( [ <VOW> ] ) )
+lines containing one of the following: a vowel, a capital letter, or the string <M0>	. * ( [ <VOW> ] ) | ( [ <CAP> ] ) | ( <M0> ) . *
+lines with 7 or more of the string <M0> before the string <M1>	( ( <M0> ) { 7 , } ) . * ( <M1> ) . *
+lines with words with either a capital letter, character, or string <M0> before string <M1>	\ b ( ( [ <CAP> ] ) | ( . ) | ( <M0> ) ) . * ( <M1> ) . * \ b
+lines containing a character after a capital letter at least 5 times	( ( [ <CAP> ] ) { 5 , } ) . * ( . ) . *
+lines with words that contain only 4 or more capital letters	( \ b [ <CAP> ] \ b ) { 4 , }
+Items with <M0> or an uppercase letter or letter preceding a character.	( ( [ <CAP> ] ) | ( <M0> ) | ( [ <LET> ] ) ) . * ( . ) . *
+The lines that contain a letter coming before the string <M0> at least 2 times	( [ <LET> ] ) . * ( ( <M0> ) { 2 , } ) . *
+lines starting in the string <M0> before lower-case letter or string <M1>	( ( <M0> ) ( . * ) ) . * ( ( [ <LOW> ] ) | ( <M1> ) ) . *
+lines with 5 or more of the string <M0> or lower-case letter	( ( <M0> ) | ( [ <LOW> ] ) ) { 5 , }
+lines with <M0> before a letter	( <M0> ) . * ( . * ~ ( [ <LET> ] ) . * ) . *
+lines with words with string <M0> before a capital, zero or more times	( \ b ( <M0> ) . * ( [ <CAP> ] ) . * \ b ) *
+lines with the string <M0> before a number or which are ending with a vowel	( ( <M0> ) . * ( [ <NUM> ] ) . * ) | ( ( . * ) ( [ <VOW> ] ) )
+lines with a letter or vowel and lower-case letter	. * ( ( [ <LET> ] ) | ( [ <VOW> ] ) ) & ( [ <LOW> ] ) . *
+lines with words with zero or more of a character with string <M0>	\ b ( ( . ) * ) & ( <M0> ) \ b
+lines with the string <M0> followed by the string <M1> and the string <M2>, the string <M3>, and a lower-case letter in them	( <M0> . * <M1> . * ) & ( ( <M2> ) & ( <M3> ) & ( [ <LOW> ] ) )
+lines ending with 5 or more of the string <M0> or characters	( ( ( . * ) ( <M0> ) ) | ( . ) ) { 5 , }
+lines with zero or more of the string <M0> and <M1> and a number or the string <M2>	( ( ( <M0> ) & ( <M1> ) & ( [ <NUM> ] ) ) | ( <M2> ) ) *
+lines having mimnimum one number and a capital letter	( ( [ <CAP> ] ) | ( [ <NUM> ] ) ) +
+lines with a letter before a number	( ( [ <LET> ] ) + ) . * ( ~ ( [ <NUM> ] ) ) . *
+lines ending with a lower-case letter before a vowel	( ( . * ) ( [ <LOW> ] ) ) . * ( ( [ <VOW> ] ) * ) . *
+lines containing 3 or more numbers before capital letters	. * ( ( [ <NUM> ] ) { 3 , } ) . * ( [ <CAP> ] ) . * . *
+lines not beginning with a letter followed by a lower-case letter	( ~ ( ( [ <LET> ] ) ( . * ) ) ) . * ( [ <LOW> ] ) . *
+lines without letter or capital letter	~ ( ( [ <LET> ] ) & ( [ <CAP> ] ) )
+does not have <M0>, a character, or a lowercase letter	~ ( ( <M0> ) | ( . ) | ( [ <LOW> ] ) )
+lines with capital letter followed by character before vowel	( [ <CAP> ] . * . . * ) . * ( [ <VOW> ] ) . *
+lines containing a letter or the string <M0>	\ b ( [ <LET> ] ) | ( <M0> ) \ b
+lines with a number and ending with a capital letter	( [ <NUM> ] ) . * ( ( . * ) ( [ <CAP> ] ) ) . *
+lines with 2 or more lower-case letters before a character	( ( [ <LOW> ] ) { 2 , } ) . * ( . ) . *
+lines that start with a vowel or <M0> before <M1>	( ( [ <VOW> ] ) ( . * ) ) | ( ( <M0> ) . * ( <M1> ) . * )
+Lines with number, three or more times before capital letter	( ( [ <NUM> ] ) { 3 , } ) . * ( [ <CAP> ] ) . *
+lines which have a capital letter before ending with a letter	( [ <CAP> ] ) . * ( ( . * ) ( [ <LET> ] ) ) . *
+lines with a vowel before string <M0> or lower-case letter	( [ <VOW> ] ) . * ( ( <M0> ) | ( [ <LOW> ] ) ) . *
+lines ending with a number after a capital letter	( ( . * ) ( [ <CAP> ] ) ) . * ( [ <NUM> ] ) . *
+lines that contain a capital letter followed by a letter and a character, or the string <M0>	( [ <CAP> ] . * <M0> . * ) | ( ( [ <LET> ] ) & ( . ) )
+lines with <M0>, a vowel, or a number that comes prior to a letter	( ( <M0> ) | ( [ <VOW> ] ) | ( [ <NUM> ] ) ) . * ( [ <LET> ] ) . *
+lines with a lower-case letter or a vowel before a character in them	( ( [ <LOW> ] ) | ( [ <VOW> ] ) ) . * ( . ) . *
+lines with less than 6 characters and letters	( ~ ( . ) ) & ( ( [ <LET> ] ) { 6 , } )
+lines with a vowel or letter	. * ( [ <LOW> ] ) | ( [ <VOW> ] ) | ( [ <LET> ] ) . *
+lines beginning with a letter or containing a capital letter	( ( [ <CAP> ] ) + ) | ( ( [ <LET> ] ) ( . * ) )
+lines containing the string <M0>, a vowel, and the string <M1> at least once	( \ b ( <M0> ) & ( [ <VOW> ] ) & ( <M1> ) \ b ) +
+lines with the string <M0> and <M1> and a vowel before a lower-case letter	( ( <M0> ) & ( <M1> ) & ( [ <VOW> ] ) ) . * ( [ <LOW> ] ) . *
+lines that have a character preceding the word <M0> followed by a capital letter	( . ) . * ( <M0> . * [ <CAP> ] . * ) . *
+lines not starting with character	~ ( ( . ) ( . * ) )
+lines with zero or more of a number before a lower-case letter and string <M0> and 'truck	( ( [ <NUM> ] ) * ) . * ( ( [ <LOW> ] ) & ( <M0> ) & ( <M1> ) ) . *
+lines where a number doesn't come before a character	( [ <NUM> ] ) . * ( ~ ( . ) ) . *
+lines which words contain either of these - letter, number, or vowel	\ b ( . ) | ( [ <LET> ] ) | ( [ <NUM> ] ) \ b
+lines with the string <M0>, a letter, or the string <M1>	\ b ( <M0> ) | ( [ <LET> ] ) | ( <M1> ) \ b
+lines with 3 or more of a lower-case letter before string <M0>	( [ <LOW> ] ) . * ( ( <M0> ) { 3 , } ) . *
+lines ending with <M0> or a vowel	( . * ) ( ( ( <M0> ) + ) | ( [ <VOW> ] ) )
+lines with a number before a capital letter and string <M0>	( [ <NUM> ] . * [ <CAP> ] . * ) & ( ( <M0> ) + )
+lines with a lower-case letter, the string <M1>, and the string <M2> after the string <M0>	( <M0> ) . * ( ( [ <LOW> ] ) & ( <M1> ) & ( <M2> ) ) . *
+lines with a lower-case letter before letter then capital letter	( [ <LOW> ] . * [ <LET> ] . * ) . * ( [ <CAP> ] ) . *
+lines with words and a character before string <M0> and <M1>	\ b ( ( . ) . * ( <M0> ) . * ) & ( <M1> ) \ b
+lines with a letter occuring zero or more times before a number	( ( [ <LET> ] ) * ) . * ( [ <NUM> ] ) . *
+lines with a number, the string <M0>, and the string <M1> after a lower-case letter	( [ <LOW> ] ) . * ( ( [ <NUM> ] ) & ( <M0> ) & ( <M1> ) ) . *
+lines containing a lower-case letter or number	( ( [ <LOW> ] ) | ( [ <NUM> ] ) ) *
+lines containing the string <M0> or a letter 4 or more times	( ( <M0> ) | ( [ <LET> ] ) ) { 4 , }
+lines which are having either a character, the string <M0>, or a number before a capital letter	( ( . ) | ( <M0> ) | ( [ <NUM> ] ) ) . * ( [ <CAP> ] ) . *
+lines with 5 characters followed by a capital letter	( . . * [ <CAP> ] . * ) { 5 , }
+lines which do not have words with the string <M0>, 5 or more times	~ ( \ b ( <M0> ) { 5 , } \ b )
+Items terminating with a character at least five times.	( ( . * ) ( . ) ) { 5 , }
+Lines with vowel before capital letter, seven or so times	( [ <VOW> ] ) . * ( ( [ <CAP> ] ) { 7 , } ) . *
+Items with either a letter or a numeral.	. * ( [ <LET> ] ) | ( [ <NUM> ] ) | ( [ <LOW> ] ) . *
+lines starting with character before number	( ( . ) ( . * ) ) . * ( [ <NUM> ] ) . *
+lines with letter before string <M0>, 6 or more times	( [ <LET> ] ) . * ( ( <M0> ) { 6 , } ) . *
+lines with a character or string <M0> or <M1> before a letter	( ( . ) | ( <M0> ) | ( <M1> ) ) . * ( [ <LET> ] ) . *
+lines with words with a letter before the string <M0> in them	\ b ( [ <LET> ] ) . * ( <M0> ) . * \ b
+lines that have words ending with a lower-case letter or the string <M0>	\ b ( . * ) ( ( [ <LOW> ] ) | ( <M0> ) ) \ b
+Items with a letter and a character preceding <M0>.	( ( . ) & ( [ <LET> ] ) ) . * ( <M0> ) . *
+lines containing vowel before a capital or string <M0>	. * ( ( [ <VOW> ] ) . * ( [ <CAP> ] ) . * ) | ( <M0> ) . *
+lines having words containing the string <M0> followed by a vowel or a letter	\ b ( ( <M0> ) . * ( [ <VOW> ] ) . * ) | ( [ <LET> ] ) \ b
+lines containing a character or the string <M0> at least zero times	( ( . ) | ( <M0> ) ) *
+lines starting 7 times with capital letter	( ( [ <CAP> ] ) ( . * ) ) { 7 , }
+lines starting in 5 or more characters before a capital letter	( ( ( . ) { 5 , } ) | ( [ <CAP> ] ) ) ( . * )
+lines with a lower-case letter and vowel before string <M0>	( ( [ <LOW> ] ) & ( [ <VOW> ] ) ) . * ( <M0> ) . *
+lines with the string <M0> before a character, letter, and string <M1>	( <M0> ) . * ( ( . ) & ( [ <LET> ] ) & ( <M1> ) ) . *
+liens without <M0> before <M1>	~ ( \ b ( <M0> ) . * ( <M1> ) . * \ b )
+lines ending with a word containing a capital	( . * ) ( \ b ( [ <CAP> ] ) * \ b )
+lines with the string <M0>, a character, or a number after a vowel	( [ <VOW> ] ) . * ( ( <M0> ) | ( . ) | ( [ <NUM> ] ) ) . *
+lines having a number, lower-case letter, and a vowel	( ( [ <NUM> ] ) & ( [ <LOW> ] ) & ( [ <VOW> ] ) ) . * ( [ <CAP> ] ) . *
+lines with the string <M0> followed by a character, with 6 or more times	( <M0> . * . . * ) { 6 , }
+lines with words with the string <M0> or either the string <M1>, the string <M2>, or the string <M3> in them	\ b ( <M0> ) | ( ( <M1> ) | ( <M2> ) | ( <M3> ) ) \ b
+lines containing words with a number, a letter, or a capital letter	\ b ( [ <NUM> ] ) | ( [ <LET> ] ) | ( [ <CAP> ] ) \ b
+lines with the string <M1> after the string <M0> one or more times	( ( <M0> ) + ) . * ( <M1> ) . *
+lines containing the string <M0>. <M1> and a character	. * ( <M0> ) & ( . ) & ( <M1> ) . *
+lines with words with a character, lower-case letter, or number	\ b ( . ) | ( [ <LOW> ] ) | ( [ <NUM> ] ) \ b
+lines with a capital letter or the string <M0>	( ( [ <CAP> ] ) | ( <M0> ) ) +
+lines containing the string <M0> followed by the string <M1>	( <M0> ) . * ( ~ ( ( <M1> ) * ) ) . *
+lines consisting of words with a letter as well as a number	\ b ( [ <LET> ] ) & ( [ <NUM> ] ) \ b
+lines which contain the string <M0> or a vowel, 3 or more times	( ( <M0> ) | ( [ <VOW> ] ) ) { 3 , }
+lines with words with a letter	( \ b . * [ <LET> ] . * \ b ) *
+lines starting with a capital letter at least twice	( \ b ( [ <CAP> ] ) ( . * ) \ b ) { 2 , }
+lines in which a character appears no less than zero times before a <M0> string occurs	( ( . ) * ) . * ( <M0> ) . *
+lines that finish with the <M0> string 4 times or more	( ( . * ) ( <M0> ) ) { 4 , }
+lines with a letter after the string <M0> at least once	( ( <M0> ) + ) . * ( [ <LET> ] ) . *
+Items without any letter.	~ ( ( [ <LET> ] ) | ( [ <LOW> ] ) | ( [ <CAP> ] ) )
+lines with number before string <M0>,  string <M1>, and a capital	( [ <NUM> ] ) . * ( ( <M0> ) & ( <M1> ) & ( [ <CAP> ] ) ) . *
+lines with the string <M0> or a lower-case letter >= 1 times	( ( <M0> ) | ( [ <LOW> ] ) ) +
+My dog Misty would bark if you started yelling at each other.	\ b ( <M0> ) | ( [ <LOW> ] ) \ b
+Lines ending with string <M0>	\ b ( . * ) ( <M0> ) \ b
+Items with words containing a small letter.	\ b . * [ <LOW> ] . * \ b
+lines with two words that don't have a letter	\ b ~ ( ( [ <LET> ] ) { 2 , } ) \ b
+lines starting with string <M0> or string <M1> before a character	( ( <M0> ) | ( ( <M1> ) . * ( . ) . * ) ) ( . * )
+lines that start with words and no character	( \ b ~ ( . ) \ b ) ( . * )
+lines having character, number, and lower-case letter before string <M0>	( ( . ) & ( [ <NUM> ] ) & ( [ <LOW> ] ) ) . * ( <M0> ) . *
+Lines having either number, letter, or character before a vowel	( ( [ <NUM> ] ) | ( [ <LET> ] ) | ( . ) ) . * ( [ <VOW> ] ) . *
+lines with the string <M0> followed by the string <M1> occurring 6 or more times	( <M0> . * <M1> . * ) { 6 , }
+lines with a number followed by a letter 3 times	( [ <NUM> ] . * [ <LET> ] . * ) { 3 , }
+lines ending in string <M0> before <M1>	. * ( . * ) ( <M0> . * <M1> . * ) . *
+lines with "dog", or a number before "truck"	( ( <M0> ) | ( ( [ <NUM> ] ) . * ( <M1> ) . * ) ) *
+lines with lower-case letter at least once and vowel followed by number	( ( [ <LOW> ] ) + ) & ( [ <VOW> ] . * [ <NUM> ] . * )
+lines containing words having a character or the string <M0> as well as a capital letter	\ b ( ( . ) | ( <M0> ) ) & ( [ <CAP> ] ) \ b
+lines beginning with the string <M0> before character	( ( <M0> ) ( . * ) ) . * ( . ) . *
+lines with the string <M0> ending in a letter	( ( <M0> ) + ) . * ( ( . * ) ( [ <LET> ] ) ) . *
+lines with letter in lower-case or before the string <M0>	( ( [ <LOW> ] ) | ( [ <LET> ] ) ) . * ( <M0> ) . *
+lines which have the string <M0>, a number, and the string <M1>	. * ( <M0> ) & ( [ <NUM> ] ) & ( <M1> ) . *
+lines containing words with or without the string <M0>, followed by the string <M1>	\ b ( ( <M0> ) * ) . * ( <M1> ) . * \ b
+lines beginning with a vowel one or more times	( ( [ <VOW> ] ) + ) ( . * )
+Items with a numeral at least six times preceding a small letter.	( ( [ <NUM> ] ) { 6 , } ) . * ( [ <LOW> ] ) . *
+lines that contain one of the following: the string <M0>; a capital letter; or a lower-case letter with a number before it	( ( <M0> ) | ( [ <CAP> ] ) | ( [ <NUM> ] ) ) . * ( [ <LOW> ] ) . *
+lines containing number, 6 or more times	. * ( [ <NUM> ] ) { 6 , } . *
+lines with at least 1 character or number	( ( . ) | ( [ <NUM> ] ) ) +
+lines with words starting with a capital, 4 or more times	( \ b ( [ <CAP> ] ) ( . * ) \ b ) { 4 , }
+lines with 3 or less of a number and character	( ~ ( [ <NUM> ] ) ) & ( ( . ) { 3 , } )
+Items with a small letter or <M0> preceding an upper case letter.	( ( [ <LOW> ] ) | ( <M0> ) ) . * ( [ <CAP> ] ) . *
+lines with a letter or string <M0> before a vowel	( ( [ <LET> ] ) | ( <M0> ) ) . * ( [ <VOW> ] ) . *
+Lines with a character, <M0>, or a capital letter, before a vowel.	( ( . ) | ( <M0> ) | ( [ <CAP> ] ) ) . * ( [ <VOW> ] ) . *
+lines which are not containing containing only a vowel	~ ( . * [ <VOW> ] . * )
+lines having a capital letter and the string <M0>	( . * ( [ <CAP> ] ) & ( <M0> ) . * ) +
+lines with 4 or more of a number or lower-case letter	( ( [ <NUM> ] ) | ( [ <LOW> ] ) ) { 4 , }
+lines containing a vowel before 0 or more of the string <M0>	( [ <VOW> ] ) . * ( ( <M0> ) * ) . *
+lines with words with either the string <M0>, a number, or the string <M1> or a capital letter in them	\ b ( ( <M0> ) | ( [ <NUM> ] ) | ( <M1> ) ) | ( [ <CAP> ] ) \ b
+Items with words beginning with a small letter.	\ b ( ( [ <LOW> ] ) * ) ( . * ) \ b
+lines that contain <M0> followed by a character, lower-case letter, or <M1>	( <M0> ) . * ( ( . ) | ( [ <LOW> ] ) | ( <M1> ) ) . *
+lines which are not containing only the string <M0>	~ ( <M0> )
+lines having words beginning with a lower-case letter coming twice or more	( \ b ( [ <LOW> ] ) ( . * ) \ b ) { 2 , }
+lines with words including a vowel, number, and letter	\ b ( [ <VOW> ] ) & ( [ <NUM> ] ) & ( [ <LET> ] ) \ b
+lines that does not end with a vowel or a number	( . * ) ( ( ~ ( [ <VOW> ] ) ) | ( [ <NUM> ] ) )
+Items with a letter, a character, or a numeral.	. * ( [ <NUM> ] ) | ( . ) | ( [ <LET> ] ) . *
+Items with a character at lease six times before <M0>.	( ( . ) { 6 , } ) . * ( <M0> ) . *
+lines containing a letter or a number and a capital letter	( ( [ <LET> ] ) | ( [ <NUM> ] ) ) . * ( [ <CAP> ] ) . *
+lines containing either string <M0>, capital letter, or lower-case letter	. * ( <M0> ) | ( [ <CAP> ] ) | ( [ <LOW> ] ) . *
+lines with the string <M0> before only 2 or more letters	( <M0> ) . * ( ( [ <CAP> ] ) { 2 , } ) . *
+Items with a numeral preceding a vowel at least thrice.	( [ <NUM> ] . * [ <VOW> ] . * ) { 3 , }
+lines ending with a letter before another letter	( ( . * ) ( . ) ) . * ( [ <LOW> ] ) . *
+lines without the string <M0> or a character	~ ( ( <M0> ) | ( . * . . * ) )
+lines with words that don't have a vowel zero or more times	( \ b ~ ( [ <VOW> ] ) \ b ) *
+lines with one or more <M0> or a letter	\ b ( ( <M0> ) + ) | ( [ <LET> ] ) \ b
+lines where 3 or more times a number is preceded by a character	( . . * [ <NUM> ] . * ) { 3 , }
+lines ending in zero or more of a character	( ( . * ) ( . * . . * ) ) *
+lines starting in the string <M0> before a capital letter and string <M1>	( ( <M0> ) ( . * ) ) . * ( ( [ <CAP> ] ) & ( <M1> ) ) . *
+lines containing either a vowel, the string <M0>, or a capital letter	\ b ( [ <VOW> ] ) | ( <M0> ) | ( [ <CAP> ] ) \ b
+lines with <M0>, a letter, or a number before <M1>	( ( <M0> ) | ( [ <LET> ] ) | ( [ <NUM> ] ) ) . * ( <M1> ) . *
+lines containing a vowel, followed by a capital letter and a number	( [ <VOW> ] ) . * ( ( [ <CAP> ] ) & ( [ <NUM> ] ) ) . *
+lines starting in the string <M0> or with string <M1>	( ( <M0> ) ( . * ) ) | ( . * <M1> . * )
+lines ending with only a letter at least once	( ( . * ) ( [ <LET> ] ) ) +
+lines end with 2 or more letters	. * ( . * ) ( ( [ <LET> ] ) { 2 , } ) . *
+lines end with a vowel and a character	( . * ) ( \ b ( [ <VOW> ] ) . * ( . ) . * \ b )
+lines ending in zero or more of a letter and string <M0>	( . * ) ( ( ( [ <LET> ] ) * ) | ( <M0> ) )
+lines with the string <M0> preceding an uppercase letter or the string <M1> or a character	( <M0> ) . * ( ( [ <CAP> ] ) | ( <M1> ) | ( . ) ) . *
+Items with a letter preceding a numeral at least four times.	( [ <LET> ] . * [ <NUM> ] . * ) { 4 , }
+lines with the string <M0>, zero or more times and a lower-case letter followed by a vowel in them	( ( <M0> ) * ) & ( [ <LOW> ] . * [ <VOW> ] . * )
+lines not having a letter, the string <M0>, or a number	~ ( ( [ <LET> ] ) & ( <M0> ) & ( [ <NUM> ] ) )
+lines with <M0>, a letter, or <M1> before a vowel	( ( <M0> ) | ( [ <LET> ] ) | ( <M1> ) ) . * ( [ <VOW> ] ) . *
+lines that may or may not contain a number, letter, or the string <M0>	( \ b ( [ <NUM> ] ) | ( [ <LET> ] ) | ( <M0> ) \ b ) *
+a lower case letter after a vowel in the lines	( . * [ <VOW> ] . * ) . * ( [ <LOW> ] ) . *
+lines having a number, the string <M0>, a lower-case letter, and a capital letter	( ( [ <NUM> ] ) & ( <M0> ) & ( [ <LOW> ] ) ) . * ( [ <CAP> ] ) . *
+lines that contain six or more vowels or <M0>	( ( <M0> ) | ( [ <VOW> ] ) ) { 6 , }
+lines that end with a vowel or a lower-case letter, at least 6 times	( . * ) ( ( ( [ <VOW> ] ) | ( [ <LOW> ] ) ) { 6 , } )
+lines with a capital letter and containing the string <M0> 1 or more times	( ( [ <CAP> ] ) + ) & ( . * <M0> . * )
+lines that contain a character followed by a capital letter, at least 3 times	( ( . ) { 3 , } ) . * ( [ <CAP> ] ) . *
+lines containing capital letter or character, at least twice	( ( [ <CAP> ] ) | ( . ) ) { 2 , }
+lines with string <M0> followed by capital letter before number	( <M0> . * [ <CAP> ] . * ) . * ( [ <NUM> ] ) . *
+Lines with a capital letter after a vowel	. * [ <VOW> ] . * [ <CAP> ] . * . *
+lines ending with a letter or a lower-case	( . * ) ( ( . * [ <LET> ] . * ) | ( [ <LOW> ] ) )
+lines which aare not having a lower-case letter, not a character, and not a letter	~ ( ( [ <LOW> ] ) & ( . ) & ( [ <LET> ] ) )
+lines having lettered words or a character.	\ b ( [ <LET> ] ) | ( . ) \ b
+lines ending in words with a number	( . * ) ( \ b . * [ <NUM> ] . * \ b )
+lines with the string <M0> or character and vowel	( . * <M0> . * ) | ( ( . ) & ( [ <VOW> ] ) )
+Items with words containing <M0> and a numeral.	\ b ( [ <NUM> ] ) & ( <M0> ) \ b
+lines ending with letter, 5 or more times	( . * ) ( ( [ <LET> ] ) { 5 , } )
+no lines with words and the string 'dog then a vowel	( \ b <M0> . * [ <VOW> ] . * \ b ) *
+lines that have a character or capital letter followed by a number	( ( . ) | ( [ <CAP> ] ) ) . * ( [ <NUM> ] ) . *
+lines ending with a number	( . * ) ( \ b [ <NUM> ] \ b )
+lines that have words with a character or a capital letter	\ b ( [ <CAP> ] ) | ( . ) \ b
+lines with a vowel, string <M0>, and letter before string <M1>	( ( [ <VOW> ] ) & ( <M0> ) & ( [ <LET> ] ) ) . * ( <M1> ) . *
+lines with words with string <M0> and <M1> or a number	\ b ( ( <M0> ) & ( <M1> ) ) | ( [ <NUM> ] ) \ b
+lines with a character followed by the string <M0> or 0 or more letters	( ( . . * <M0> . * ) | ( [ <LET> ] ) ) *
+lines ending with a vowel followed by a letter in them	( . * ) ( [ <VOW> ] . * [ <LET> ] . * )
+lines do not contain a capital letter, the string <M0>, nor a letter	~ ( ( [ <CAP> ] ) | ( <M0> ) | ( [ <LET> ] ) )
+lines with 2 ore more of a character before a letter	( . . * [ <LET> ] . * ) { 2 , }
+lines with a vowel and string <M0> before a character	( ( [ <VOW> ] ) & ( <M0> ) ) . * ( . ) . *
+lines with the string <M0> or capital letter before a vowel	( ( <M0> ) | ( [ <CAP> ] ) ) . * ( [ <VOW> ] ) . *
+lines without the string <M0> or a vowel	~ ( ( <M0> ) & ( [ <VOW> ] ) )
+lines containing only a letter at least once	( . * [ <LET> ] . * ) +
+lines with the string <M0> or with only zero or more of string <M1>	( ( <M0> ) | ( <M1> ) ) *
+lines that end with a number followed by a capital letter and a lower-case letter	( ( . * ) ( [ <NUM> ] ) ) . * ( ( [ <CAP> ] ) & ( [ <LOW> ] ) ) . *
+lines without a letter, a number, and <M0>	~ ( ( [ <LET> ] ) & ( [ <NUM> ] ) & ( <M0> ) )
+lines without a lower-case letter just before a character	. * ~ ( ( [ <LOW> ] ) . * ( . ) . * ) . *
+lines with string <M0> or character before a capital	( ( <M0> ) | ( . ) ) . * ( [ <CAP> ] ) . *
+Items with a numeral preceding a terminal small letter.	( [ <NUM> ] ) . * ( ( . * ) ( [ <LOW> ] ) ) . *
+lines with a letter string <M0>, a lower-case letter, or a capital letter	( [ <LET> ] ) . * ( ( <M0> ) | ( [ <LOW> ] ) | ( [ <CAP> ] ) ) . *
+lines with words and the string <M0> and 'truck and a number	\ b . * ( <M0> ) & ( <M1> ) & ( [ <NUM> ] ) . * \ b
+lines with words with number before character, 2 or more times	( \ b ( [ <NUM> ] ) . * ( . ) . * \ b ) { 2 , }
+lines without the string <M0> before a capital letter	~ ( <M0> . * [ <CAP> ] . * )
+lines with the string <M0>, lower-case letter, and a letter before the string 'truck	( ( <M0> ) & ( [ <LOW> ] ) & ( [ <LET> ] ) ) . * ( <M1> ) . *
+lines having words with  only a vowel followed by a character	( \ b [ <VOW> ] \ b ) . * ( . ) . *
+lines ending with a number at least 4 times	( . * ) ( ( [ <NUM> ] ) { 4 , } )
+lines not containing the string <M0> nor a character	~ ( ( <M0> ) & ( . ) )
+lines starting in a character before a letter and capital letter	( ( . ) ( . * ) ) . * ( ( [ <LET> ] ) & ( [ <CAP> ] ) ) . *
+The lines that begin with a letter coming before a capital letter	( ( [ <LET> ] ) ( . * ) ) . * ( [ <CAP> ] ) . *
+Items beginning with a character preceding an upper case letter.	( . . * [ <CAP> ] . * ) ( . * )
+lines containing words with a letter and a character minimum of one time	( \ b ( [ <LET> ] ) & ( . ) \ b ) +
+The lines that contain a lower-case letter and also the string <M0>, followed by the string <M1>	( ( [ <LOW> ] ) & ( <M0> ) ) . * ( <M1> ) . *
+lines that contain a number, a character, or a lower-case letter	. * ( [ <NUM> ] ) | ( . ) | ( [ <LOW> ] ) . *
+lines with <M0> and a number before <M1> once	( ( <M0> ) & ( [ <NUM> ] ) ) . * ( ( <M1> ) + ) . *
+lines ending with containing either string <M0>, a character, or capital letter	( . * ) ( . * ( <M0> ) | ( . ) | ( [ <CAP> ] ) . * )
+Items with a vowel at least seven times before <M0>.	( ( [ <VOW> ] ) { 7 , } ) . * ( <M0> ) . *
+lines with words with zero or more number before string <M0>	\ b ( ( [ <NUM> ] ) * ) . * ( <M0> ) . * \ b
+lined ending with numbers and the string <M0> with the string <M1> after	( ( . * ) ( [ <NUM> ] ) ) & ( <M0> . * <M1> . * )
+lines with the string <M0> or letter and a character	( . * <M0> . * ) | ( ( [ <LET> ] ) & ( . ) )
+lines with the string <M0> or the string <M1> before a lower-case letter and the string <M2> in them	( ( <M0> ) | ( <M1> ) ) . * ( ( [ <LOW> ] ) & ( <M2> ) ) . *
+Items with a letter preceding a character.	( [ <LET> ] . * . . * ) ( . * )
+lines starting with string <M0> before a letter	( ( [ <LET> ] ) ( . * ) ) . * ( <M0> ) . *
+lines with words that aren't  ending with a number	\ b ~ ( ( . * ) ( [ <NUM> ] ) ) \ b
+lines with words with the string <M0> before a lower-case letter or string <M1>	\ b ( <M0> . * [ <LOW> ] . * ) | ( <M1> ) \ b
+lines ending in words with a capital letter or character	( . * ) ( \ b ( [ <CAP> ] ) | ( . ) \ b )
+lines with a lower-case letter before string <M0> or <M1>	( [ <LOW> ] ) . * ( ( <M0> ) | ( <M1> ) ) . *
+lines with a letter, a lower-case letter, as well as a vowel followed by the string <M0>	( ( [ <LET> ] ) & ( [ <LOW> ] ) & ( [ <VOW> ] ) ) . * ( <M0> ) . *
+lines where a vowel is preceded by a letter or capital letter	( ( [ <LET> ] ) | ( [ <CAP> ] ) ) . * ( [ <VOW> ] ) . *
+Items with words containing either a upper case letter, a character, or a vowel.	\ b ( [ <VOW> ] ) | ( . ) | ( [ <CAP> ] ) \ b
+lines with words that contain a character or a letter, at least twice	\ b ( ( . ) | ( [ <LET> ] ) ) { 2 , } \ b
+lines ending with the string <M0>	. * ( . * ) ( <M0> ) . *
+lines with a letter before a capital	( [ <LET> ] ) . * ( [ <CAP> ] ) . *
+lines beginning with the string <M0> before the string <M1> or a character	( ( <M0> . * <M1> . * ) | ( . ) ) ( . * )
+lines with a lower-case letter, number, or character before string <M0>	( ( [ <LOW> ] ) | ( [ <NUM> ] ) | ( . ) ) . * ( <M0> ) . *
+lines with a lower-case letter, number, and string <M0> before string <M1>	( ( [ <LOW> ] ) & ( [ <NUM> ] ) & ( <M0> ) ) . * ( <M1> ) . *
+Lines with the string <M0> followed by the string <M1>	( <M0> . * <M1> . * ) *
+lines containing the string <M0>, a character, and a letter	\ b ( <M0> ) & ( ( . ) . * ( [ <LET> ] ) . * ) \ b
+lines with a character, lower-case letter before a number	( ( . ) & ( [ <LOW> ] ) ) . * ( [ <NUM> ] ) . *
+lines with a number before string <M0> and a character	( [ <NUM> ] ) . * ( ( <M0> ) & ( . ) ) . *
+lines that do not have a lower-case letter or a vowel at least zero times	~ ( ( [ <LOW> ] ) | ( ( [ <VOW> ] ) * ) )
+lines ending with a capital before string <M0> and character	( ( . * ) ( [ <CAP> ] ) ) . * ( ( <M0> ) & ( . ) ) . *
+lines without string <M0>, lower-case letter, and a number.	~ ( ( [ <NUM> ] ) & ( <M0> ) & ( [ <LOW> ] ) )
+Items with a character, a letter, and <M0> preceding an upper case letter.	( ( <M0> ) & ( [ <LET> ] ) & ( . ) ) . * ( [ <CAP> ] ) . *
+lines with words and zero or more of the string <M0> and a letter	\ b ( ( <M0> ) * ) & ( [ <LET> ] ) \ b
