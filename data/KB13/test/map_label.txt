@@ -1,206 +1,206 @@
-<M0>	fu	
+<M0>	gh	
+<M0>	laugh	
+<M0>	New York	
+
+<M0>	the	
+
+<M0>	z	
+<M0>	and	<M1>	sand	<M2>	tide	
+
+<M0>	unifax	<M1>	colorado	
+
+<M0>	az	
+<M0>	z	
+<M0>	di	
+
+<M0>	a	<M1>	b	
+
+<M0>	An	
+<M0>	day	<M1>	abc	
+<M0>	ch	
+<M0>	ot	
 <M0>	old	<M1>	ion	
-<M0>	ti	
-<M0>	a	
 
-<M0>	alpha	
-<M0>	der	
-<M0>	the	<M1>	cold	
+<M0>	shoe	<M1>	lace	
 
-<M0>	tain	<M1>	re	<M2>	per	
+<M0>	th	
 
-
-<M0>	ape	
-<M0>	tumeric	<M1>	saffron	
-
-
-<M0>	hello	<M1>	world	
-<M0>	t	
-<M0>	te	
-
-<M0>	sandwich	<M1>	ham	
-
-
-<M0>	intellectual	
-<M0>	y	<M1>	i	
-<M0>	l	<M1>	y	
+<M0>	y	
+<M0>	ABC	<M1>	WEX	
+<M0>	n	
+<M0>	th	
+<M0>	egg	
+<M0>	k	
+<M0>	12345	<M1>	54321	
+<M0>	re	
 <M0>	ing	
-<M0>	house	
-<M0>	fast	<M1>	2	
+<M0>	the	
+<M0>	Mr	<M1>	Mrs	<M2>	Ms	<M3>	Miss	
+<M0>	g	
 
-
-<M0>	native	<M1>	tribes	
-<M0>	street	<M1>	avenue	
-<M0>	ea	
+<M0>	o	
 <M0>	s	
-<M0>	number	
-<M0>	ably	<M1>	ed	
+
+
+<M0>	ra	
+<M0>	ru	
+
+<M0>	min	<M1>	imal	
+<M0>	null	
+<M0>	Beaker	<M1>	Bunsen	
+<M0>	mix	<M1>	shake	
+<M0>	helper	<M1>	little	<M2>	helper	
+<M0>	sw	
+<M0>	re	
+<M0>	once	
+<M0>	street	<M1>	avenue	
+<M0>	abc	<M1>	def	
+
+
+
+<M0>	eye	
+
+<M0>	eleven	
 <M0>	ing	<M1>	out	<M2>	sh	<M3>	cl	
 
-<M0>	and	
-<M0>	ne	
-<M0>	ant	
 
 
-<M0>	h	<M1>	e	
-<M0>	ABC	<M1>	WEX	
-<M0>	laughing	
-<M0>	mie	
-<M0>	de	
-<M0>	turn	
-<M0>	mean	<M1>	nic	<M2>	est	<M3>	test	
 
-<M0>	en	
-<M0>	rst	
-<M0>	jellyfish	<M1>	breeding	
-<M0>	a	<M1>	c	
+<M0>	9	
+<M0>	a	<M1>	b	<M2>	er	
 
 
-<M0>	ca	
-<M0>	art	
-<M0>	no	
-<M0>	start	
-<M0>	pray	
-<M0>	ba	
-<M0>	boby	
-<M0>	oe	
+<M0>	irl	
+
+<M0>	May	<M1>	June	
+
+<M0>	I	<M1>	you	
+<M0>	1	
+<M0>	ei	
+
+<M0>	ause	
+<M0>	s	
+<M0>	t	
+<M0>	7	
+
+
+<M0>	ly	
+
+<M0>	uu	<M1>	z	
+<M0>	house	
+<M0>	ight	
+<M0>	abc	<M1>	def	
+<M0>	e	<M1>	i	
+<M0>	y	<M1>	w	
+<M0>	s	
+<M0>	xyz	
+<M0>	bar	
+<M0>	44	
+
+<M0>	c	
+
+<M0>	y	<M1>	z	
+<M0>	s	
+<M0>	-	
+
+<M0>	7	
+<M0>	fe	
+<M0>	3	
+<M0>	l	
+<M0>	bit	<M1>	ch	
+<M0>	aought	
+<M0>	fa	
+<M0>	day	<M1>	to	
+<M0>	n	
+<M0>	efg	<M1>	car	
+
+
+<M0>	hey	
+<M0>	8	
+<M0>	staphyloccus aureus.	
+<M0>	I am mad	
+
+
+<M0>	qu	
+<M0>	e	<M1>	f	
 <M0>	de	<M1>	st	<M2>	re	<M3>	col	
-<M0>	excellent	
+<M0>	oo	
+<M0>	black	<M1>	z	
 
+<M0>	the	
+<M0>	V	<M1>	33	
+<M0>	b	
+<M0>	Columbia	
+<M0>	ea	
+<M0>	x	
 
-<M0>	email	<M1>	spam	
-<M0>	pi	
-<M0>	d	
+<M0>	spoon	
+<M0>	bar	<M1>	San Jose	
+<M0>	c.	
+<M0>	ing	
+<M0>	f	
+<M0>	revolution	
+<M0>	trade	
+<M0>	ug	
+
+<M0>	clue	
+
+<M0>	w	
+<M0>	ser	<M1>	lin	<M2>	ku	
 <M0>	q	
-<M0>	on	
-<M0>	iffl	
-
-
-
+<M0>	uin	
+<M0>	the	
+<M0>	The	
 <M0>	re	
 
 
-
-
-
-<M0>	at	
-<M0>	agde	
-<M0>	s	
-<M0>	s	
-
-<M0>	f	
-<M0>	I	<M1>	you	
-
-<M0>	revolution	
-<M0>	g	
-<M0>	l	
-<M0>	ge	
-<M0>	An	
-<M0>	fa	
-<M0>	a	<M1>	b	<M2>	er	
-<M0>	George	<M1>	62	
-<M0>	ly	
-
-
-
-<M0>	lo	
-
-<M0>	ri	
-<M0>	e	<M1>	c	
-<M0>	ce	
-
-<M0>	19	
-<M0>	c	<M1>	d	
-<M0>	oo	
-<M0>	ope	
-<M0>	100	
-<M0>	ke	
-<M0>	mno	<M1>	pqr	
-<M0>	piggy	
-
-<M0>	z	
-<M0>	tch	
-<M0>	L	
-<M0>	go	
-
+<M0>	i	<M1>	e	<M2>	u	
+<M0>	fo	
+<M0>	b	
+<M0>	2005	<M1>	May	<M2>	Mary	
 
 <M0>	Pat	<M1>	turkey	
 
-<M0>	e	<M1>	i	
+<M0>	fuzz	
+<M0>	c	
+<M0>	code	
+<M0>	ro	
+<M0>	x	
+<M0>	life	<M1>	lives	
 
-<M0>	re	
+
+
+<M0>	z	<M1>	nt	
+<M0>	ant	
+<M0>	ca	
+
+<M0>	pu	
+<M0>	ly	
+<M0>	ing	
+
+<M0>	ge	
+<M0>	ick	
+
+<M0>	begin	
+<M0>	once upon a time	
+<M0>	fu	
+<M0>	boom	<M1>	ka	
+<M0>	hula	
+<M0>	f	
+<M0>	rh	<M1>	y	
+
+<M0>	no	
+
+
+<M0>	Booyah	
+<M0>	tal	<M1>	tel	
+<M0>	din	<M1>	e	<M2>	ky	
+<M0>	H	
+
+<M0>	ac	
 <M0>	d	
-<M0>	you	
-<M0>	9	<M1>	10	
-<M0>	A	
-
-
-
-
-
-<M0>	a	
-<M0>	uin	
-<M0>	s	
-<M0>	q	<M1>	u	
-
-
-<M0>	re	
-
-<M0>	z	<M1>	a	
-<M0>	ch	
-<M0>	Y	
-<M0>	ABC	
-<M0>	0	
-
-<M0>	eye	
-<M0>	Randy	<M1>	fox	
-
-<M0>	A	<M1>	a	
-
-<M0>	lugg	<M1>	age	
-<M0>	oo	
-<M0>	wig	<M1>	er	<M2>	let	
-<M0>	CE	
-<M0>	th	
-
-<M0>	how	
-<M0>	abc	<M1>	def	
-
-<M0>	Boby	
-<M0>	10	
-<M0>	ABC	<M1>	XYZ	
-<M0>	P	
-<M0>	ku	<M1>	mar	<M2>	is	
-
-
-
-<M0>	trust	
-<M0>	country	
-<M0>	abc	<M1>	def	
-<M0>	du	
-<M0>	z	
-<M0>	n	
-<M0>	ast	
-<M0>	bar	
-<M0>	if	<M1>	then	<M2>	else	
-<M0>	d	
-
-<M0>	ac	<M1>	dc	
-<M0>	7	
-<M0>	a	<M1>	b	<M2>	d	
-<M0>	a	<M1>	b	
-<M0>	abc	
-<M0>	billy	<M1>	bob	
-<M0>	ire	
-
-
-<M0>	the	
-<M0>	os	
-<M0>	o	
-
-<M0>	Bean	
-<M0>	0	
-<M0>	The	<M1>	For	
-<M0>	na	
-<M0>	lives	<M1>	lifes	<M2>	life	
-<M0>	3	
+<M0>	gu	
+<M0>	native	<M1>	tribes	
+<M0>	tt	
+<M0>	car	
+<M0>	Facebook	

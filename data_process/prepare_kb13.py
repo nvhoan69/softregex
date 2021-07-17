@@ -27,7 +27,7 @@ def transformReg(regex, index):
 
 map_label = open('../data/KB13/map_label.txt', 'w+')
 def transformDesc(description):
-    matches = re.findall('\'(\w+)\'', description)
+    matches = re.findall('\'(.+?)\'', description)
     label_count = 0
     for meaning in matches:
         label = '<M' + str(label_count) + '>'

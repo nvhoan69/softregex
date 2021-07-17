@@ -1,206 +1,206 @@
-lines using 6 instances of <M0>	. * ( . * <M0> . * ) { 6 } . *
-lines that have no instances of <M0> but at least one instance of <M1>.	( ~ ( . * <M0> . * ) ) & ( ( . * <M1> . * ) { 1 , } )
-lines that have words ending with <M0>.	. * \ b [ <LET> ] * <M0> \ b . *
-lines starting and ending with <M0>	<M0> ( . * <M0> ) ?
-lines using five letter words.	. * \ b [ <LET> ] { 5 } \ b . *
-lines which start with <M0>	<M0> . *
-lines using a word having the string <M0>	. * \ b [ <LET> ] * <M0> [ <LET> ] * \ b . *
-lines that contain the words <M0> and  <M1>.	( . * \ b <M0> \ b . * ) & ( . * \ b <M1> \ b . * )
-lines where there are two consecutive capital letters	. * [ <CAP> ] [ <CAP> ] . *
-lines containing <M0> after <M1> or <M2>.	. * ( <M1> | <M2> ) . * <M0> . *
-lines using 4 letter words	. * \ b [ <LET> ] { 4 } \ b . *
-lines that contain at least three five letter words	( . * \ b [ <LET> ] { 5 } \ b . * ) { 3 }
-lines that contain instances of <M0>, but only if its one of the first three words.	( [ ^ <LET> ] * \ b [ <LET> ] + \ b [ ^ <LET> ] * ) { 0 , 2 } [ ^ <LET> ] * \ b <M0> \ b . *
-lines that contain <M0> and <M1>	( . * <M0> . * ) & ( . * <M1> . * )
-lines that have less than 6 words but more than 3 words.	( [ ^ <LET> ] * \ b [ <LET> ] + \ b [ ^ <LET> ] * ) { 0 , 5 } & ( . * \ b [ <LET> ] + \ b . * ) { 4 , }
-lines using at least 5 characters	. * . { 5 } . *
-lines that contain the word <M0> within 5 characters of the word <M1>.	. * ( \ b <M0> \ b . { 1 , 5 } \ b <M1> \ b | \ b <M1> \ b . { 1 , 5 } \ b <M0> \ b ) . *
-lines that start with the letter <M0>.	<M0> . *
-lines having words ending with <M0>.	. * ( ( \ b [ <LET> ] + \ b ) & ( . * <M0> ) ) . *
-lines containing 3 or more vowels.	( . * [ <VOW> ] . * ) { 3 , }
-lines that have <M0> but not the word <M1>	( . * <M0> . * ) & ( ~ ( . * \ b <M1> \ b . * ) )
-lines which contain a word using 2 or more letters	. * \ b [ <LET> ] { 2 , } \ b . *
-lines where there is only one word.	[ ^ <LET> ] * \ b [ <LET> ] + \ b [ ^ <LET> ] *
-lines using the word <M0>	. * \ b <M0> \ b . *
-lines using words that end in <M0> or <M1>.	. * \ b [ <LET> ] * ( <M0> | <M1> ) \ b . *
-lines containing <M0> before <M1>	. * <M0> . * <M1> . *
-lines that have words ending in <M0>.	. * \ b [ <LET> ] * <M0> \ b . *
-lines containing the word <M0>.	. * \ b <M0> \ b . *
-lines that contain <M0> and contain <M1>	( . * <M0> . * ) & ( . * <M1> . * )
-lines that have 2 or more numbers.	( . * [ <NUM> ] . * ) { 2 , }
-lines that use words of at least 9 letters.	. * \ b [ <LET> ] { 9 , } \ b . *
-lines that use <M0> and <M1>.	( . * <M0> . * ) & ( . * <M1> . * )
-lines that begin with a number and end with <M0> or <M1>.	[ <NUM> ] . * ( <M0> | <M1> )
-lines having the letters <M0>.	. * ( ( <M0> ) & ( [ <LET> ] * ) ) . *
-lines that have at least two words that start with <M0>.	( . * \ b <M0> [ <LET> ] * \ b . * ) { 2 }
-lines which have the word <M0> and a number	( . * \ b <M0> \ b . * ) & ( . * [ <NUM> ] . * )
-lines using the letter sequence <M0> followed by a word ending in <M1>.	. * <M0> . * \ b [ <LET> ] * <M1> \ b . *
-lines which have <M0> and <M1> but not <M2> or <M3>.	( ( . * <M0> . * ) & ( . * <M1> . * ) & ( ~ ( . * ( <M2> | <M3> ) . * ) ) )
-lines that have 2 words using 4 letters	( . * \ b [ <LET> ] { 4 } \ b . * ) { 2 }
 lines that end with <M0>	. * <M0>
-lines that include words starting with <M0>.	. * \ b <M0> [ <LET> ] * \ b . *
-lines containing <M0>	. * <M0> . *
-lines that do not contain numerical characters.	~ ( . * [ <NUM> ] . * )
-lines that contain any numbers.	. * [ <NUM> ] . *
-lines containing words that start with <M0> and end with <M1>.	. * \ b <M0> [ <LET> ] * <M1> \ b . *
-lines where there are three characters between instances of <M0> and <M1>	. * <M0> . * . { 3 } . * <M1> . * | . * <M1> . * . { 3 } . * <M0> . *
-lines containing the word <M0>.	. * \ b <M0> \ b . *
-lines containing words ending with <M0>.	. * \ b [ <LET> ] * <M0> \ b . *
-lines that contain words starting with <M0>.	. * ( ( \ b <M0> . * \ b ) & ( [ <LET> ] + ) ) . *
-lines that have <M0>	. * <M0> . *
-lines containing <M0> or <M1> before <M2> or <M3> 	. * ( <M0> | <M1> ) . * ( <M2> | t <M2> ) . *
-lines that contain four letter words.	. * \ b [ <LET> ] { 4 } \ b . *
-lines having words ending with <M0>.	. * \ b [ <LET> ] * <M0> \ b . *
-lines that include the string <M0>	. * <M0> . *
-lines that contain <M0> and mention <M1>.	( . * <M0> . * ) & ( . * <M1> . * )
-lines that start with the letter <M0> and end with the letter <M1>	<M0> . * <M1>
-lines that contain text made up of more than 6 letters total.	( . * [ <LET> ] . * ) { 7 , }
-lines containing at least one uppercase letter, and at least one lowercase letter	( . * [ <CAP> ] . * ) & ( . * [ <LOW> ] . * )
-lines that use words with <M0>.	. * ( ( \ b [ <LET> ] + \ b ) & ( . * <M0> . * ) ) . *
-lines containing the word <M0>	. * \ b <M0> \ b . *
-lines that use words starting with <M0>.	. * \ b <M0> [ <LET> ] * \ b . *
-lines which start with <M0>	<M0> . *
-lines containing the word <M0> at the end.	. * \ b <M0>
-lines that contain words starting with <M0>.	. * ( ( \ b [ <LET> ] + \ b ) & ( <M0> . * ) ) . *
-lines that end with <M0>	. * <M0>
-lines that have <M0>.	. * <M0> . *
-lines that have <M0> before <M1> and <M2> after <M3>.	( . * <M0> . * <M1> . * ) & ( . * <M3> . * <M2> . * )
-lines which do not contain <M0>	~ ( . * <M0> . * )
-lines that contain 3 words.	( . * \ b [ <LET> ] + \ b . * ) { 3 }
-lines with fox that do not contain the word chicken.	( . * f o x . * ) & ( ~ ( . * \ b c h i c k e n \ b . * ) )
-lines that feature <M0> followed by the word <M1>.	. * <M0> . * \ b <M1> \ b . *
-lines that have words starting with <M0>.	. * ( ( \ b [ <LET> ] [ <LET> ] * \ b ) & ( <M0> . * ) ) . *
-lines using <M0> in the middle of a word.	. * \ b [ <LET> ] + <M0> [ <LET> ] + \ b . *
-lines using words that contain the letter <M0>.	. * ( ( \ b [ <LET> ] + \ b ) & ( . * <M0> . * ) ) . *
-lines that contain <M0> 	. * <M0> . *
-lines that start with <M0> 	<M0> . *
-lines that contain words with at least 3 vowels	. * ( ( \ b [ <LET> ] + \ b ) & ( . * [ <VOW> ] . * ) { 3 } ) . *
-lines that contain 5 or more words.	. * ( . * \ b [ <LET> ] [ <LET> ] * \ b . * ) { 5 } . *
-lines that contain three letter words.	. * \ b [ <LET> ] { 3 } \ b . *
-lines that have words with <M0>.	. * \ b [ <LET> ] * <M0> [ <LET> ] * \ b . *
-lines that begin with a vowel and end with a vowel	[ a e i o u A E I O U ] ( . * [ a e i o u A E I O U ] ) ?
-lines that have at least 3, but not more that 6 words.	( [ ^ <LET> ] * \ b [ <LET> ] + \ b [ ^ <LET> ] * ) { 3 , 6 }
-lines using more than 3 characters	. * . { 4 , } . *
-lines that have a 2 letter sequence	. * [ <LET> ] { 2 } . *
-lines that end in a digit	. * [ <NUM> ]
-lines that use words ending with <M0>.	. * \ b [ <LET> ] * <M0> \ b . *
-lines that contain only the letters <M0>.	<M0>
-lines that contain 4 letter words ending in <M0>	. * \ b [ <LET> ] { 3 } <M0> \ b . *
-lines that contain words starting in <M0>	. * ( ( \ b [ <LET> ] [ <LET> ] * \ b ) & ( <M0> . * ) ) . *
-lines that have words with 7 letters.	. * \ b [ <LET> ] { 7 } \ b . *
-lines which contain 5 words starting with <M0>	( . * \ b <M0> [ <LET> ] * \ b . * ) { 5 , }
-lines that contain words between <M0> and <M1>	. * <M0> . * \ b [ <LET> ] + \ b . * <M1> . * | . * <M1> . * \ b [ <LET> ] + \ b . * <M0> . *
-lines that have 4 characters	. { 4 }
-lines containing the word <M0>.	. * \ b <M0> \ b . *
-lines that contain words starting with the letter <M0>	. * \ b <M0> [ <LET> ] * \ b . *
-lines that contain a word  starting with <M0>.	. * \ b <M0> [ <LET> ] * \ b . *
-lines that contain words starting with <M0>.	. * \ b <M0> [ <LET> ] * \ b . *
-lines using the word <M0> at least once.	. * \ b <M0> \ b . *
-lines containing words that start with <M0>	. * \ b <M0> [ <LET> ] * \ b . *
-lines that use <M0> or <M1> before words ending with <M2>.	. * ( <M0> | <M1> ) . * \ <M1> [ <LET> ] * <M2> \ <M1> . *
-lines using the word <M0> and the number <M1>.	. * ( . * \ b <M0> \ b . * ) & ( . * <M1> . * ) . *
-lines that have 3 or more words containing the letters <M0>.	( . * ( ( \ b [ <LET> ] + \ b ) & ( . * <M0> . * ) ) . * ) { 3 , }
-lines containing words that end with s.	. * \ b [ <LET> ] * s \ b . *
-lines using 2 words or more	( . * \ b [ <LET> ] + \ b . * ) { 2 , }
-lines that are 20 characters or less	. { 0 , 2 0 }
-lines having words ending with <M0>.	. * \ b [ <LET> ] * <M0> \ b . *
-lines that contain numbers	. * [ <NUM> ] . *
-lines that contain words with <M0>.	. * \ b [ <LET> ] * <M0> [ <LET> ] * \ b . *
-lines that contain words that have the letter <M0> occuring after the letter <M1>.	. * \ b [ <LET> ] * <M1> [ <LET> ] * <M0> [ <LET> ] * \ b . *
-lines that use words with <M0>.	. * ( ( \ b [ <LET> ] + \ b ) & ( . * <M0> . * ) ) . *
-lines composed of at least 3 words of 4 or more letters	( . * \ b [ <LET> ] { 4 , } \ b . * ) { 3 , }
-lines that contain 2 numbers that contain <M0>.	( . * <M0> . * ) { 2 }
-lines that feature <M0> or <M1> before words that start with capital letters.	. * ( <M0> | <M1> ) . * \ b [ <CAP> ] [ <LET> ] * \ b . *
-lines that contain words with <M0>.	. * ( ( \ b [ <LET> ] + \ b ) & ( . * <M0> . * ) ) . *
-lines using words containing <M0>.	. * \ b [ <LET> ] * <M0> [ <LET> ] * \ b . *
-lines that end with the number <M0>.	. * <M0>
-lines that contain words starting with <M0>.	. * ( ( \ b [ <LET> ] + \ b ) & ( <M0> . * ) ) . *
-lines using <M0> after <M1>	. * <M1> . * <M0> . *
-lines using the word <M0> and 'his mother'.	. * ( . * \ b <M0> \ b . * ) & ( . * h i s   m o t h e r . * )
-lines that have 1 word in them	. * \ b [ <LET> ] [ <LET> ] * \ b . *
-lines that end containing the letter <M0>.	. * <M0>
-lines which have instances of <M0>.	. * <M0> . *
-lines containing words that end with <M0>	. * \ b [ <<M0>ET> ] * <M0> \ b . *
-lines that contain words starting with <M0>.	. * \ b <M0> [ <LET> ] * \ b . *
-Look for any line with the '@' symbol.	. * \ @ . *
-lines that contain at least one digit.	. * [ <NUM> ] . *
-lines which mention <M0> with the word <M1>.	. * ( . * <M0> . * ) & ( . * \ b <M1> \ b . * ) . *
-lines that contain at least 2 vowels in a word.	. * ( ( \ b [ <LET> ] + \ b ) & ( . * [ <VOW> ] . * ) { 2 } ) . *
-lines where there is at least one word in which <M0> follows <M1>	. * ( ( \ b [ <LET> ] [ <LET> ] * \ b ) & ( . * <M1> . * <M0> . * ) ) . *
-lines that have 5 characters and no vowels.	( . { 5 } ) & ( ~ ( . * [ <VOW> ] . * ) )
-lines containing words ending in <M0> 	. * \ b [ <LET> ] * <M0> \ b . *
-lines that contain words ending with <M0>.	. * ( ( \ b [ <LET> ] [ <LET> ] * \ b ) & ( . * <M0> ) ) . *
-lines that end with <M0>.	. * <M0>
-lines that contain the numbers <M0>, and <M1>	. * ( <M0> . * <M1> | <M1> . * <M0> ) . *
-lines that start with <M0> or An	<M0> . * | <M0> n . *
-lines composed with a word	. * \ b [ <LET> ] + \ b . *
-lines that contain DEF' with a period immediately after it.'	. * D E F \ . . *
-lines not containing 4 or more characters	~ ( . * . { 4 , } . * )
-lines that have one number	. * [ <NUM> ] . *
-lines using a word which contains at least 5 letters.	. * \ b [ <LET> ] { 5 , } \ b . *
-lines that contain 5 or less words that have 4 or more letters where one of those letters is an <M0>.	( [ ^ <LET> ] * ( ( \ b [ <LET> ] + \ b ) & ( [ <LET> ] { 4 , } ) & ( . * <M0> . * ) ) [ ^ <LET> ] * ) { 0 , 5 }
-lines that have 4 words or less where at least 1 of those words contains the letter sequence <M0>.	( [ ^ <LET> ] * \ b [ <LET> ] + \ b [ ^ <LET> ] * ) { 0 , 4 } & ( . * ( ( \ b [ <LET> ] + \ b ) & ( . * <M0> . * ) ) . * ) { 1 , }
-lines of 6 characters that end with the letter <M0>.	. { 5 } <M0>
-lines using words that begin with <M0> but do not have a <M1>.	. * \ b ( ( [ <LET> ] + ) & ( <M0> . * ) & ( ~ ( . * <M1> . * ) ) ) \ b . *
-lines that begin with a numeral	[ <NUM> ] . *
-lines using more than 5 characters	. * . { 6 , } . *
-lines that contain words with <M0>.	. * \ b [ <LET> ] * <M0> [ <LET> ] * \ b . *
+lines that have the word <M0>, and at least 1 number.	( . * \ b <M0> \ b . * ) & ( . * [ <NUM> ] . * )
+lines that contain the text, <M0>.	. * <M0> . *
 lines using 4 or more words	( . * \ b [ <LET> ] + \ b . * ) { 4 , }
-lines that start with a <M0> and end with an <M1>.	<M0> . * <M1>
-lines which have a th after a <M0>.	. * <M0> . * t h . *
-lines that contain three words that start with the letter <M0>.	( . * \ b <M0> [ <LET> ] * \ b . * ) { 3 }
-lines that have a number, but only if it is followed by <M0>	. * [ <NUM> ] . * <M0> . *
-lines that contain a number ending with <M0>	. * [ <NUM> ] * <M0> . *
-lines composed of 3 or more characters	. * . { 3 , } . *
-lines that have <M0>	. * <M0> . *
-lines that mention <M0> and also contain <M1>	( . * <M0> . * ) & ( . * <M1> . * )
-lines containing the text 'and so it came to pass'	. * a n d   s o   i t   c a m e   t o   p a s s . *
-lines that have a capital <M0>, but not a lowercase <M1>.	( . * <M0> . * ) & ( ~ ( . * <M1> . * ) )
-lines that contain words ending with vowels.	. * \ b [ <LET> ] * [ <VOW> ] \ b . *
-lines using <M0> before <M1>	. * <M0> . * <M1> . *
-lines that contain words using <M0> in them.	. * \ b [ <LET> ] * <M0> [ <LET> ] * \ b . *
-lines that contain <M0> after <M1> or <M2>.	. * ( <M1> | <M2> ) . * <M0> . *
-lines using three character words begining with the letters <M0>.	. * \ b <M0> [ <LET> ] \ b . *
-lines in which there are words that begin with <M0>.	. * \ b <M0> [ <LET> ] * \ b . *
-lines that have 6 words.	( . * \ b [ <LET> ] + \ b . * ) { 6 }
-lines which begin with the word <M0>	( ( \ b [ <LET> ] + \ b ) & ( <M0> ) ) . *
-lines using <M0> after <M1>	. * <M1> . * <M0> . *
-lines that end in a number	. * [ <NUM> ]
-lines that contain the word <M0>.	. * \ b <M0> \ b . *
-lines that contain the number <M0>.	. * <M0> . *
-lines where numbers exist only after a sequence of <M0> and <M1>	( [ ^ <NUM> ] * ) | ( ( ( [ ^ <NUM> ] * ) & ( . * <M0> . * ) & ( . * <M1> . * ) ) . * )
-lines that contain five words that begin with <M0>.	. * ( . * \ b <M0> [ <LET> ] * \ b . * ) { 5 } . *
-lines containing <M0> after <M1> or <M2>.	. * ( <M1> | <M2> ) . * <M0> . *
-lines that have only one b.	( [ ^ b ] ) * b ( [ ^ b ] ) *
-lines that contain a number.	. * [ <NUM> ] . *
-lines using at least 4 characters	. * . { 4 } . *
-lines that contain the word <M0>.	. * \ b <M0> \ b . *
-lines containing the word <M0>	. * \ b <M0> \ b . *
-lines that have three numbers between <M0> and <M1>.	. * ( <M0> . * ( . * [ <NUM> ] . * ) { 3 } . * <M1> | . * <M1> . * ( . * [ <NUM> ] . * ) { 3 } . * <M0> ) . *
-lines that contain words starting with <M0>.	. * ( ( \ b [ <LET> ] [ <LET> ] * \ b ) & ( <M0> . * ) ) . *
-lines which begin with the letter <M0>.	<M0> . *
-lines with words that end in <M0>.	. * \ b [ <LET> ] * <M0> \ b . *
-lines containing <M0>	( . * <M0> . * ) . *
-lines that end with <M0> and include the phrase 'San Jose'.	( . * <M0> ) & ( . * S a n   J o s e . * )
-lines that contain <M0> before <M1> or <M2>.	. * <M0> . * ( <M1> | <M2> ) . *
-lines using at least 5 <M0>	( . * <M0> . * ) { 5 , }
-lines containing words using a vowel.	. * \ b [ <LET> ] * [ a e i o u A E I O U ] [ <LET> ] * \ b . *
-lines containing both <M0> and <M1>	( . * <M0> . * ) & ( . * <M1> . * )
-lines that utilize the number <M0>.	. * <M0> . *
-lines that are composed of the letters <M0>, <M1>, and <M2>.	( <M0> | <M1> | <M2> ) *
+lines that begin with the word <M0>	\ b <M0> \ b . *
+lines that have 2 words using 4 letters	( . * \ b [ <LET> ] { 4 } \ b . * ) { 2 }
+lines which contain the letter <M0> twice.	( . * <M0> . * ) { 2 , }
+lines where the word <M0> appears between the words <M1> and <M2>	. * \ b s <M0> \ b . * \ b <M0> \ b . * \ b <M2> \ b . * | . * \ b <M2> \ b . * \ b <M0> \ b . * \ b s <M0> \ b . *
+lines that contain three letter words.	. * \ b [ <LET> ] { 3 } \ b . *
+lines that contain the word <M0> but not the word <M1>.	( . * \ b <M0> \ b . * ) & ( ~ ( . * \ b <M1> \ b . * ) )
+lines using at least 6 characters	. * . { 6 } . *
+lines ending in <M0>	. * <M0>
+lines using words that begin with <M0>.	. * \ b <M0> [ <LET> ] * \ b . *
+lines having words starting with <M0>.	. * \ b <M0> [ <LET> ] * \ b . *
+lines that have a word of 3 letters	. * \ b [ <LET> ] { 3 } \ b . *
 lines containing <M0> before <M1>	. * <M0> . * <M1> . *
-lines starting with <M0>	<M0> . *
-lines that match <M0> or <M1>.	. * ( <M0> | <M1> ) . *
-lines using words that have <M0>	. * \ b [ <LET> ] * <M0> [ <LET> ] * \ b . *
-lines using at least three numerical characters	( . * [ <NUM> ] . * ) { 3 , }
-lines containing the country name 'New Zealand'.	. * N e w   Z e a l a n d . *
-lines that do not use the word <M0>	~ ( . * \ b <M0> \ b . * )
+lines that contain a number.	. * [ <NUM> ] . *
+lines using the word <M0> at least once.	. * \ b <M0> \ b . *
+lines using the word <M0> followed by the letters <M1>	. * \ b <M0> \ b . * <M1> . *
 lines that contain words ending in <M0>	. * \ b [ <LET> ] * <M0> \ b . *
+lines that use words ending with <M0>.	. * \ b [ <LET> ] * <M0> \ b . *
+lines that have no instances of <M0> but at least one instance of <M1>.	( ~ ( . * <M0> . * ) ) & ( ( . * <M1> . * ) { 1 , } )
+lines that contain at least one word which is 8 characters or longer	. * ( ( \ b [ <LET> ] + \ b ) & ( . { 8 , } ) ) . *
+lines containing the word <M0> and containing the word <M1> 	( . * \ b <M0> \ b . * ) & ( . * \ b <M1> \ b . * )
+lines that have more than 6 numbers.	( . * [ <NUM> ] . * ) { 7 , }
+lines that have six letter words ending in <M0>.	. * \ b [ <LET> ] { 4 } <M0> \ b . *
+lines using a word	. * \ b [ <LET> ] + \ b . *
+lines that contain 6 letter words beginning with the letter <M0>.	. * \ b <M0> [ <LET> ] { 5 } \ b . *
+lines where there are three characters between instances of <M0> and <M1>	. * <M0> . * . { 3 } . * <M1> . * | . * <M1> . * . { 3 } . * <M0> . *
+lines with words that end in <M0>.	. * \ b [ <LET> ] * <M0> \ b . *
+lines containing words that start with <M0>	. * \ b <M0> [ <LET> ] * \ b . *
+lines which have the word <M0>	. * \ b <M0> \ b . *
+lines any words beginning with the letter <M0>.	. * ( ( \ b [ <LET> ] + \ b ) & ( <M0> . * ) ) . *
+lines that have the numbers <M0> and <M1>.	( . * <M0> . * ) & ( . * <M1> . * )
+lines containing words ending in <M0> 	. * \ b [ <LET> ] * <M0> \ b . *
+lines that have words ending in <M0>	. * \ b [ <LET> ] * <M0> \ b . *
+lines that start with <M0>.	( <M0> . * ) . *
+lines that show <M0> and <M1> but not <M2> or <M3>.	( ( . * <M0> . * ) & ( . * <M0> s . * ) & ( ~ ( . * ( <M2> | <M3> ) . * ) ) )
+lines that use words ending in <M0>	. * ( ( . * <M0> ) & ( \ b [ <LET> ] [ <LET> ] * \ b ) ) . *
+lines with words that contain 3 vowels.	. * ( ( \ b [ <LET> ] + \ b ) & ( . * [ <VOW> ] . * ) { 3 } ) . *
 lines that end in <M0>	. * <M0>
-lines that only contain vowels.	[ <VOW> ] *
-lines that list the word <M0>.	. * \ b <M0> \ b . *
-lines where the number <M0> appears	. * <M0> . *
-lines that begin with <M0> or <M1>.	( <M0> | <M1> ) . *
-lines that contain words starting with <M0>.	. * \ b <M0> [ <LET> ] * \ b . *
-lines using <M0>, <M1>, or <M2>	. * l i ( v e s | f e s | f e ) . *
+lines that have at least two words that start with <M0>.	( . * \ b <M0> [ <LET> ] * \ b . * ) { 2 }
+lines that have 3 characters after the first vowel	. * [ <VOW> ] . * ( . { 3 } ) . *
+lines using at least 5 characters	. * . { 5 } . *
+lines that include words with <M0>.	. * ( ( \ b [ <LET> ] + \ b ) & ( . * <M0> . * ) ) . *
+lines that contain words with <M0>.	. * \ b [ <LET> ] * <M0> [ <LET> ] * \ b . *
+lines that contain a word using at most 6 letters	. * \ b [ <LET> ] { 1 , 6 } \ b . *
+lines using <M0> before <M1>	. * <M0> . * <M1> . *
+lines that contain the word <M0>	. * \ b <M0> \ b . *
+lines that contain <M0> but do not contain <M1>.	( . * <M0> . * ) & ( ~ ( . * <M1> . * ) )
+lines that contain <M0> or <M1>.	. * <M0> . * | . * <M1> . *
+lines with <M0> where the word <M1> comes before <M0>.	( . * <M0> . * ) & ( . * \ b <M1> \ b . * <M0> . * )
+lines using 3 instances of <M0>	. * ( . * <M0> . * ) { 3 } . *
+lines that contain words with <M0>.	. * \ b [ <LET> ] * <M0> [ <LET> ] * \ b . *
+lines that begin with the word <M0>.	<M0> \ b . *
+lines that begin with a number and end with <M0> or <M1>.	[ <NUM> ] . * ( <M0> | <M1> )
+lines that have three numbers between <M0> and <M1>.	. * ( <M0> . * ( . * [ <NUM> ] . * ) { 3 } . * <M1> | . * <M1> . * ( . * [ <NUM> ] . * ) { 3 } . * <M0> ) . *
+lines that contain at least one number.	. * [ <NUM> ] . *
+lines that do not contain any number	~ ( . * [ <NUM> ] . * )
+lines using five letter words.	. * \ b [ <LET> ] { 5 } \ b . *
+lines that have <M0>	. * <M0> . *
+lines that contain 3 words with at least 1 number in between the 1st and 3rd word.	[ ^ <LET> ] * \ b [ <LET> ] + \ b ( ( . * \ b [ <LET> ] + \ b . * ) & ( . * [ <NUM> ] . * ) ) \ b [ <LET> ] + \ b [ ^ <LET> ] *
+lines containing the number 11 and the word <M0>.	( . * 1 1 . * ) & ( . * <M0> . * )
+lines which have <M0> and <M1> but not <M2> or <M3>.	( ( . * <M0> . * ) & ( . * <M1> . * ) & ( ~ ( . * ( <M2> | <M3> ) . * ) ) )
+lines using more than 1 character	. * . { 2 , } . *
+lines which contain only lowercase letters.	[ <LOW> ] *
+lines that are composed of 4 or more words.	( . * \ b [ <LET> ] + \ b . * ) { 4 , }
+lines that end with vowels.	. * [ <VOW> ]
+lines containg the number <M0>.	. * <M0> . *
+lines that use <M0> or <M1> before words ending with <M2>.	. * ( <M0> | <M1> ) . * \ <M1> [ <LET> ] * <M2> \ <M1> . *
+lines that have three words comprised of 4 characters each.	. * ( . * \ b [ <LET> ] { 4 } \ b . * ) { 3 } . *
+lines containing only a letter	[ <LET> ]
+lines using 2 instances of <M0>	. * ( . * <M0> . * ) { 2 } . *
+lines with capital letters	. * [ <CAP> ] . *
+lines that show <M0> and <M1>.	. * ( . * <M0> . * ) & ( . * <M1> . * ) . *
+lines that include one word using at least 2 letters	. * \ b [ <LET> ] { 2 , } \ b . *
+lines that contain words between <M0> and <M1>	. * <M0> . * \ b [ <LET> ] + \ b . * <M1> . * | . * <M1> . * \ b [ <LET> ] + \ b . * <M0> . *
+lines utilizing the number <M0>.	. * <M0> . *
+lines that have words containing <M0>	. * \ b [ <LET> ] * <M0> [ <LET> ] * \ b . *
+lines that contain at least one digit.	. * [ <NUM> ] . *
+lines containing a word using <M0> 	. * \ b [ <LET> ] * <M0> [ <LET> ] * \ b . *
+lines that use words starting with <M0>.	. * \ b <M0> [ <LET> ] * \ b . *
+lines containing words starting with <M0>.	. * ( ( \ b <M0> . * \ b ) & ( [ <LET> ] + ) ) . *
+lines that have a word beginning with th and a number that begins in <M0>	( . * \ b t h [ <LET> ] * \ b . * ) & ( . * <M0> [ <NUM> ] * . * )
+lines that contain three or more digits	( . * [ <NUM> ] . * ) { 3 }
+lines that have all of its letters capitalized.	~ ( . * [ <LOW> ] . * )
+lines that contain 5 numbers and 2 words that contain <M0>.	. * ( . * [ <NUM> ] . * ) { 5 } & ( . * \ b [ <LET> ] * <M0> [ <LET> ] * \ b . * ) { 2 } . *
+lines that use words that are only four letters long.	. * \ b [ <LET> ] { 4 } \ b . *
+lines starting with <M0> followed by words starting with <M1>.	<M0> . * \ b <M1> [ <LET> ] * \ b . *
+lines containing the word <M0>.	. * \ b <M0> \ b . *
+lines that have any instance of <M0>.	. * <M0> . *
+lines using <M0> after <M1>	. * <M1> . * <M0> . *
+lines using words containing <M0> before <M1>.	. * ( ( \ b [ <LET> ] [ <LET> ] * \ b ) & ( . * <M0> . * <M1> . * ) ) . *
+lines that contain words that end in <M0> that do not begin with <M1>	. * ( ( \ b [ <LET> ] + \ b ) & ( . * <M0> ) & ( ~ ( <M1> . * ) ) ) . *
+lines that contain 4 letter words ending in <M0>	. * \ b [ <LET> ] { 3 } <M0> \ b . *
+lines ending with <M0>	. * <M0>
+lines that contain the word <M0>	. * \ b <M0> \ b . *
+lines that have the number <M0>.	. * <M0> . *
+lines that contain a 3 letter word and a 2 letter word.	. * ( . * \ b [ <LET> ] { 3 } \ b . * ) & ( . * \ b [ <LET> ] { 2 } \ b . * ) . *
+lines using at least 4 <M0>	( . * <M0> . * ) { 4 , }
+lines containing both letters and numbers, but no capitals.	( . * [ <LET> ] . * ) & ( . * [ <NUM> ] . * ) & ( ~ ( . * [ <CAP> ] . * ) )
+lines that contain either of <M0> or <M1>	. * ( <M0> | <M1> ) . *
+lines that contain words starting in <M0>	. * ( ( \ b [ <LET> ] [ <LET> ] * \ b ) & ( <M0> . * ) ) . *
+lines that contain the symbol <M0>.	. * <M0> . *
+lines that contain 5 or more letters	. * ( . * [ <LET> ] . * ) { 5 , } . *
+lines that utilize the number <M0>.	. * <M0> . *
+lines utilizing words ending with <M0>.	. * ( ( \ b [ <LET> ] + \ b ) & ( . * <M0> ) ) . *
 lines which contain only the number <M0>.	<M0>
+lines using a word containing the letter <M0>.	. * ( ( \ b [ <LET> ] + \ b ) & ( . * <M0> . * ) ) . *
+lines with <M0> and not <M1>.	( . * <M0> . * ) & ( ~ ( . * <M1> . * ) )
+lines with a word ending in <M0> that contain only one word	( [ ^ <LET> ] ) * \ b [ <LET> ] * <M0> \ b ( [ ^ <LET> ] ) *
+lines containing words that start with <M0>	. * \ b <M0> [ <LET> ] * \ b . *
+lines that contain <M0> or <M1>	. * ( <M0> | <M1> ) . *
+lines using a 3 letter sequence starting with <M0>	. * <M0> [ <LET> ] { 2 } . *
+lines that have <M0> followed by the word <M1>	. * <M0> . * \ b <M1> \ b . *
+lines which contain a word using 2 or more letters	. * \ b [ <LET> ] { 2 , } \ b . *
+lines that contain at least one numeric in it.	. * [ <NUM> ] . *
+lines that end with <M0> 	. * <M0>
+lines containing any number with an <M0> in it.	. * <M0> . *
+lines that contain the <M0>	. * <M0> *
+lines which contain <M0>.	. * <M0> . *
+lines that contain five vowels	( . * [ <VOW> ] . * ) { 5 }
+lines that contain 3 numbers and one number contains 1.	( . * [ <NUM> ] . * ) & ( . * 1 . * )
+lines which contain <M0> at the start	<M0> . *
+lines containing <M0>, or <M1>	. * ( <M0> | <M1> ) . *
+lines that have <M0> before <M1> and <M2> after <M3>.	( . * <M0> . * <M1> . * ) & ( . * <M3> . * <M2> . * )
+lines having words ending with <M0>.	. * ( ( \ b [ <LET> ] + \ b ) & ( . * <M0> ) ) . *
+lines which contain the word <M0> and the letter <M1>.	( . * \ b <M0> \ b . * ) & ( . * <M1> . * )
+lines using more than 3 characters	. * . { 4 , } . *
+lines that do not use the word <M0>	~ ( . * \ b <M0> \ b . * )
+lines that contain the letter <M0> and the number <M1>.	( . * <M0> . * ) & ( . * <M1> . * )
+lines using at least 3 <M0>	( . * <M0> . * ) { 3 , }
+lines that have 3 numbers and contain the word <M0>.	( . * [ <NUM> ] . * ) { 3 } & ( . * \ b <M0> \ b . * )
+lines having the letters <M0>.	. * ( ( <M0> ) & ( [ <LET> ] * ) ) . *
+lines using words beginning with the letter <M0>.	. * \ b <M0> [ <LET> ] * \ b . *
+lines using three letter words.	. * \ b [ <LET> ] { 3 } \ b . *
+lines using a word that ends in <M0>	. * ( ( \ b [ <LET> ] + \ b ) & ( . * <M0> ) ) . *
+lines that end with <M0> and include the phrase <M1>.	( . * <M0> ) & ( . * <M1> . * )
+lines that have more than 5 words ending with a <M0>	( . * \ b [ <LET> ] * c \ b . * ) { 6 , }
+lines which contain a word ending in <M0>.	. * \ b [ <LET> ] * <M0> \ b . *
+lines that contain only 2 words, and, begin with the letter <M0>.	<M0> . * & ( ( [ ^ <LET> ] ) * \ b [ <LET> ] + \ b ( [ ^ <LET> ] ) * ) { 2 }
+lines containing the word <M0>.	. * \ b <M0> \ b . *
+lines containing the word <M0>.	. * \ b <M0> \ b . *
+lines using 4 instances of <M0>	. * ( . * <M0> . * ) { 4 } . *
+lines that contain at least five words.	( . * \ b [ <LET> ] [ <LET> ] * \ b . * ) { 5 , }
+lines using the word <M0>	. * \ b <M0> \ b . *
+lines containing words that end with s.	. * \ b [ <LET> ] * s \ b . *
+lines utilizing words starting with <M0>.	. * ( ( <M0> . * ) & ( \ b [ <LET> ] [ <LET> ] * \ b ) ) . *
+lines that have <M0> after <M1> or <M2>.	. * ( <M1> | <M2> ) . * <M0> . *
+lines that contain at least one word starting with <M0>.	. * \ b <M0> [ <LET> ] * \ b . *
+lines that have 4 words or less where at least 1 of those words contains the letter sequence <M0>.	( [ ^ <LET> ] * \ b [ <LET> ] + \ b [ ^ <LET> ] * ) { 0 , 4 } & ( . * ( ( \ b [ <LET> ] + \ b ) & ( . * <M0> . * ) ) . * ) { 1 , }
+lines that do not have <M0> in them	~ ( . * <M0> . * )
+lines which start with the word <M0>	\ b <M0> \ b . *
+lines that have words with <M0>.	. * \ b [ <LET> ] * <M0> [ <LET> ] * \ b . *
+lines where there is only one word.	[ ^ <LET> ] * \ b [ <LET> ] + \ b [ ^ <LET> ] *
+lines that contain at least three words and at least one number.	( . * \ b [ <LET> ] [ <LET> ] * \ b . * ) { 3 } & ( . * [ <NUM> ] . * )
+lines which contain both <M0> and <M1> but no instances of <M2>.	( . * <M0> . * ) & ( . * <M1> . * ) & ( ~ ( . * <M2> . * ) )
+lines having words starting with <M0>.	. * ( ( \ b [ <LET> ] [ <LET> ] * \ b ) & ( <M0> . * ) ) . *
+lines using 3 instances of <M0>	. * ( . * <M0> . * ) { 3 } . *
+lines that contain the number <M0> and <M1> and begin with <M2>.	( . * <M0> . * ) & ( . * <M1> . * ) & ( <M2> . * )
+lines that contain more than five words.	( . * \ b [ <LET> ] + \ b . * ) { 6 , }
+lines which mention <M0> with the word <M1>.	. * ( . * <M0> . * ) & ( . * \ b <M1> \ b . * ) . *
+lines using words which have a vowel.	. * \ b [ <LET> ] * [ a e i o u A E I O U ] [ <LET> ] * \ b . *
+lines ending in <M0>	. * <M0>
+lines that start with the letter <M0>	<M0> . *
+lines containing any mention of the word <M0>.	. * \ b <M0> \ b . *
+lines having words with <M0>.	. * \ b [ <LET> ] * <M0> [ <LET> ] * \ b . *
+lines having the letter <M0>.	. * <M0> . *
+lines using <M0> or <M1>	. * ( <M0> | <M1> ) . *
+lines that contain a word in all uppercase.	. * \ b [ <CAP> ] + \ b . *
+lines which do not begin with an uppercase letter.	~ ( [ <CAP> ] . * )
+lines using a word of 5 letters or less.	. * \ b [ <LET> ] { 1 , 5 } \ b . *
+lines ending in <M0> preceded by a word that ends in <M1>	. * \ b [ <LET> ] * <M1> \ b . * <M0>
+lines that contain words using the letters <M0>	. * \ b [ <LET> ] * <M0> [ <LET> ] * \ b . *
+lines that use words with <M0>.	. * ( ( \ b [ <LET> ] + \ b ) & ( . * <M0> . * ) ) . *
+lines that contain any numbers.	. * [ <NUM> ] . *
+lines that utilize words starting with <M0>.	. * ( ( \ b [ <LET> ] + \ b ) & ( <M0> . * ) ) . *
+lines that have 3 or more words containing the letters <M0>.	( . * ( ( \ b [ <LET> ] + \ b ) & ( . * <M0> . * ) ) . * ) { 3 , }
+lines using 2 or more words containing the letters <M0>. 	( . * ( \ b [ <LET> ] + \ b & ( . * <M0> . * ) ) . * ) { 2 , }
+lines containing only four words.	( ( [ ^ <LET> ] ) * \ b [ <LET> ] + \ b ( [ ^ <LET> ] ) * ) { 4 }
+lines that have words ending with <M0>.	. * \ b [ <LET> ] * <M0> \ b . *
+lines using <M0> 	. * <M0> . *
+lines that contain at least 2 digits.	( . * [ <NUM> ] . * ) { 2 , }
+lines beginning with <M0>	<M0> . *
+lines that begin with the phrase <M0>	<M0> . *
+lines using 6 instances of <M0>	. * ( . * <M0> . * ) { 6 } . *
+lines that use the word <M0> followed by words starting with <M1>	. * \ b <M0> \ b . * \ b <M1> [ <LET> ] * \ b . *
+lines which end with <M0> 	. * <M0>
+lines using 7 <M0>	( . * <M0> . * ) { 7 }
+lines which contain <M0> but do not contain the letter <M1>.	( . * <M0> . * ) & ~ ( . * <M1> . * )
+lines which start with a number.	[ <NUM> ] . *
+lines that use words starting with <M0>.	. * \ b <M0> [ <LET> ] * \ b . *
+lines using more than 4 characters	. * . { 5 , } . *
+Find lines that mention dogs or cats but not any with mice	( . * ( d o g s | c a t s ) . * ) & ( ~ ( . * m i c e . * ) )
+lines that contain the phrase <M0>.	. * <M0> . *
+lines containing <M0> and containing <M1> too	( . * <M0> . * ) & ( . * <M1> . * )
+lines using <M0> after <M1> or <M2>.	. * ( <M1> | <M2> ) . * <M0> . *
+lines which have words beginning with <M0>.	. * \ b <M0> [ <LET> ] * \ b . *
+lines which contain multiple quoted words.	( . * \ ' [ <LET> ] + \ ' . * ) { 2 , }
+lines that contain words starting with <M0>.	. * ( ( \ b [ <LET> ] [ <LET> ] * \ b ) & ( <M0> . * ) ) . *
+lines using <M0> in the middle of a word.	. * \ b [ <LET> ] + <M0> [ <LET> ] + \ b . *
+lines that contain words starting with <M0>.	. * \ b <M0> [ <LET> ] * \ b . *
+lines that use <M0> and <M1>.	( . * <M0> . * ) & ( . * <M1> . * )
+lines containing a word using the letters <M0>.	. * \ b [ <LET> ] * <M0> [ <LET> ] * \ b . *
+lines that have <M0>	. * <M0> . *
+lines that have the word <M0>	. * \ b <M0> \ b . *

@@ -24,7 +24,7 @@
 <M0>	o	
 <M0>	a	<M1>	b	<M2>	c	
 <M0>	ne	
-<M0>	casualties	
+<M0>	World War II	<M1>	casualties	
 <M0>	9	<M1>	10	
 <M0>	Triple	<M1>	X	
 <M0>	su	<M1>	son	<M2>	soon	
@@ -44,11 +44,11 @@
 
 <M0>	s	
 
-<M0>	piggy	
+<M0>	piggy	<M1>	his mother	
 
 
 
-
+<M0>	city of	
 
 <M0>	ga	
 <M0>	k	
@@ -85,7 +85,7 @@
 <M0>	orange	
 
 <M0>	la	
-
+<M0>	+	<M1>	-	
 <M0>	Hindi	
 <M0>	e	<M1>	i	
 
@@ -189,7 +189,7 @@
 <M0>	hello	
 <M0>	P	
 <M0>	ge	
-
+<M0>	@	
 <M0>	itch	
 
 <M0>	ers	<M1>	oxy	
@@ -239,7 +239,7 @@
 <M0>	a	<M1>	z	
 <M0>	May	<M1>	June	
 <M0>	no	
-
+<M0>	this is it	
 <M0>	the	
 <M0>	a	<M1>	5	
 <M0>	din	<M1>	e	<M2>	ky	
@@ -342,7 +342,7 @@
 
 
 <M0>	ta	
-
+<M0>	I am mad	
 
 <M0>	G	
 <M0>	i	
@@ -371,7 +371,7 @@
 <M0>	upper	<M1>	lower	
 <M0>	sandwich	
 <M0>	ia	
-
+<M0>	once upon a time	
 <M0>	as	
 <M0>	unifax	<M1>	colorado	
 <M0>	Westbury	
@@ -401,27 +401,27 @@
 <M0>	null	
 
 
-
+<M0>	and in this life	
 
 <M0>	b	
 <M0>	x	
-
+<M0>	-	
 <M0>	x	
 <M0>	pol	<M1>	mi	<M2>	ist	<M3>	lk	
 
-<M0>	a	<M1>	lot	
+<M0>	-	<M1>	a	<M2>	lot	
 <M0>	n	
 <M0>	lay	<M1>	lie	
 <M0>	s	<M1>	t	
 <M0>	de	<M1>	st	<M2>	re	<M3>	col	
 <M0>	f	
 <M0>	puppy	
-
+<M0>	 with a period immediately after it.	
 <M0>	intellectual	
 <M0>	ant	
 <M0>	number	
 <M0>	on	
-<M0>	bar	
+<M0>	bar	<M1>	San Jose	
 <M0>	fu	
 <M0>	begin	
 <M0>	e	
@@ -464,7 +464,7 @@
 <M0>	g	
 <M0>	a	
 <M0>	ko	
-<M0>	midnight	
+<M0>	1:15	<M1>	midnight	
 
 <M0>	ness	<M1>	ed	
 
@@ -473,7 +473,7 @@
 <M0>	eleven	
 <M0>	a	<M1>	b	<M2>	d	
 <M0>	Randy	<M1>	fox	
-
+<M0>	!	
 
 <M0>	ace	<M1>	pl	<M2>	tr	
 <M0>	tra	
@@ -487,7 +487,7 @@
 <M0>	ni	<M1>	knight	
 <M0>	y	<M1>	z	
 <M0>	tal	<M1>	tel	
-
+<M0>	staphyloccus aureus.	
 <M0>	Jane	<M1>	Janet	<M2>	2	
 <M0>	go	
 <M0>	f	
@@ -518,7 +518,7 @@
 <M0>	number	
 
 
-
+<M0>	this is it	
 <M0>	ba	
 <M0>	ou	<M1>	th	
 <M0>	rh	<M1>	y	
@@ -538,7 +538,7 @@
 <M0>	native	<M1>	tribes	
 
 
-
+<M0>	?	<M1>	!	
 
 
 
@@ -570,12 +570,12 @@
 <M0>	ABC	
 
 <M0>	y	<M1>	a	
-
+<M0>	I went into	
 <M0>	hula	
 <M0>	total	
 <M0>	God	
 <M0>	bu	
-<M0>	AIDS	
+<M0>	Freddie Mercury	<M1>	AIDS	
 <M0>	k	
 <M0>	Y	
 
@@ -589,7 +589,7 @@
 <M0>	tch	
 <M0>	gue	
 <M0>	aba	<M1>	bcb	<M2>	cbc	
-
+<M0>	New Zealand	
 <M0>	i	<M1>	e	<M2>	u	
 
 <M0>	start	
@@ -611,7 +611,7 @@
 <M0>	street	<M1>	avenue	
 
 <M0>	lives	<M1>	lifes	<M2>	life	
-
+<M0>	then I said	
 <M0>	movie	
 
 <M0>	ly	
@@ -643,7 +643,7 @@
 
 <M0>	life	<M1>	lives	
 
-<M0>	surprise	
+<M0>	!	<M1>	surprise	
 <M0>	kitten	
 
 <M0>	art	<M1>	led	
@@ -659,13 +659,13 @@
 <M0>	ant	
 <M0>	ABC	
 
-
+<M0>	New York	
 <M0>	hurry	<M1>	up	
 
-
+<M0>	$	
 <M0>	ABC	<M1>	WEX	
 <M0>	oo	<M1>	at	
-
+<M0>	c.	
 <M0>	left	<M1>	right	
 <M0>	dre	<M1>	ber	
 <M0>	n	
@@ -691,7 +691,7 @@
 <M0>	fer	
 
 
-
+<M0>	@	
 
 <M0>	the	
 <M0>	s	
@@ -735,9 +735,9 @@
 <M0>	x	
 <M0>	q	<M1>	u	
 <M0>	ly	<M1>	ny	
-
-
-
+<M0>	Transport One	
+<M0>	...	
+<M0>	;	
 <M0>	I	
 <M0>	bedrock	<M1>	yabadabadoo	
 <M0>	ge	
@@ -777,7 +777,7 @@
 <M0>	pray	
 <M0>	I	<M1>	you	
 
-
+<M0>	and so it came to pass	
 <M0>	helper	<M1>	little	<M2>	helper	
 <M0>	ked	
 
