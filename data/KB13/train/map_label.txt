@@ -1,0 +1,618 @@
+<M0>	ABC	
+<M0>	unifax	<M1>	colorado	
+<M0>	w	
+<M0>	tu	
+<M0>	h	
+<M0>	bar	
+<M0>	h	
+<M0>	dre	<M1>	ber	
+<M0>	Westbury	
+<M0>	dance	
+<M0>	fer	
+
+<M0>	white	
+<M0>	ace	<M1>	pl	<M2>	tr	
+<M0>	Beaker	
+
+<M0>	re	
+
+
+<M0>	bar	
+<M0>	7	
+<M0>	cem	
+<M0>	trade	
+<M0>	e	
+
+<M0>	b	
+
+<M0>	ABC	
+<M0>	c	
+<M0>	tran	<M1>	nguyen	
+
+<M0>	a	
+<M0>	midnight	
+<M0>	at	
+
+<M0>	a	
+<M0>	a	
+
+
+<M0>	fried	
+<M0>	1	
+
+<M0>	pu	
+<M0>	life	
+
+<M0>	f	
+<M0>	bi	
+<M0>	n	
+
+
+<M0>	e	
+<M0>	z	
+<M0>	TRY	<M1>	LOL	
+<M0>	k	
+<M0>	a	<M1>	b	<M2>	c	
+<M0>	g	
+<M0>	j	
+
+
+<M0>	mae	
+<M0>	ba	
+<M0>	9	
+
+<M0>	44	
+<M0>	itch	
+<M0>	a	<M1>	b	
+
+<M0>	mobile	<M1>	phone	
+<M0>	gh	
+
+<M0>	Columbia	
+
+<M0>	y	<M1>	a	
+<M0>	e	
+
+<M0>	f	
+<M0>	s	<M1>	y	
+<M0>	null	
+<M0>	oo	<M1>	at	
+<M0>	su	<M1>	son	<M2>	soon	
+<M0>	Beaker	<M1>	Bunsen	
+<M0>	fe	
+
+<M0>	ing	
+<M0>	a	
+<M0>	is	<M1>	it	
+
+<M0>	mix	<M1>	shake	
+
+<M0>	t	
+<M0>	inoperative	
+<M0>	fa	
+<M0>	Kelly	<M1>	Chris	
+<M0>	c	
+<M0>	God	
+<M0>	ci	
+<M0>	fu	<M1>	ba	<M2>	bar	
+<M0>	do	
+
+<M0>	ug	
+
+<M0>	w	
+<M0>	n	
+<M0>	hey	
+<M0>	ness	<M1>	ed	
+<M0>	b	<M1>	c	
+
+<M0>	fireflies	<M1>	butterflies	
+<M0>	a	<M1>	z	
+<M0>	no	
+<M0>	k	
+<M0>	ca	
+
+
+<M0>	ge	
+
+
+<M0>	z	
+<M0>	ni	<M1>	knight	
+<M0>	G	
+
+<M0>	f	
+
+<M0>	t	
+<M0>	car	<M1>	try	<M2>	say	
+<M0>	hula	
+<M0>	o	
+
+<M0>	Dylan	<M1>	Lynda	
+
+<M0>	far	
+<M0>	bedrock	<M1>	yabadabadoo	
+
+<M0>	b	
+
+<M0>	fur	
+<M0>	2005	<M1>	May	<M2>	Mary	
+<M0>	q	
+
+<M0>	number	
+
+
+
+
+
+
+<M0>	and	<M1>	sand	<M2>	tide	
+<M0>	car	
+<M0>	ire	
+
+
+<M0>	Jane	<M1>	Janet	<M2>	2	
+
+<M0>	on	<M1>	off	
+
+<M0>	c	
+<M0>	foo	<M1>	car	<M2>	cop	
+<M0>	x	
+<M0>	2	
+<M0>	fi	
+<M0>	x	
+<M0>	gates	
+<M0>	hero	
+<M0>	7	
+<M0>	Al	
+<M0>	12	
+
+<M0>	the	
+<M0>	di	
+<M0>	p	
+<M0>	rh	<M1>	y	
+
+<M0>	sandwich	
+<M0>	begin	
+
+<M0>	the	
+
+<M0>	annou	<M1>	irth	<M2>	c	
+<M0>	May	<M1>	June	
+<M0>	ked	
+<M0>	the	
+<M0>	shoe	<M1>	lace	
+<M0>	a	
+<M0>	k	<M1>	l	
+<M0>	The	
+<M0>	Mr	<M1>	Mrs	<M2>	Ms	<M3>	Miss	
+<M0>	sh	<M1>	wi	<M2>	st	<M3>	ar	
+<M0>	z	<M1>	nt	
+<M0>	movie	
+<M0>	law	
+<M0>	you	
+
+
+<M0>	ude	
+
+
+<M0>	ot	
+
+<M0>	GHF	<M1>	JFK	
+<M0>	e	<M1>	i	
+
+<M0>	H	
+<M0>	ra	
+
+<M0>	G	
+<M0>	ly	<M1>	ny	
+
+<M0>	d	
+<M0>	po	
+<M0>	az	
+<M0>	bo	
+<M0>	sea	
+<M0>	fa	
+<M0>	xyz	
+<M0>	r	
+
+
+<M0>	az	
+
+<M0>	da	
+
+<M0>	news	<M1>	paper	<M2>	show	
+
+
+<M0>	day	<M1>	abc	
+
+<M0>	ing	<M1>	est	
+<M0>	th	
+<M0>	n	
+<M0>	ause	
+<M0>	e	
+<M0>	Triple	<M1>	X	
+
+<M0>	going	<M1>	d	
+<M0>	aby	<M1>	oz	
+<M0>	ead	<M1>	pro	
+
+<M0>	a	<M1>	lot	
+<M0>	ser	<M1>	lin	<M2>	ku	
+
+<M0>	the	
+
+<M0>	X	
+<M0>	un	
+<M0>	G	<M1>	y	
+<M0>	free	
+<M0>	33	
+<M0>	e	<M1>	jr	
+<M0>	ch	
+<M0>	ox	<M1>	en	
+<M0>	the	
+
+
+
+<M0>	oo	
+
+<M0>	Facebook	
+
+<M0>	bu	
+<M0>	12345	<M1>	54321	
+<M0>	life	<M1>	lives	
+<M0>	pan	<M1>	pe	
+
+<M0>	ch	
+<M0>	Goal	
+<M0>	upper	<M1>	lower	
+<M0>	8	<M1>	3	
+<M0>	apartheid	
+<M0>	y	<M1>	z	
+<M0>	x	<M1>	y	<M2>	z	
+
+<M0>	helper	<M1>	little	<M2>	helper	
+<M0>	t	
+<M0>	total	
+<M0>	orange	
+<M0>	ch	<M1>	dh	
+
+<M0>	cl	
+<M0>	boom	<M1>	ka	
+
+<M0>	ick	
+<M0>	as	
+
+<M0>	trolls	
+<M0>	ers	<M1>	oxy	
+<M0>	254	
+<M0>	qu	
+<M0>	g	
+<M0>	ol	
+<M0>	NOW	
+
+
+
+<M0>	fe	
+<M0>	la	
+<M0>	ei	
+<M0>	a	
+
+<M0>	Hindi	
+
+<M0>	oocl	
+
+
+<M0>	The	
+<M0>	t	
+
+
+
+<M0>	z	
+<M0>	helper	<M1>	little	
+
+<M0>	tra	
+<M0>	ac	
+
+
+<M0>	efg	<M1>	car	
+<M0>	ness	
+
+<M0>	a	
+<M0>	Jim	<M1>	Stacks	<M2>	Slim	
+
+<M0>	q	
+<M0>	A	
+<M0>	ru	
+<M0>	e	<M1>	f	
+<M0>	ugly	<M1>	betty	<M2>	thomas	
+
+<M0>	sec	<M1>	mun	
+<M0>	b	
+
+<M0>	e	
+<M0>	y	
+<M0>	an	
+
+<M0>	ko	
+<M0>	x	
+<M0>	love	<M1>	you	
+<M0>	day	<M1>	to	
+<M0>	fu	
+<M0>	aought	
+<M0>	tag	
+<M0>	le	
+
+<M0>	tt	<M1>	bb	
+
+<M0>	puppy	
+<M0>	aba	<M1>	bcb	<M2>	cbc	
+
+
+<M0>	oon	
+
+<M0>	es	
+<M0>	ie	
+
+<M0>	la	
+<M0>	ent	<M1>	ong	
+
+<M0>	fuzz	
+<M0>	eak	<M1>	red	
+<M0>	ight	
+<M0>	oo	<M1>	o	<M2>	d	<M3>	a	
+<M0>	q	
+<M0>	end	
+<M0>	1	
+
+<M0>	l	
+<M0>	ing	
+<M0>	mo	
+<M0>	er	
+
+<M0>	a	<M1>	5	
+<M0>	gue	
+<M0>	the	
+
+<M0>	uu	<M1>	z	
+
+<M0>	be	
+<M0>	Wednesday	<M1>	Sunday	
+<M0>	f	
+<M0>	kitten	
+<M0>	bit	<M1>	ch	
+<M0>	er	
+<M0>	and	<M1>	zyx	<M2>	cba	
+<M0>	s	
+<M0>	gi	
+<M0>	sw	
+<M0>	spoon	
+<M0>	ou	<M1>	th	
+
+<M0>	casualties	
+<M0>	ss	<M1>	a	<M2>	le	
+<M0>	ca	<M1>	r	<M2>	t	
+<M0>	8	<M1>	5	
+<M0>	ly	
+<M0>	she	
+<M0>	y	
+
+<M0>	ABC	<M1>	XYX	
+<M0>	2	<M1>	Sel	
+<M0>	sorry	
+
+
+<M0>	lake	<M1>	house	
+<M0>	d	<M1>	e	<M2>	s	<M3>	r	
+
+<M0>	ei	
+<M0>	AIDS	
+<M0>	V	<M1>	33	
+
+<M0>	ta	
+<M0>	z	<M1>	q	
+<M0>	laugh	
+
+<M0>	b	
+<M0>	st	<M1>	gy	
+<M0>	an	<M1>	imal	
+<M0>	e	
+<M0>	clue	
+<M0>	pol	<M1>	mi	<M2>	ist	<M3>	lk	
+
+<M0>	egg	
+
+<M0>	tal	<M1>	tel	
+
+<M0>	kai	
+
+
+
+
+<M0>	x	
+<M0>	q	<M1>	r	
+<M0>	Booyah	
+<M0>	hello	
+<M0>	bar	<M1>	stress	
+<M0>	ch	
+<M0>	th	
+<M0>	ghi	<M1>	jkl	
+<M0>	ki	
+<M0>	ers	
+<M0>	ge	<M1>	an	<M2>	ger	<M3>	tra	
+<M0>	ro	
+<M0>	fo	
+<M0>	an	
+<M0>	ing	
+<M0>	irl	
+<M0>	of	<M1>	in	
+<M0>	sing	<M1>	sung	
+<M0>	crack	
+<M0>	cake	<M1>	candles	
+<M0>	g	
+<M0>	uns	
+
+<M0>	y	
+
+
+
+<M0>	din	<M1>	e	<M2>	ky	
+
+
+<M0>	ia	
+<M0>	0	
+<M0>	sign	
+<M0>	butterflies	<M1>	fireflies	
+<M0>	Homer	<M1>	Odyssey	
+<M0>	ly	
+<M0>	x	<M1>	z	
+
+<M0>	B	<M1>	b	
+<M0>	e	
+<M0>	after	
+<M0>	i	
+
+<M0>	w	<M1>	s	
+<M0>	moot	
+<M0>	I	
+<M0>	helper	<M1>	little	<M2>	helper	
+<M0>	a	<M1>	a	
+<M0>	4	<M1>	3	<M2>	5	
+<M0>	run	<M1>	hat	
+<M0>	x	<M1>	y	
+<M0>	y	
+<M0>	Bill	<M1>	bill	
+
+<M0>	tch	<M1>	wi	
+<M0>	foo	
+<M0>	wrench	<M1>	monkey	
+<M0>	pa	
+<M0>	x	<M1>	y	
+
+<M0>	y	<M1>	w	
+<M0>	eleven	
+<M0>	surprise	
+<M0>	the	
+<M0>	ing	
+<M0>	tron	<M1>	bot	
+<M0>	Canada	<M1>	Mexico	<M2>	Cuba	
+<M0>	P	
+<M0>	x	
+<M0>	i	
+<M0>	Topo	
+<M0>	ne	
+<M0>	el	
+<M0>	the	
+<M0>	gophers	<M1>	grass	<M2>	seeds	
+
+<M0>	twist	
+<M0>	ant	
+<M0>	h	
+<M0>	foo	<M1>	nu	<M2>	dist	<M3>	dust	
+<M0>	b	
+
+<M0>	out	
+
+<M0>	o	
+<M0>	der	
+
+
+<M0>	pray	
+<M0>	PQR	<M1>	LMNO	
+<M0>	blog	
+<M0>	in	
+
+<M0>	b	
+
+
+<M0>	hurry	<M1>	up	
+<M0>	tt	
+
+<M0>	ga	
+<M0>	c	<M1>	d	
+
+
+<M0>	h	<M1>	i	
+<M0>	ABC	<M1>	TRY	
+<M0>	z	
+<M0>	a	<M1>	z	
+
+<M0>	T	
+<M0>	hairy	
+<M0>	on	
+
+<M0>	SBC	
+
+
+<M0>	ock	
+<M0>	f	
+<M0>	ject	<M1>	pel	
+<M0>	gu	
+<M0>	mo	<M1>	fo	
+<M0>	couch	
+<M0>	min	<M1>	imal	
+
+
+<M0>	xyz	
+<M0>	JFK	<M1>	WAS	
+
+<M0>	zoo	
+<M0>	once	
+<M0>	y	<M1>	z	
+
+<M0>	and	
+
+<M0>	omega	
+<M0>	pid	<M1>	stu	
+<M0>	i	<M1>	e	<M2>	u	
+<M0>	vem	
+<M0>	lay	<M1>	lie	
+<M0>	preordained	
+
+
+<M0>	black	<M1>	z	
+
+
+<M0>	Therefore	
+
+<M0>	x	
+
+<M0>	news	
+<M0>	X	<M1>	oa	
+<M0>	ig	<M1>	physics	<M2>	nobel	
+
+<M0>	Quasi	
+
+<M0>	y	
+
+
+
+
+<M0>	as	
+
+
+
+<M0>	be	
+
+
+<M0>	JFK	<M1>	ABC	
+<M0>	g	
+<M0>	y	
+
+<M0>	left	<M1>	right	
+
+<M0>	n	<M1>	y	
+<M0>	buck	
+<M0>	q	<M1>	u	
+<M0>	art	<M1>	led	
+<M0>	8	
+
+<M0>	x	<M1>	y	
+
+<M0>	x	
+<M0>	a	
+<M0>	ca	<M1>	att	
+<M0>	ab	
+
+
+
+<M0>	s	<M1>	t	
+<M0>	code	

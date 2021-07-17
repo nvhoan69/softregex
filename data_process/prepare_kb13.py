@@ -82,34 +82,43 @@ writer.close()
 # prepare train data
 input_writer = open('../data/KB13/train/data.txt', 'w+')
 map_writer = open('../data/KB13/train/map_targ.txt', 'w+')
+map_label = open('../data/KB13/train/map_label.txt', 'w+')
 for data in train_data:
     input_data = "{}\t{}\n".format(data[1], data[3]) # description and sketch
     map_data = "{}\t{}\t{}\t\n".format(data[0], data[1], data[2]) # line number and target regex
     input_writer.write(input_data)
     map_writer.write(map_data)
+    map_label.write(label_map_lines[data[0]] + "\n")
 input_writer.close()
 map_writer.close()
+map_label.close()
 
 # prepare test data
 input_writer = open('../data/KB13/test/data.txt', 'w+')
 map_writer = open('../data/KB13/test/map_targ.txt', 'w+')
+map_label = open('../data/KB13/test/map_label.txt', 'w+')
 for data in test_data:
     input_data = "{}\t{}\n".format(data[1], data[3]) # description and sketch
     map_data = "{}\t{}\t{}\t\n".format(data[0], data[1], data[2]) # line number and target regex
     input_writer.write(input_data)
     map_writer.write(map_data)
+    map_label.write(label_map_lines[data[0]] + "\n")
 input_writer.close()
 map_writer.close()
+map_label.close()
 
 # prepare evaluate data
 input_writer = open('../data/KB13/val/data.txt', 'w+')
 map_writer = open('../data/KB13/val/map_targ.txt', 'w+')
+map_label = open('../data/KB13/val/map_label.txt', 'w+')
 for data in eval_data:
     input_data = "{}\t{}\n".format(data[1], data[3]) # description and sketch
     map_data = "{}\t{}\t{}\t\n".format(data[0], data[1], data[2]) # line number and target regex
     input_writer.write(input_data)
     map_writer.write(map_data)
+    map_label.write(label_map_lines[data[0]] + "\n")
 input_writer.close()
 map_writer.close()
+map_label.close()
 
 
