@@ -239,7 +239,7 @@ def refine_outout(regex):
     return ' '.join(word_list)
 
 
-with open('data/' + data_tuple[0] + '/test/data.txt', 'r') as label_map:
+with open('data/' + data_tuple[0] + '/test/map_label.txt', 'r') as label_map:
   label_maps = label_map.read().splitlines()
 label_map.close()
 
@@ -256,10 +256,19 @@ def unprocess_re(regex, index):
   for i in range(len(data) - 1):
       if (i % 2 == 0):
           regex = regex.replace(data[i], " ".join(data[i + 1]))
-
+  
+  regex = regex.replace(" ", "")
   return regex
 
-def unprocess_descript(description):
+def unprocess_descript(description, index):
+  global label_maps
+
+  label_map_line = label_maps[index]
+  data = label_map_line.split("\t")
+  for i in range(len(data) - 1):
+      if (i % 2 == 0):
+          description = description.replace(data[i], "\'" + (data[i + 1]) + "\'")
+
   return description
 
 
@@ -275,7 +284,7 @@ total = 0
 
 model_correct = 0
 model_wrong = 0
-result_writer = open("my_result.txt", "w+")
+result_writer = open("my_kb13_result.txt", "w+")
 
 with torch.no_grad():
     for batch in batch_iterator:
@@ -321,9 +330,13 @@ with torch.no_grad():
             print("DFA not Equivalent")
             label = "DFA_NEQ"
 
-        targ = unprocess_regex(target_string)
-        synthesized = unprocess_regex(generated_string)
-        result_writer.write("{}\t{}\t{}\t{}\n".format(input_string, targ, synthesized, label))
+        index = num_samples - 1
+        desc = unprocess_descript(input_string, index)
+        targ = unprocess_re(target_string, index)
+        synthesized = unprocess_re(generated_string, index)
+        line = "{}\t{}\t{}\t{}\n".format(desc, targ, synthesized, label)
+        print(line)
+        result_writer.write(line)
         
         target_tokens = target_string.split()
         generated_tokens = generated_string.split()
